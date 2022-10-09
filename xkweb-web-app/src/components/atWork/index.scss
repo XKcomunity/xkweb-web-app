@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 30%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35%;
+
+  p {
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
