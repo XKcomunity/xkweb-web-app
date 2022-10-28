@@ -1,0 +1,18 @@
+.HomeCardcontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  padding-left: 10%;
+
+  img {
+    width: 50%;
+    padding-left: 34px;
+  }
+
+  p {
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
