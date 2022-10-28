@@ -1,11 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import AtWork from './components/atWork/AtWork'
+import HomeCards from './components/home-cards/HomeCards'
 import './App.css';
 
 function App() {
   return (
-    <AtWork />
+    <Fragment>
+      <AtWork />
+      <HomeCards />
+    </Fragment>
   );
 }
 
