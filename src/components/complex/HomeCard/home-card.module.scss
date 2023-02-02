@@ -1,0 +1,49 @@
+.card {
+	$card-gradient1: rgba(0, 0, 0, 0.8);
+	$card-gradient2: #72aae6, #4e444a;
+	// --card-gradient: tomato, orange;
+	$card-blend-mode: overlay;
+	// --card-blend-mode: multiply;
+
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+	padding-bottom: 1rem;
+	background-image: linear-gradient($card-gradient2, white max(9.5rem, 27vh));
+	overflow: hidden;
+	cursor: pointer;
+
+	img {
+		border-radius: 0.5rem 0.5rem 0 0;
+		width: 100%;
+		object-fit: cover;
+		// height: max(10rem, 25vh);
+		max-height: max(10rem, 30vh);
+		aspect-ratio: 4/3;
+		mix-blend-mode: $card-blend-mode;
+		// filter: grayscale(100);
+
+		~ * {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	&:hover,
+	&:focus-within {
+		$card-gradient1: #24a9d5 max(8.5rem, 20vh);
+	}
+}
+
+.card h3 {
+	margin-top: 1rem;
+	font-size: 1.25rem;
+}
+
+.card a {
+	color: inherit;
+}
