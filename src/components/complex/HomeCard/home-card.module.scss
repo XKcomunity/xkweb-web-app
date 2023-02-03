@@ -1,4 +1,6 @@
 .card {
+	width: 90%;
+	height: 45vh;
 	$card-gradient1: rgba(0, 0, 0, 0.8);
 	$card-gradient2: #72aae6, #4e444a;
 	// --card-gradient: tomato, orange;
@@ -12,6 +14,7 @@
 	background-image: linear-gradient($card-gradient2, white max(9.5rem, 27vh));
 	overflow: hidden;
 	cursor: pointer;
+	margin-bottom: 30px;
 
 	img {
 		border-radius: 0.5rem 0.5rem 0 0;

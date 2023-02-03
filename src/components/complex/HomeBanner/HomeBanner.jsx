@@ -7,38 +7,17 @@ export const HomeBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
-				<Image
-					src={bg}
-					style={{
-						objectFit: "cover",
-						maxWidth: "100%",
-						height: "90%",
-					}}
-					alt="bg image"
-				/>
-				<div>
-					<Image
-						src={space}
-						style={{
-							position: "absolute",
-							objectFit: "cover",
-							maxWidth: "100%",
-							height: "90%",
-							zIndex: -1,
-							top: 0,
-						}}
-						alt="space image"
-					/>
+				<div className={styles.space_background}>
 				</div>
 				<div>
 					<Image
 						className={styles.responsive_image}
 						src={robot}
+						width={250}
+						height={250}
 						style={{
 							position: "absolute",
 							objectFit: "cover",
-							width: "250px",
-							height: "250px",
 							top: 180,
 							left: 350,
 						}}

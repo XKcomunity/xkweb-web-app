@@ -1,8 +1,12 @@
 // import styles from "./page.module.scss";
-import Button from "@/components/basic/button/Button";
+import { MainTitle } from "@/components/basic/main_title/MainTitle";
 import { HomeBanner } from "@/components/complex/HomeBanner/HomeBanner";
 import { NavBar } from "@/components/complex/navbar/NavBar";
-// import { HomeCard } from "@/components/complex/HomeCard/HomeCard";
+import { SliderCard } from "@/components/complex/slider/SliderCard";
+
+export default function Home() {
+	const image1 =
+		"https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGVuZ3VhamVzJTIwZGUlMjBwcm9ncmFtYWNpJUMzJUIzbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60";
 
 export default function Home() {
 	// const image1 =
@@ -17,11 +21,8 @@ export default function Home() {
 		<>
 			<NavBar />
 			<HomeBanner />
-			{/* <div className={styles.cardwrapper}>
-				<HomeCard urlImage={image1} />
-				<HomeCard urlImage={image2} />
-				<HomeCard urlImage={image3} />
-			</div> */}
+			<MainTitle />
+			<SliderCard />
 		</>
 	);
 }
