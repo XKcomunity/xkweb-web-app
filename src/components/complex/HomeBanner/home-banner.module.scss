@@ -27,3 +27,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+@media (min-width: 800px) {
+	.responsive_image {
+		top: 160;
+	}
+}
+
+@media (min-width: 400px) {
+	.responsive_image {
+		max-width: 500px;
+		height: 300px;
+	}
+}
