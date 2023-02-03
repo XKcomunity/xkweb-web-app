@@ -7,7 +7,7 @@ export const HomeBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
-				<Image
+				{/* <Image
 					src={bg}
 					style={{
 						objectFit: "cover",
@@ -15,9 +15,9 @@ export const HomeBanner = () => {
 						height: "90%",
 					}}
 					alt="bg image"
-				/>
-				<div>
-					<Image
+				/> */}
+				<div className={styles.space_background}>
+					{/* <Image
 						src={space}
 						style={{
 							position: "absolute",
@@ -28,17 +28,17 @@ export const HomeBanner = () => {
 							top: 0,
 						}}
 						alt="space image"
-					/>
+					/> */}
 				</div>
 				<div>
 					<Image
 						className={styles.responsive_image}
 						src={robot}
+						width={250}
+						height={250}
 						style={{
 							position: "absolute",
 							objectFit: "cover",
-							width: "250px",
-							height: "250px",
 							top: 180,
 							left: 350,
 						}}
