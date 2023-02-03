@@ -1,11 +1,33 @@
 .banner_title {
+
+	font-size: 20px;
 	color: white;
+	position: absolute;
+	top: 400;
+	left: 300;
 }
 
 .image_background {
 	position: relative;
 	width: 100%;
 	height: 100vh;
+
+	background-image: url("../../../../public/images/space.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 4.7%;
+}
+
+.space_background {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../../../../public/images/bg.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @media (min-width: 800px) {

@@ -1,0 +1,36 @@
+.navbar_wrapper {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-image: linear-gradient(#801336, #3a0450);
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar_logo {
+	color: white;
+	font-size: 3rem;
+	margin-left: 5%;
+}
+.navbar_pages {
+	width: 40%;
+	margin-right: 5%;
+}
+
+.navbar_list {
+	color: white;
+	font-size: 1.5rem;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.navbar_item:hover {
+	cursor: pointer;
+	color: rgba($color: #ffffff, $alpha: 0.7);
+}
