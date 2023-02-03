@@ -3,9 +3,8 @@
 	height: 45vh;
 	$card-gradient1: rgba(0, 0, 0, 0.8);
 	$card-gradient2: #72aae6, #4e444a;
-	// --card-gradient: tomato, orange;
 	$card-blend-mode: overlay;
-	// --card-blend-mode: multiply;
+
 
 	background-color: #fff;
 	border-radius: 0.5rem;
@@ -15,7 +14,6 @@
 	overflow: hidden;
 	cursor: pointer;
 	margin-bottom: 30px;
-
 	img {
 		border-radius: 0.5rem 0.5rem 0 0;
 		width: 100%;

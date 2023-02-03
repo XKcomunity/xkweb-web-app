@@ -7,7 +7,9 @@ export const HomeBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
+
 				<div className={styles.space_background}>
+
 				</div>
 				<div>
 					<Image
@@ -18,6 +20,7 @@ export const HomeBanner = () => {
 						style={{
 							position: "absolute",
 							objectFit: "cover",
+
 							top: 180,
 							left: 350,
 						}}
