@@ -1,0 +1,43 @@
+.card_wrapper {
+	width: 90%;
+	height: 60vh;
+	background-color: white;
+	cursor: pointer;
+
+	.image_wrapper {
+		max-width: 100%;
+
+		.card_image {
+			width: 100%;
+			object-fit: cover;
+			border: 3px solid #ba54de;
+		}
+	}
+
+	.card_content {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		flex-flow: wrap;
+		margin-top: 10px;
+		margin-left: 10px;
+		padding: 10px;
+
+		.card_title {
+			font-size: 25px;
+			color: green;
+		}
+
+		.card_description {
+			margin-top: 15px;
+			font-size: 15px;
+			font-weight: 600;
+		}
+
+		.footer_wrapper {
+			margin-top: 40px;
+			font-size: 15px;
+			font-weight: 500;
+		}
+	}
+}
