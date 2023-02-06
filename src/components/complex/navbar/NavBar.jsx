@@ -14,7 +14,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>Home</li>
+								<li className={styles.navbar_item}>Inicio</li>
 							</Link>
 						</motion.li>
 						<motion.li
@@ -22,7 +22,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>Blog</li>
+								<li className={styles.navbar_item}>Quienes Somos</li>
 							</Link>
 						</motion.li>
 						<motion.li
@@ -30,7 +30,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>Cursos</li>
+								<li className={styles.navbar_item}>Articulos</li>
 							</Link>
 						</motion.li>
 						<motion.li
@@ -38,23 +38,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>About us</li>
-							</Link>
-						</motion.li>
-						<motion.li
-							whileHover={{ translateY: -5 }}
-							transition={{ duration: 0.5 }}
-						>
-							<Link href="#">
-								<li className={styles.navbar_item}>Login</li>
-							</Link>
-						</motion.li>
-						<motion.li
-							whileHover={{ translateY: -5 }}
-							transition={{ duration: 0.5 }}
-						>
-							<Link href="#">
-								<li className={styles.navbar_item}>Register</li>
+								<li className={styles.navbar_item}>Contacto</li>
 							</Link>
 						</motion.li>
 					</ul>

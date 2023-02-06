@@ -13,7 +13,7 @@ export const HomeCard = ({ urlImage }) => {
 				</h1>
 				<p>The most popular frontend library</p>
 				<footer>
-					<p>Nivel: Intermedio</p>
+					<h6>Nivel:</h6><p>Intermedio</p>
 				</footer>
 			</div>
 		</>

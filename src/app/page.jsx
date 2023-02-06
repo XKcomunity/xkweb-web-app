@@ -14,9 +14,9 @@ export default function Home() {
 			<HomeBanner />
 			<MainTitle />
 			<HomeSection />
-			<SecondaryTitle secondary_title="Front-end development" />
+			<SecondaryTitle secondary_title="Frontend" />
 			<SliderCard />
-			<SecondaryTitle secondary_title="Back-end development" />
+			<SecondaryTitle secondary_title="Backend" />
 			<SliderCard />
 		</>
 	);

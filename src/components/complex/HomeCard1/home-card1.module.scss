@@ -10,7 +10,6 @@
 		.card_image {
 			width: 100%;
 			object-fit: cover;
-			border: 3px solid #ba54de;
 		}
 	}
 
@@ -25,13 +24,14 @@
 
 		.card_title {
 			font-size: 25px;
-			color: green;
+			color: #13547A;
 		}
 
 		.card_description {
 			margin-top: 15px;
 			font-size: 15px;
 			font-weight: 600;
+			color: #696F79;
 		}
 
 		.footer_wrapper {
