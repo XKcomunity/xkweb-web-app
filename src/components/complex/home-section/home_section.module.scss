@@ -13,21 +13,47 @@
 	margin-bottom: 50px;
 }
 
+@media (max-width: 800px) {
+	.grid_container {
+		grid-template-areas:
+			"section . image1"
+			"section . image2";
+	}
+}
+
 .text_section {
 	display: flex;
 	flex-direction: column;
 	grid-area: section;
 	padding: 10px;
+
+	.main_text {
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.main_subtitle_text {
+		font-size: 18px;
+		letter-spacing: 5;
+	}
 }
 
 .image_section1 {
 	display: flex;
 	flex-direction: column;
 	grid-area: image1;
+	margin-right: 5%;
 }
 
 .image_section2 {
 	display: flex;
 	flex-direction: column;
 	grid-area: image2;
+}
+
+.main_subtitle_text_wrapper {
+	margin-top: 40px;
+}
+
+.title {
+	margin-top: 10px;
 }

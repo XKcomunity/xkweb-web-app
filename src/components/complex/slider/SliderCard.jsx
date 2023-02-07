@@ -45,37 +45,43 @@ export const SliderCard = () => {
 					image={image}
 					title="Vue 3 - Composition"
 					description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-					footer_content="Nivel: Intermedio"
+					nivel="Nivel"
+					nivel_value="Intermedio"
 				/>
 				<HomeCard1
 					image={image1}
 					title="React 18 with hooks"
 					description="Aprende a dominar los hooks de react y crea magnificas UIs"
-					footer_content="Nivel: Avanzado"
+					nivel="Nivel"
+					nivel_value="Avanzado"
 				/>
 				<HomeCard1
 					image={image2}
 					title="Arquitecturas Limpias"
 					description="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-					footer_content="Nivel: Básico"
+					nivel="Nivel"
+					nivel_value="Básico"
 				/>
 				<HomeCard1
 					image={image}
 					title="Vue 3-Composition"
 					description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-					footer_content="Nivel: Intermedio"
+					nivel="Nivel"
+					nivel_value="Avanzado"
 				/>
 				<HomeCard1
 					image={image1}
 					title="React 18 with hooks"
 					description="Aprende a dominar los hooks de react y crea magnificas UIs"
-					footer_content="Nivel: Avanzado"
+					nivel="Nivel"
+					nivel_value="Intermedio"
 				/>
 				<HomeCard1
 					image={image2}
 					title="Arquitecturas Limpias"
 					description="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-					footer_content="Nivel: Básico"
+					nivel="Nivel"
+					nivel_value="Intermedio"
 				/>
 				{/* <HomeCard urlImage={image} />
 				<HomeCard urlImage={image} />

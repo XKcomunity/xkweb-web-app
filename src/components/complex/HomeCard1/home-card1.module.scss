@@ -24,7 +24,7 @@
 
 		.card_title {
 			font-size: 25px;
-			color: #13547A;
+			color: #13547a;
 		}
 
 		.card_description {
@@ -32,13 +32,29 @@
 			font-size: 15px;
 			font-weight: 600;
 			line-height: 20px;
-			color: #696F79;
+			color: #696f79;
 		}
 
 		.footer_wrapper {
 			margin-top: 40px;
 			font-size: 15px;
 			font-weight: 500;
+
+			.footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.bold_footer {
+				font-size: 17px;
+				font-weight: bold;
+			}
+
+			.level_text {
+				margin-left: 3px;
+			}
 		}
 	}
 }
