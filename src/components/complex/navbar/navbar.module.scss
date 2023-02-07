@@ -4,7 +4,7 @@
 	z-index: 1;
 	background-image: linear-gradient(#801336, #3a0450);
 	width: 100%;
-	height: 10vh;
+	height: 11vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -12,6 +12,9 @@
 }
 
 .navbar_logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: white;
 	font-size: 3rem;
 	margin-left: 5%;

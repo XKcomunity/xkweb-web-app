@@ -2,11 +2,16 @@
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+import logo from "../../../../public/logo/logo_3.png";
 export const NavBar = () => {
 	return (
 		<>
 			<nav className={styles.navbar_wrapper}>
-				<div className={styles.navbar_logo}>Xk Web</div>
+				<div className={styles.navbar_logo}>
+					<Image src={logo} alt="" width={170} height={110} />
+				</div>
 				<div className={styles.navbar_pages}>
 					<ul className={styles.navbar_list}>
 						<motion.li

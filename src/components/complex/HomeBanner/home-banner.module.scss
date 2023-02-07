@@ -29,11 +29,11 @@
 	background-size: cover;
 }
 
-@media (min-width: 800px) {
-	.responsive_image {
-		top: 160;
-	}
-}
+// @media (max-width: 800px) {
+// 	.responsive_image {
+// 		top: 100;
+// 	}
+// }
 
 @media (min-width: 400px) {
 	.responsive_image {

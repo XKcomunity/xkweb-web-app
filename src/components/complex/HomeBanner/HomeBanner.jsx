@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./home-banner.module.scss";
 import robot from "../../../../public/images/robots/robot.png";
 import { motion } from "framer-motion";
+
 export const HomeBanner = () => {
 	return (
 		<>
