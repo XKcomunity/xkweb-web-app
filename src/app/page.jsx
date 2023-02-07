@@ -1,5 +1,4 @@
 // import styles from "./page.module.scss";
-
 import { MainTitle } from "@/components/basic/main_title/MainTitle";
 import { SecondaryTitle } from "@/components/basic/secondary_title/SecondaryTitle";
 import { HomeBanner } from "@/components/complex/HomeBanner/HomeBanner";
