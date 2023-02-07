@@ -3,10 +3,10 @@
 import styles from "./home_section.module.scss";
 import Image from "next/image";
 
-import vue from "../../../../public/tech-logos/vue.jpeg";
-import js from "../../../../public/tech-logos/js.jpeg";
-import css from "../../../../public/tech-logos/css3.jpeg";
-import html5 from "../../../../public/tech-logos/html5.jpeg";
+import vue from "../../../../public/images/tech-logos/vue.jpeg";
+import js from "../../../../public/images/tech-logos/js.jpeg";
+import css from "../../../../public/images/tech-logos/css3.jpeg";
+import html5 from "../../../../public/images/tech-logos/html5.jpeg";
 
 export const HomeSection = () => {
 	return (
@@ -17,16 +17,12 @@ export const HomeSection = () => {
 						<p className={styles.main_text}>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Explicabo assumenda laudantium in pariatur adipisci cupiditate
-							quidem! Quos porro, cumque, fuga ullam vero quam possimus,
-							voluptates laboriosam eum nostrum architecto obcaecati.
 						</p>
 					</div>
 					<div className={styles.main_subtitle_text_wrapper}>
 						<p className={styles.main_subtitle_text}>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
 							consequuntur, provident neque obcaecati error omnis? Unde
-							necessitatibus omnis, esse quaerat atque illo voluptatibus
-							exercitationem at modi recusandae laboriosam ad similique!
 						</p>
 					</div>
 				</div>
@@ -35,8 +31,9 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={vue}
-							width={150}
-							height={120}
+							width={120}
+							height={100}
+							alt=""
 						/>
 						<h1 className={styles.title}>Aprende React</h1>
 						<p className={styles.subtitle}>
@@ -44,8 +41,17 @@ export const HomeSection = () => {
 							aprendela y podras encontrar trabajo y estabilidad econmica
 						</p>
 					</div>
-					<div className={styles.image_text_wrapper}>
-						<Image className={styles.image} src={js} width={150} height={120} />
+					<div
+						className={styles.image_text_wrapper}
+						style={{ marginTop: "10%" }}
+					>
+						<Image
+							className={styles.image}
+							src={js}
+							width={120}
+							height={100}
+							alt=""
+						/>
 						<h1 className={styles.title}>Aprende React</h1>
 						<p className={styles.subtitle}>
 							React es la libreria de frontend mas popular en la actualidad,
@@ -58,8 +64,9 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={css}
-							width={150}
-							height={120}
+							width={120}
+							height={100}
+							alt=""
 						/>
 						<h1 className={styles.title}>Aprende React</h1>
 						<p className={styles.subtitle}>
@@ -67,12 +74,18 @@ export const HomeSection = () => {
 							aprendela y podras encontrar trabajo y estabilidad econmica
 						</p>
 					</div>
-					<div className={styles.image_text_wrapper}>
+					<div
+						className={styles.image_text_wrapper}
+						style={{
+							marginTop: "15%",
+						}}
+					>
 						<Image
 							className={styles.image}
 							src={html5}
-							width={150}
-							height={120}
+							width={120}
+							height={100}
+							alt=""
 						/>
 						<h1 className={styles.title}>Aprende React</h1>
 						<p className={styles.subtitle}>

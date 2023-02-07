@@ -3,7 +3,13 @@ import styles from "./home-card1.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const HomeCard1 = ({ image, title, description, footer_content }) => {
+export const HomeCard1 = ({
+	image,
+	title,
+	description,
+	nivel,
+	nivel_value,
+}) => {
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.07 }}>
@@ -17,7 +23,10 @@ export const HomeCard1 = ({ image, title, description, footer_content }) => {
 							<p className={styles.card_description}>{description}</p>
 						</div>
 						<footer className={styles.footer_wrapper}>
-							<p className={styles.footer}>{footer_content}</p>
+							<div className={styles.footer}>
+								<span className={styles.bold_footer}>{nivel}:</span>
+								<p className={styles.level_text}>{nivel_value}</p>
+							</div>
 						</footer>
 					</div>
 				</div>
