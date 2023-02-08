@@ -1,31 +1,68 @@
 .grid_container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	gap: 10px;
+	gap: 30px;
 	grid-template-areas:
-		"section  . image1 image2"
-		"section  . image1 image2";
+		"section  section . image1 image2"
+		"section  section . image1 image2";
 	width: 90%;
+	font-family: "Source Sans Pro", sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
 	margin-bottom: 50px;
 }
 
-// @media (max-width: 800px) {
-// 	.grid_container {
-// 		grid-template-areas:
-// 			"section . image1"
-// 			"section . image2";
-// 	}
-// }
+@media (max-width: 900px) {
+	.grid_container {
+		display: grid;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 0px 0px;
+		grid-template-areas:
+			"section section section section section"
+			"image1  image1  image1  image1  image1"
+			"image2  image2  image2  image2  image2";
+
+		.text_section {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.image_section1 {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 15%;
+		}
+
+		.image_section2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 15%;
+		}
+
+		.image_text_wrapper2 {
+			margin-top: 0;
+		}
+
+		.image_text_wrapper4 {
+			margin-top: 0;
+		}
+	}
+}
 
 .text_section {
 	display: flex;
 	flex-direction: column;
 	grid-area: section;
 	padding: 10px;
+	flex-wrap: wrap;
 
 	.main_text {
 		font-weight: bold;
@@ -56,4 +93,13 @@
 
 .title {
 	margin-top: 10px;
+	font-size: 25px;
+}
+
+.image_text_wrapper2 {
+	margin-top: 15%;
+}
+
+.image_text_wrapper4 {
+	margin-top: 15%;
 }

@@ -1,9 +1,13 @@
+"use client";
+
 import styles from "./main_title.module.scss";
 
 export const MainTitle = () => {
 	return (
 		<>
-			<h1 className={styles.main_title}>XK Community</h1>
+			<div className={styles.main_title_wrapper}>
+				<h1 className={styles.main_title}>XK Community</h1>
+			</div>
 		</>
 	);
 };

@@ -17,17 +17,21 @@ export const HomeSection = () => {
 						<p className={styles.main_text}>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Explicabo assumenda laudantium in pariatur adipisci cupiditate
+							zvnjcxknvjkc vcxnvcvncx vxcjvxcvcx vjxcvjcxvjcx vjxvcxjvcxjv
+							vjxcvjcxvjcxcxv vncjvnjcv
 						</p>
 					</div>
 					<div className={styles.main_subtitle_text_wrapper}>
 						<p className={styles.main_subtitle_text}>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-							consequuntur, provident neque obcaecati error omnis? Unde
+							consequuntur, provident neque obcaecati error omnis? Unde ashbdshf
+							sdfdhsfhsd sdfjsdjfjsd sdjfsdfbsd sdfhsdfhsdf sdhfsdhfhsdf
+							fshfhsdhfhsdf sdhfsdhfhsd
 						</p>
 					</div>
 				</div>
 				<div className={styles.image_section1}>
-					<div className={styles.image_text_wrapper}>
+					<div className={styles.image_text_wrapper1}>
 						<Image
 							className={styles.image}
 							src={vue}
@@ -41,10 +45,7 @@ export const HomeSection = () => {
 							aprendela y podras encontrar trabajo y estabilidad econmica
 						</p>
 					</div>
-					<div
-						className={styles.image_text_wrapper}
-						style={{ marginTop: "10%" }}
-					>
+					<div className={styles.image_text_wrapper2}>
 						<Image
 							className={styles.image}
 							src={js}
@@ -60,7 +61,7 @@ export const HomeSection = () => {
 					</div>
 				</div>
 				<div className={styles.image_section2}>
-					<div className={styles.image_text_wrapper}>
+					<div className={styles.image_text_wrapper3}>
 						<Image
 							className={styles.image}
 							src={css}
@@ -74,12 +75,7 @@ export const HomeSection = () => {
 							aprendela y podras encontrar trabajo y estabilidad econmica
 						</p>
 					</div>
-					<div
-						className={styles.image_text_wrapper}
-						style={{
-							marginTop: "15%",
-						}}
-					>
+					<div className={styles.image_text_wrapper4}>
 						<Image
 							className={styles.image}
 							src={html5}
