@@ -28,7 +28,7 @@ export const NavBar = () => {
 						onClick={() => alert("Abriendo el Drawer")}
 					/> */}
 					<HiMenu
-						size={60}
+						size={45}
 						color="white"
 						className={styles.mobile_logo_image}
 						onClick={() => alert("Abriendo el Drawer")}
