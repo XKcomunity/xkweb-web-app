@@ -16,8 +16,8 @@ export const NavBar = () => {
 						className={styles.logo_image}
 						src={logo}
 						alt=""
-						width={170}
-						height={110}
+						width={160}
+						height={105}
 					/>
 					{/* <Image
 						className={styles.mobile_logo_image}
@@ -49,7 +49,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>Quienes Somos</li>
+								<li className={styles.navbar_item}>Articulos</li>
 							</Link>
 						</motion.li>
 						<motion.li
@@ -57,7 +57,7 @@ export const NavBar = () => {
 							transition={{ duration: 0.5 }}
 						>
 							<Link href="#">
-								<li className={styles.navbar_item}>Articulos</li>
+								<li className={styles.navbar_item}>Snippets</li>
 							</Link>
 						</motion.li>
 						<motion.li

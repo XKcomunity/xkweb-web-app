@@ -1,0 +1,32 @@
+@mixin Normal-button {
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-top: 2em;
+  }
+
+  @mixin vw100 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @mixin flex-h-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  @mixin flex-v-center {
+    display: flex;
+    align-items: center;
+  }
+
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
