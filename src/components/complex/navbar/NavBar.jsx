@@ -19,14 +19,6 @@ export const NavBar = () => {
 						width={160}
 						height={105}
 					/>
-					{/* <Image
-						className={styles.mobile_logo_image}
-						src={mobile_logo}
-						width={60}
-						height={60}
-						alt="mobile logo"
-						onClick={() => alert("Abriendo el Drawer")}
-					/> */}
 					<HiMenu
 						size={45}
 						color="white"

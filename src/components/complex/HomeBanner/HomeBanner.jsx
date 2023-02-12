@@ -24,13 +24,6 @@ export const HomeBanner = () => {
 							src={robot}
 							width={250}
 							height={250}
-							// style={{
-							// 	position: "absolute",
-							// 	objectFit: "cover",
-
-							// 	top: 180,
-							// 	left: 350,
-							// }}
 							alt="robot image"
 						/>
 					</div>

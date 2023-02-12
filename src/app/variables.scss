@@ -2,12 +2,11 @@
 :root {
 
     // ============================ COLORES ===================  //
-	$primary-color: #c52f5c;
-    $secondary-color: #000000;
-    $terceary-color: #13547a;;
-    $alt-color: #000;
-    $white-color: #000;
-    $bg-color: #0e0619;
+	$primary-color: #FE3DA6;
+    $secondary-color: #56DBFF;
+    $white-color: #FFF;
+    $grey-color: #696F79;
+    $bg-color: #0E0619;
 
 
     // ============================ TIPOGRAFIA ===================  //
@@ -17,7 +16,14 @@
     $line-height: 1em;
     $letter-spacing: 1em;
 
-    // ============================ TAMANOS ====================== //
+    // ============================ TAMANOS (Estos dependen del elemento padre) ====================== //
     $width-100: 100%;
     $width-90: 90%;
+    $height-100: 100%;
+    $height-90: 90%;
+    // ============================ TAMANOS (Medidas el viewport) ====================== //
+    $width-100: 100vw;
+    $width-90: 90vw;
+    $height-100: 100vh;
+    $height-90: 90vh;
 }

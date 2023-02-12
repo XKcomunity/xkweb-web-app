@@ -1,4 +1,11 @@
-@mixin Normal-button {
+@import "variables";
+
+@mixin main-title {
+    font-size: large;
+    text-align: center;
+}
+
+@mixin button {
     width: 50%;
     padding: 10px 20px;
     border-radius: 10px;
@@ -9,24 +16,41 @@
     font-size: 0.8em;
     cursor: pointer;
     margin-top: 2em;
-  }
+}
+
+@mixin outline-button {
+  @include button;
+  background: none;
+  border: 1px solid var($secondary-color);
+}
+
 
   @mixin vw100 {
     width: 100vw;
     height: 100vh;
   }
 
-  @mixin flex-h-center {
+  @mixin flex {
     display: flex;
+  }
+
+  @mixin flex-h-center {
+    @include flex;
     justify-content: center;
   }
 
+  @mixin total-center {
+    @include flex-h-center;
+    @include flex-v-center;
+  }
+
   @mixin flex-v-center {
-    display: flex;
+    @include flex;
     align-items: center;
   }
 
   @mixin flex-column {
-    display: flex;
+    @include flex;
     flex-direction: column;
 }
+

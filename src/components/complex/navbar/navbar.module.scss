@@ -1,8 +1,9 @@
+
 .navbar_wrapper {
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	background-image: linear-gradient(#801336, #3a0450);
+	background-color: #0E0619;
 	width: 100%;
 	height: 11vh;
 	display: flex;
@@ -49,7 +50,6 @@
 		display: block;
 		cursor: pointer;
 		color: white;
-		background-color: rgba($color: #000000, $alpha: 0.4);
 		border-radius: 5px;
 	}
 }
