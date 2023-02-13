@@ -5,20 +5,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { HiMenu } from "react-icons/hi";
 
-import logo from "../../../../public/logo/logo_3.png";
+import logo from "../../../../public/logo/logo-x.png";
 // import mobile_logo from "../../../../public/logo/logo_mobile.svg";
 export const NavBar = () => {
 	return (
 		<>
 			<nav className={styles.navbar_wrapper}>
 				<div className={styles.navbar_logo}>
-					<Image
-						className={styles.logo_image}
-						src={logo}
-						alt=""
-						width={160}
-						height={105}
-					/>
+				    <h2>XK-Comunity</h2>
 					<HiMenu
 						size={45}
 						color="white"
