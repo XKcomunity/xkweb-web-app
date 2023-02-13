@@ -5,9 +5,9 @@ import styles from "./slider.module.scss";
 import { HomeCard } from "../HomeCard/HomeCard";
 import { HomeCard1 } from "../HomeCard1/HomeCard1";
 
-import image from "../../../../public/images/tech-cards/vuecard.png";
-import image1 from "../../../../public/images/tech-cards/react.png";
-import image2 from "../../../../public/images/tech-cards/handcard.png";
+import image from "../../../../public/images/article-cards/vuecard.png";
+import image1 from "../../../../public/images/article-cards/react.png";
+import image2 from "../../../../public/images/article-cards/handcard.png";
 
 export const SliderCard = () => {
 	// const image =

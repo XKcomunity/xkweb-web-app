@@ -3,10 +3,10 @@
 import styles from "./home_section.module.scss";
 import Image from "next/image";
 
-import vue from "../../../../public/images/tech-logos/vue.jpeg";
+import vue from "../../../../public/images/tech-logos/vue.png";
 import js from "../../../../public/images/tech-logos/js.jpeg";
-import css from "../../../../public/images/tech-logos/css3.jpeg";
-import html5 from "../../../../public/images/tech-logos/html5.jpeg";
+import css from "../../../../public/images/tech-logos/css.png";
+import html5 from "../../../../public/images/tech-logos/html.png";
 
 export const HomeSection = () => {
 	return (
