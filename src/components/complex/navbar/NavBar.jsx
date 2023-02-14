@@ -13,12 +13,7 @@ export const NavBar = () => {
 			<nav className={styles.navbar_wrapper}>
 				<div className={styles.navbar_logo}>
 				    <h2>XK-Comunity</h2>
-					<HiMenu
-						size={45}
-						color="white"
-						className={styles.mobile_logo_image}
-						onClick={() => alert("Abriendo el Drawer")}
-					/>
+			
 				</div>
 				<div className={styles.navbar_pages}>
 					<ul className={styles.navbar_list}>
@@ -56,6 +51,12 @@ export const NavBar = () => {
 						</motion.li>
 					</ul>
 				</div>
+				<HiMenu
+						size={45}
+						color="white"
+						className={styles.mobile_logo_image}
+						onClick={() => alert("Abriendo el Drawer")}
+					/>
 			</nav>
 		</>
 	);

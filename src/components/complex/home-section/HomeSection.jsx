@@ -35,7 +35,7 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={vue}
-							width={120}
+							width={110}
 							height={100}
 							alt=""
 						/>
@@ -49,7 +49,7 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={js}
-							width={120}
+							width={110}
 							height={100}
 							alt=""
 						/>
@@ -65,7 +65,7 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={css}
-							width={120}
+							width={110}
 							height={100}
 							alt=""
 						/>
@@ -79,7 +79,7 @@ export const HomeSection = () => {
 						<Image
 							className={styles.image}
 							src={html5}
-							width={120}
+							width={110}
 							height={100}
 							alt=""
 						/>
