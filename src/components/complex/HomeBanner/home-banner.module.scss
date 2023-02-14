@@ -1,9 +1,9 @@
 .image_background {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	background-image: url("../../../../public/images/bg/space-bg.jpg");
-	background-position: 50% 50%;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -12,7 +12,7 @@
 	.space_background {
 		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		background-image: url("../../../../public/images/bg/main-bg.png");
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
