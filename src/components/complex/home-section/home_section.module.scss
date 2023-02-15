@@ -1,3 +1,6 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
 .grid_container {
 	padding: 5em 0em 10em;
 	display: grid;
@@ -94,7 +97,7 @@
 
 .title {
 	margin-top: 10px;
-	font-size: 25px;
+	font-size: $font-size__h2;
 }
 
 .image_text_wrapper2 {
@@ -103,4 +106,8 @@
 
 .image_text_wrapper4 {
 	margin-top: 15%;
+}
+
+.subtitle {
+	font-size: $font-size__paragraph;
 }
