@@ -37,16 +37,16 @@
 	align-items: center;
 }
 
-@mixin flex-column {
+@mixin flex-row {
 	@include flex;
+	flex-direction: row;
+}
+@mixin flex-column {
+	display: flex;
 	flex-direction: column;
 }
+
 @mixin flex-v-center {
 	display: flex;
 	align-items: center;
-}
-
-@mixin flex-column {
-	display: flex;
-	flex-direction: column;
 }
