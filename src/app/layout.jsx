@@ -1,4 +1,6 @@
 import "./globals.scss";
+import { NavBar } from "@/components/complex/navbar/NavBar";
+import { Footer } from "@/components/complex/footer/Footer";
 
 export default function RootLayout({ children }) {
 	return (
@@ -8,7 +10,9 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
+			<NavBar />
 			<body>{children}</body>
+			<Footer />
 		</html>
 	);
 }

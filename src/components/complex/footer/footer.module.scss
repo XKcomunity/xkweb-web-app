@@ -59,7 +59,7 @@
 	.footer_links {
 		@include flex-column;
 		font-size: $font-size__h5;
-
+		list-style: none;
 		.link:nth-child(n) {
 			margin-top: 15px;
 		}

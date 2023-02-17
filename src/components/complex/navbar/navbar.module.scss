@@ -1,21 +1,20 @@
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
+
 .navbar_wrapper {
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	background-color: #0e0619;
+	background-color: $bg-color;
 	width: 100%;
 	height: 8vh;
-	display: flex;
-	flex-direction: row;
+    @include flex-v-center;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .navbar_logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
+	color: $white-color;
 	margin-left: 5%;
 }
 .navbar_pages {
@@ -24,10 +23,9 @@
 }
 
 .navbar_list {
-	display: flex;
-	flex-direction: row;
+    display: flex;
 	justify-content: space-around;
-	color: white;
+	color: $white-color;
 	font-size: 1.3rem;
 	list-style: none;
 	flex-wrap: wrap;
@@ -36,6 +34,7 @@
 
 .navbar_item:hover {
 	cursor: pointer;
+	color: $secondary-color;
 }
 
 .mobile_logo_image {
@@ -44,12 +43,10 @@
 
 @media (max-width: 600px) {
 	.mobile_logo_image {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+        @include flex-v-center;
 		display: block;
 		cursor: pointer;
-		color: white;
+		color: $white-color;
 		border-radius: 5px;
 		margin-right: 4%;
 	}

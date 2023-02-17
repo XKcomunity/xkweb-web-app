@@ -1,0 +1,63 @@
+@import "../variables";
+@import "../mixins";
+
+.main_snippet {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.h1 {
+    color: $white-color;
+    font-size: $font-size__h1;
+    .h1_span {
+        color: $secondary-color;
+    }
+}
+
+
+.headings_snippets_text {
+    color: $white-color;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.headings_snippets {
+    @include flex-h-center;
+}
+
+.headings_snippets_links {
+    width: 80%;
+    color: $white-color;
+    @include flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+
+.headings_snippets_links li {
+    list-style: none;
+
+}
+
+.headings_snippets_links a {
+    color: $dark-alt-color;
+    font-size: $font-size__h5;
+}
+
+.headings_snippets_links a:hover {
+    color: $white-color;
+}
+
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: $dark-alt-color;
+    margin: 2em;
+}

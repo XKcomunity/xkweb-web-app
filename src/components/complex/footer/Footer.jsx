@@ -49,21 +49,21 @@ export function Footer() {
 							<span className={styles.heading}>Enlaces</span>
 						</div>
 						<div className={styles.footer_links}>
-							<Link href="#" className={styles.link}>
-								Inicio
+							<Link href="/" className={styles.link}>
+								<li className={styles.navbar_item}><a>Inicio</a></li>
 							</Link>
 							<Link href="#" className={styles.link}>
-								Artículos
+								<li className={styles.navbar_item}><a>Articulos</a></li>
+							</Link>
+							<Link href="/snippets" className={styles.link}>
+								<li className={styles.navbar_item}><a>Snippets</a></li>
 							</Link>
 							<Link href="#" className={styles.link}>
-								Snippets
-							</Link>
-							<Link href="#" className={styles.link}>
-								Contacto
+								<li className={styles.navbar_item}><a>Contacto</a></li>
 							</Link>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</footer>
 		</>
 	);
