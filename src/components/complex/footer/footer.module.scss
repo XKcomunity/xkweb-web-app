@@ -1,0 +1,69 @@
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
+.footer {
+	width: 100vw;
+	height: 55vh;
+	background-color: $dark-alt-color;
+	color: $white-color;
+	background-attachment: fixed;
+}
+
+.footer_wrapper {
+	width: 80%;
+	height: 80%;
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(12, 1fr);
+	padding: $padding-1;
+}
+
+.footer_section_1 {
+	grid-column: 2/8;
+	.footer_logo {
+		@include flex-v-center;
+		margin-left: -17px;
+		.logo_text {
+			font-size: clamp(2rem, 3vw, 3.5rem);
+			font-weight: 700;
+		}
+	}
+
+	.footer_description {
+		font-size: $font-size__h6;
+	}
+
+	.footer_social_media {
+		width: 20%;
+		margin-top: 1em;
+
+		.social_icons_wrapper {
+			@include flex;
+			gap: 1.2em;
+			font-size: $font-size__h2;
+		}
+	}
+}
+
+
+.footer_section_2 {
+	margin-top: 2em;
+	grid-column: 10/12;
+	@include flex-column;
+
+	.heading {
+		font-size: clamp(1.5rem, 2vw, 2rem);
+		font-weight: bold
+	}
+
+	.footer_links {
+		@include flex-column;
+		font-size: $font-size__h5;
+
+		.link:nth-child(n) {
+			margin-top: 15px;
+		}
+	}
+
+
+}
