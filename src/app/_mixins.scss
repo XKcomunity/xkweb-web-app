@@ -46,3 +46,14 @@
 	align-items: center;
 }
 
+@mixin paragraph {
+	font-size: var(--font-size_paragraph);
+	font-weight: lighter;
+	line-height: 20px;
+}
+
+@mixin cardDescription {
+   @include paragraph;
+   color: $grey-color;
+   margin-bottom: $margin-2;
+}
