@@ -5,6 +5,7 @@ import { HomeBanner } from "@/components/complex/HomeBanner/HomeBanner";
 import { HomeSection } from "@/components/complex/home-section/HomeSection";
 import { NavBar } from "@/components/complex/navbar/NavBar";
 import { SliderCard } from "@/components/complex/slider/SliderCard";
+import { Footer } from "@/components/complex/footer/Footer";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 			<SliderCard />
 			<SecondaryTitle secondary_title="Backend" />
 			<SliderCard />
+			<Footer />
 		</>
 	);
 }
