@@ -10,8 +10,6 @@ import image1 from "../../../../public/images/article-cards/react.png";
 import image2 from "../../../../public/images/article-cards/handcard.png";
 
 export const SliderCard = () => {
-	// const image =
-	// 	"https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGVuZ3VhamVzJTIwZGUlMjBwcm9ncmFtYWNpJUMzJUIzbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60";
 
 	const responsive = {
 		superLargeDesktop: {
@@ -83,12 +81,6 @@ export const SliderCard = () => {
 					nivel="Nivel"
 					nivel_value="Intermedio"
 				/>
-				{/* <HomeCard urlImage={image} />
-				<HomeCard urlImage={image} />
-				<HomeCard urlImage={image} />
-				<HomeCard urlImage={image} />
-				<HomeCard urlImage={image} />
-				<HomeCard urlImage={image} /> */}
 			</Carousel>
 		</>
 	);

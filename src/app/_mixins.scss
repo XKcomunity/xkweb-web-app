@@ -45,8 +45,14 @@
 	display: flex;
 	align-items: center;
 }
+@mixin paragraph {
+	font-size: var(--font-size_paragraph);
+	font-weight: lighter;
+	line-height: 20px;
+}
 
-@mixin flex-row {
-	display: flex;
-	flex-direction: row;
+@mixin cardDescription {
+   @include paragraph;
+   color: $grey-color;
+   margin-bottom: $margin-2;
 }

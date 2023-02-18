@@ -2,18 +2,14 @@
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { HiMenu } from "react-icons/hi";
 
-import logo from "../../../../public/logo/logo-x.png";
-// import mobile_logo from "../../../../public/logo/logo_mobile.svg";
 export const NavBar = () => {
 	return (
 		<>
 			<nav className={styles.navbar_wrapper}>
 				<div className={styles.navbar_logo}>
 				    <h2>XK-Comunity</h2>
-			
 				</div>
 				<div className={styles.navbar_pages}>
 					<ul className={styles.navbar_list}>
@@ -21,8 +17,10 @@ export const NavBar = () => {
 							whileHover={{ translateY: -5 }}
 							transition={{ duration: 0.5 }}
 						>
-							<Link href="#">
-								<li className={styles.navbar_item}>Inicio</li>
+							<Link href="/">
+								<li className={styles.navbar_item}>
+								   <a>Inicio</a>
+								</li>
 							</Link>
 						</motion.li>
 						<motion.li
@@ -37,7 +35,7 @@ export const NavBar = () => {
 							whileHover={{ translateY: -5 }}
 							transition={{ duration: 0.5 }}
 						>
-							<Link href="#">
+							<Link href="/snippets">
 								<li className={styles.navbar_item}>Snippets</li>
 							</Link>
 						</motion.li>
@@ -45,7 +43,7 @@ export const NavBar = () => {
 							whileHover={{ translateY: -5 }}
 							transition={{ duration: 0.5 }}
 						>
-							<Link href="#">
+							<Link href="">
 								<li className={styles.navbar_item}>Contacto</li>
 							</Link>
 						</motion.li>
