@@ -15,18 +15,13 @@ export const HomeSection = () => {
 				<div className={styles.text_section}>
 					<div className={styles.main_title_text_wrapper}>
 						<p className={styles.main_text}>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Explicabo assumenda laudantium in pariatur adipisci cupiditate
-							zvnjcxknvjkc vcxnvcvncx vxcjvxcvcx vjxcvjcxvjcx vjxvcxjvcxjv
-							vjxcvjcxvjcxcxv vncjvnjcv
+						Somos mucho más que una plataforma para compartir snippet de código, somos la oportunidad para mejorar tus habilidades y ser parte de una comunidad apasionada que comparte tu interés por la programación.
 						</p>
 					</div>
 					<div className={styles.main_subtitle_text_wrapper}>
 						<p className={styles.main_subtitle_text}>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-							consequuntur, provident neque obcaecati error omnis? Unde ashbdshf
-							sdfdhsfhsd sdfjsdjfjsd sdjfsdfbsd sdfhsdfhsdf sdhfsdhfhsdf
-							fshfhsdhfhsdf sdhfsdhfhsd
+						Xk-Community es de código abierto, lo que significa que tú también puedes contribuir al desarrollo de la plataforma y  ser parte de esta comunidad tan apasionada.
+
 						</p>
 					</div>
 				</div>
@@ -39,10 +34,9 @@ export const HomeSection = () => {
 							height={100}
 							alt=""
 						/>
-						<h1 className={styles.title}>Aprende React</h1>
+						<h1 className={styles.title}>Quiz</h1>
 						<p className={styles.subtitle}>
-							React es la libreria de frontend mas popular en la actualidad,
-							aprendela y podras encontrar trabajo y estabilidad econmica
+						   Te ayudarán a poner en practica tus habilidades y confirmar lo que vas aprendiendo.
 						</p>
 					</div>
 					<div className={styles.image_text_wrapper2}>
@@ -53,10 +47,9 @@ export const HomeSection = () => {
 							height={100}
 							alt=""
 						/>
-						<h1 className={styles.title}>Aprende React</h1>
+						<h1 className={styles.title}>Snippets</h1>
 						<p className={styles.subtitle}>
-							React es la libreria de frontend mas popular en la actualidad,
-							aprendela y podras encontrar trabajo y estabilidad econmica
+						    Te proporcionamos un conjunto de recursos que podrás utilizar en tus propios proyectos.
 						</p>
 					</div>
 				</div>
@@ -69,10 +62,9 @@ export const HomeSection = () => {
 							height={100}
 							alt=""
 						/>
-						<h1 className={styles.title}>Aprende React</h1>
+						<h1 className={styles.title}>Articulos</h1>
 						<p className={styles.subtitle}>
-							React es la libreria de frontend mas popular en la actualidad,
-							aprendela y podras encontrar trabajo y estabilidad econmica
+						   Te mantendrán actualizado sobre las últimas tendencias y herramientas de diseńo y desarrollo web.
 						</p>
 					</div>
 					<div className={styles.image_text_wrapper4}>
@@ -83,10 +75,9 @@ export const HomeSection = () => {
 							height={100}
 							alt=""
 						/>
-						<h1 className={styles.title}>Aprende React</h1>
+						<h1 className={styles.title}>Documentación</h1>
 						<p className={styles.subtitle}>
-							React es la libreria de frontend mas popular en la actualidad,
-							aprendela y podras encontrar trabajo y estabilidad econmica
+							Te brindamos links a documentación, libros y articulos para que aprendas de fuentes confiables.
 						</p>
 					</div>
 				</div>

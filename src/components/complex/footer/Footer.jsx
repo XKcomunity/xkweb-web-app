@@ -19,10 +19,8 @@ export function Footer() {
 							<Image src={logo} width={90} height={90} alt="" />
 							<span className={styles.logo_text}>XK Community</span>
 						</div>
-						<div className={styles.footer_description}>
-							As the ultimate resource for Vue.js developers, Vue Mastery produces
-							weekly lessons so you can learn what you need to succeed as a Vue.js
-							Developer
+						<div>
+							<p className={styles.footer_description}>Somos una comunidad apasionada por la programación que se dedica a compartir snippet de código, componentes y animaciones, así como artículos sobre lenguajes de programación, frameworks y ejercicios para puedas crecer en tu emprendimiento.</p>
 						</div>
 						<div className={styles.footer_social_media}>
 							<div className={styles.social_icons_wrapper}>
@@ -59,7 +57,7 @@ export function Footer() {
 								<li className={styles.navbar_item}><a>Snippets</a></li>
 							</Link>
 							<Link href="#" className={styles.link}>
-								<li className={styles.navbar_item}><a>Contacto</a></li>
+								<li className={styles.navbar_item}><a>Contacto </a></li>
 							</Link>
 						</div>
 					</div>
