@@ -46,7 +46,7 @@
 	align-items: center;
 }
 
-@mixin flex-column {
+@mixin flex-row {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }

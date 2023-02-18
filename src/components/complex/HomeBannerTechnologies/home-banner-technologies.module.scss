@@ -1,0 +1,117 @@
+.banner_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1fr);
+	grid-template-areas: "images texts";
+	gap: 20px;
+	width: 100%;
+	height: 60vh;
+	background-image: linear-gradient(#124e96, #393c83);
+
+	.image_banner_wrapper {
+		grid-area: images;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+		.image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+	// .images_wrapper {
+	// 	grid-area: images;
+	// 	.image_container {
+	// 		position: relative;
+	// 		width: 100%;
+	// 		object-fit: cover;
+	// 		.vue_image_wrapper {
+	// 			display: flex;
+	// 			justify-content: center;
+	// 			align-items: center;
+	// 			background-color: white;
+	// 			width: 90px;
+	// 			height: 90px;
+	// 			border-radius: 50%;
+
+	// 			.vue_image {
+	// 				border-radius: 50%;
+	// 			}
+	// 		}
+
+	// 		.html5_image_wrapper {
+	// 			display: flex;
+	// 			justify-content: center;
+	// 			align-items: center;
+	// 			background-color: white;
+	// 			width: 90px;
+	// 			height: 90px;
+	// 			border-radius: 50%;
+
+	// 			.html5_image {
+	// 				border-radius: 50%;
+	// 			}
+	// 		}
+
+	// 		.js_image_wrapper {
+	// 			display: flex;
+	// 			justify-content: center;
+	// 			align-items: center;
+	// 			background-color: white;
+	// 			width: 150px;
+	// 			height: 150px;
+	// 			border-radius: 50%;
+	// 			left: 50;
+	// 			margin-left: auto;
+	// 			margin-right: auto;
+	// 			margin-top: auto;
+	// 			margin-bottom: auto;
+
+	// 			.js_image {
+	// 				border-radius: 10%;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.banner_text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		grid-area: texts;
+
+		.title {
+			font-size: clamp(15px, 20px, 25px);
+			color: white;
+		}
+		.text {
+			width: 90%;
+			margin-top: 5%;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+			font-size: clamp(1rem, 3vw, 1.2rem);
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.banner_wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas:
+			"images"
+			"texts";
+		width: 100%;
+		height: 100vh;
+
+		.image_banner_wrapper {
+			width: 100%;
+			height: 50vh;
+		}
+	}
+}
