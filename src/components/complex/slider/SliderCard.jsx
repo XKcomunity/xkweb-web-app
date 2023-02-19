@@ -10,7 +10,6 @@ import image1 from "../../../../public/images/article-cards/react.png";
 import image2 from "../../../../public/images/article-cards/handcard.png";
 
 export const SliderCard = () => {
-
 	const responsive = {
 		superLargeDesktop: {
 			breakpoint: { max: 4000, min: 3000 },
@@ -19,14 +18,17 @@ export const SliderCard = () => {
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
 			items: 3,
+			partialVisibilityGutter: 15,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 464 },
+			breakpoint: { max: 1024, min: 600 },
 			items: 2,
+			partialVisibilityGutter: 10,
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 600, min: 0 },
 			items: 1,
+			partialVisibilityGutter: 5,
 		},
 	};
 	return (

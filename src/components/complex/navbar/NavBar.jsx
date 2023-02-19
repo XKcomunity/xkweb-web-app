@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./navbar.module.scss";
 import { motion } from "framer-motion";
 import { HiMenu } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { useState } from "react";
@@ -63,18 +64,28 @@ export const NavBar = () => {
 						</motion.li>
 					</ul>
 				</div>
-				<HiMenu
-					size={45}
-					color="white"
-					className={styles.mobile_logo_image}
-					onClick={toogleDrawer}
-				/>
+
+				{!menuOpen ? (
+					<HiMenu
+						size={45}
+						color="white"
+						className={styles.mobile_logo_image}
+						onClick={toogleDrawer}
+					/>
+				) : (
+					<HiX
+						size={45}
+						color="white"
+						className={styles.mobile_logo_image}
+						onClick={toogleDrawer}
+					/>
+				)}
 			</nav>
 
 			<Drawer
 				open={menuOpen}
 				onClose={toogleDrawer}
-				direction="right"
+				direction="left"
 				size={width}
 				duration={400}
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}

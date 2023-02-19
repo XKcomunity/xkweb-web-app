@@ -1,5 +1,8 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
 .card_wrapper {
-	width: 90%;
+	width: $width-85-percent;
 	height: 60vh;
 	background-color: white;
 	cursor: pointer;

@@ -12,7 +12,7 @@ export const HomeCard1 = ({
 }) => {
 	return (
 		<>
-			<motion.div whileHover={{ scale: 1.07 }}>
+			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
 						<Image className={styles.card_image} src={image} alt="Vue Image" />
