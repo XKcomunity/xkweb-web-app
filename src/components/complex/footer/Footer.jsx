@@ -25,19 +25,19 @@ export function Footer() {
 						<div className={styles.footer_social_media}>
 							<div className={styles.social_icons_wrapper}>
 								<motion.div whileHover={{ scale: 1.1 }}>
-									<div>
+									<Link href="https://www.instagram.com/xkweb/" target="_blank">
 										<FaInstagram color="white" size={35} />
-									</div>
+									</Link>
 								</motion.div>
 								<motion.div whileHover={{ scale: 1.1 }}>
-									<div>
+									<Link href="#">
 										<FaDiscord color="white" size={35} />
-									</div>
+									</Link>
 								</motion.div>
 								<motion.div whileHover={{ scale: 1.1 }}>
-									<div>
+									<Link href='https://www.youtube.com/c/XkWeb/videos' target="_blank">
 										<FaYoutube color="white" size={35} />
-									</div>
+									</Link>
 								</motion.div>
 							</div>
 						</div>

@@ -7,6 +7,7 @@ import vue from "../../../../public/images/tech-logos/vue.png";
 import js from "../../../../public/images/tech-logos/js.jpeg";
 import css from "../../../../public/images/tech-logos/css.png";
 import html5 from "../../../../public/images/tech-logos/html.png";
+import Button from "@/components/basic/button/Button";
 
 export const HomeSection = () => {
 	return (
@@ -15,15 +16,16 @@ export const HomeSection = () => {
 				<div className={styles.text_section}>
 					<div className={styles.main_title_text_wrapper}>
 						<p className={styles.main_text}>
-						Somos mucho más que una plataforma para compartir snippet de código, somos la oportunidad para mejorar tus habilidades y ser parte de una comunidad apasionada que comparte tu interés por la programación.
+						Somos mucho más que una plataforma para compartir snippet de código, somos la oportunidad para mejorar tus habilidades y ser parte de una comunidad apasionada que comparte <span>tu interés</span>  por la programación.
 						</p>
 					</div>
 					<div className={styles.main_subtitle_text_wrapper}>
 						<p className={styles.main_subtitle_text}>
-						Xk-Community es de código abierto, lo que significa que tú también puedes contribuir al desarrollo de la plataforma y  ser parte de esta comunidad tan apasionada.
-
+						Xk-Community es de código abierto, lo que significa que tú también puedes contribuir al desarrollo de la plataforma y  ser parte de esta comunidad.
 						</p>
 					</div>
+					{/* <button className={styles.button}>Leer más</button> */}
+					<Button />
 				</div>
 				<div className={styles.image_section1}>
 					<div className={styles.image_text_wrapper1}>

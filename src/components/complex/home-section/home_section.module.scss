@@ -16,7 +16,17 @@
 	margin-right: auto;
 	color: white;
 	margin-bottom: 50px;
+	
+
 }
+.button {
+  @include outline-button;
+}
+
+.button:hover {
+	@include outline-button-hover;
+}
+
 
 @media (max-width: 900px) {
 	.grid_container {
@@ -31,39 +41,24 @@
 			"image2  image2  image2  image2  image2";
 
 		.text_section {
-			display: flex;
-			flex-direction: row;
+			@include flex;
 		}
 
 		.image_section1 {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
+			@include total-center;
 			gap: 15%;
 		}
 
 		.image_section2 {
-			display: flex;
+			@include total-center;
 			flex-direction: row;
-			justify-content: center;
-			align-items: center;
 			gap: 15%;
-		}
-
-		.image_text_wrapper2 {
-			margin-top: 0;
-		}
-
-		.image_text_wrapper4 {
-			margin-top: 0;
 		}
 	}
 }
 
 .text_section {
-	display: flex;
-	flex-direction: column;
+    @include flex-column;
 	grid-area: section;
 	padding: 10px;
 	flex-wrap: wrap;
@@ -75,19 +70,20 @@
 	.main_subtitle_text {
 		font-size: 18px;
 		letter-spacing: 5;
+		span {
+		  color: $primary-color;
+		}
 	}
 }
 
 .image_section1 {
-	display: flex;
-	flex-direction: column;
+	@include flex-column;
 	grid-area: image1;
 	margin-right: 5%;
 }
 
 .image_section2 {
-	display: flex;
-	flex-direction: column;
+	@include flex-column;
 	grid-area: image2;
 }
 

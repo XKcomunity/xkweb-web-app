@@ -1,14 +1,14 @@
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
 .button {
-	background-color: green;
-	border: none;
-	width: 100px;
-	height: 30px;
-	border-radius: 10px;
-	color: white;
-	font-size: 15px;
-	margin-top: 10px;
+  @include button;
 }
 
-.button:hover {
-	background-color: red;
+.outline_button {
+  @include outline-button;
+}
+
+.outline_button:hover {
+   @include outline-button-hover;
 }
