@@ -45,7 +45,6 @@
 	}
 }
 
-
 .footer_section_2 {
 	margin-top: 2em;
 	grid-column: 10/12;
@@ -53,7 +52,7 @@
 
 	.heading {
 		font-size: clamp(1.5rem, 2vw, 2rem);
-		font-weight: bold
+		font-weight: bold;
 	}
 
 	.footer_links {
@@ -64,6 +63,4 @@
 			margin-top: 15px;
 		}
 	}
-
-
 }
