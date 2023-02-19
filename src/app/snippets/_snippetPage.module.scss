@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    color: $white-color;
 }
 
 .h1 {
@@ -22,8 +23,10 @@
 
 .headings_snippets_text {
     color: $white-color;
-    margin-bottom: 1em;
+    margin: 1rem 0rem 1rem 0rem;
     width: 80%;
+    font-size: $font-size__h5;
+    text-align: center;
 }
 
 .headings_snippets {

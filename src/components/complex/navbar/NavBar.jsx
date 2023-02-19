@@ -23,8 +23,9 @@ export const NavBar = () => {
 		<>
 			<nav className={styles.navbar_wrapper}>
 				<div className={styles.navbar_logo}>
-				    <h2>XK-Community</h2>
-
+					<Link href='/'>
+						<h2>XK-Community</h2>
+					</Link>
 				</div>
 				<div className={styles.navbar_pages}>
 					<ul className={styles.navbar_list}>

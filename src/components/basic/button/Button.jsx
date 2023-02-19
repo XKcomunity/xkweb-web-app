@@ -7,8 +7,8 @@ const Button = () => {
 	};
 	return (
 		<>
-			<button className={styles.button} onClick={ShowMessage}>
-				Click me
+			<button className={styles.outline_button} onClick={ShowMessage}>
+				Leer más
 			</button>
 		</>
 	);
