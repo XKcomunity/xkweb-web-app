@@ -8,7 +8,9 @@ export const HomeBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
+				<span className={styles.banner_title}>XK Community</span>
 				<div className={styles.space_background}></div>
+
 				<motion.div
 					whileInView={{ translateY: [-20, 20] }}
 					transition={{
