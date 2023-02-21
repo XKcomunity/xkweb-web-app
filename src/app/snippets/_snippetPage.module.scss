@@ -3,11 +3,8 @@
 
 .main_snippet {
     width: 80%;
-    height: 400px;
-    display: flex;
+    @include total-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
     color: $white-color;
 }
@@ -29,32 +26,24 @@
     text-align: center;
 }
 
-.headings_snippets {
-    @include flex-h-center;
-}
 
-.headings_snippets_links {
+.headings_links_container {
     width: 80%;
-    color: $white-color;
     @include flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
 }
 
-
-.headings_snippets_links li {
-    list-style: none;
+.snippetHeadingLinks {
+   @include snippetButton;
 
 }
 
-.headings_snippets_links a {
-    color: $dark-alt-color;
-    font-size: $font-size__h5;
-}
-
-.headings_snippets_links a:hover {
-    color: $white-color;
+.snippetHeadingLinks:hover {
+    background-color: $secondary-color;
+    color: $bg-color;
+    transition: all .5s ease-in-out;
 }
 
 

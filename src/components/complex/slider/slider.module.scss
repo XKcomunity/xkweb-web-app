@@ -1,3 +1,7 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+
 .slider {
 	position: relative;
 	width: 90%;
@@ -19,9 +23,7 @@
 .right_arrow_container {
 	position: absolute;
 	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include total-center;
 	width: 55px;
 	border-radius: 50%;
 	background-color: rgba($color: #000000, $alpha: 0.7);
@@ -30,9 +32,7 @@
 .left_arrow_container {
 	position: absolute;
 	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include total-center;
 	width: 55px;
 	border-radius: 50%;
 	background-color: rgba($color: #000000, $alpha: 0.7);
