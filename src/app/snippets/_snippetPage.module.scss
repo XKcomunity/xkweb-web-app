@@ -7,6 +7,7 @@
     flex-direction: column;
     margin: 0 auto;
     color: $white-color;
+    margin-top: 5em;
 }
 
 .h1 {
@@ -53,3 +54,47 @@
     background-color: $dark-alt-color;
     margin: 2em;
 }
+
+
+//  TEACH CARD
+
+.techcard_container {
+    width: $width-80-percent;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.tech_card {
+    width: 15em;
+    height:  3.8em;
+    @include flex-v-center;
+    gap: 1rem;
+    background-color: $dark-alt-color;
+    border-radius: 1.3rem;
+    color: $white-color;
+  }
+
+  .tech_card_img_content {
+    width: 4em;
+    height: 100%;
+    border-radius: 1.3rem;
+    background-color: rgba(40, 143, 222, 0.821);
+    @include total-center;
+  }
+
+
+  .tech_card__img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .tech_card_title_content {
+     @include flex-h-center;
+     width: 50%;
+  }
+
+  .tech_card__title {
+    font-weight: lighter;
+    font-size: 1.5em;
+  }
