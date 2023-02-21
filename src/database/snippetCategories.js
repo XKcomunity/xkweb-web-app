@@ -3,7 +3,7 @@ const snippetCategories = [
         id: 1,
         title: "Vue",
         category: "Frameworks",
-        img: "url"
+        img: ""
     },
     {
         id: 2,

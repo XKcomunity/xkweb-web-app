@@ -17,8 +17,7 @@
 	}
 
 	.card_content {
-		display: flex;
-		flex-direction: column;
+		@include flex-column;
 		align-content: space-between;
 		flex-flow: wrap;
 		margin-top: 10px;
@@ -44,10 +43,7 @@
 			font-weight: 500;
 
 			.footer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
+				@include total-center;
 			}
 
 			.bold_footer {
