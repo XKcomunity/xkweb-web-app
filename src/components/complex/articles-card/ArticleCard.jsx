@@ -1,9 +1,9 @@
 "use client";
-import styles from "./home-card1.module.scss";
+import styles from "./article-card.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const HomeCard1 = ({
+export const ArticleCard = ({
 	image,
 	title,
 	description,
@@ -19,7 +19,7 @@ export const HomeCard1 = ({
 					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
-							<h1 className={styles.card_title}>{title}</h1>
+							<h2 className={styles.card_title}>{title}</h2>
 							<p className={styles.card_description}>{description}</p>
 						</div>
 						<footer className={styles.footer_wrapper}>

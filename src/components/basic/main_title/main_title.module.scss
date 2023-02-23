@@ -1,4 +1,7 @@
-@import "../../../app/variables.scss";
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
+
 
 .main_title_wrapper {
 	width: 90%;
@@ -6,10 +9,8 @@
 	margin-left: auto;
 
 	.main_title {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 50px;
+	    @include total-center;
+		margin-top: 1em;
 		margin-bottom: 50px;
 		color: rgba($color: #ffffff, $alpha: 0.9);
 		font-size: $font-size__h1;

@@ -2,8 +2,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "./slider.module.scss";
-import { HomeCard } from "../HomeCard/HomeCard";
-import { HomeCard1 } from "../HomeCard1/HomeCard1";
+import { ArticleCard } from "../articles-card/ArticleCard";
 import { HiArrowRight } from "react-icons/hi";
 import { HiArrowLeft } from "react-icons/hi";
 import image from "../../../../public/images/article-cards/vuecard.png";
@@ -14,13 +13,13 @@ export const SliderCard = () => {
 	//customs icons for the slider
 	const RightArrow = (
 		<div className={styles.right_arrow_container}>
-			<HiArrowRight size={40} color="white" />
+			<HiArrowRight size={50} color="white" />
 		</div>
 	);
 
 	const LeftArrow = (
 		<div className={styles.left_arrow_container}>
-			<HiArrowLeft size={40} color="white" />
+			<HiArrowLeft size={50} color="white" />
 		</div>
 	);
 	const responsive = {
@@ -51,44 +50,43 @@ export const SliderCard = () => {
 					infinite={true}
 					customLeftArrow={LeftArrow}
 					customRightArrow={RightArrow}
-					co
 				>
-					<HomeCard1
+					<ArticleCard
 						image={image}
 						title="Vue 3 - Composition"
 						description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						nivel="Nivel"
 						nivel_value="Intermedio"
 					/>
-					<HomeCard1
+					<ArticleCard
 						image={image1}
 						title="React 18 with hooks"
 						description="Aprende a dominar los hooks de react y crea magnificas UIs"
 						nivel="Nivel"
 						nivel_value="Avanzado"
 					/>
-					<HomeCard1
+					<ArticleCard
 						image={image2}
 						title="Arquitecturas Limpias"
 						description="Aprende arquitecturas limpias y las mejores herramientas DevOps"
 						nivel="Nivel"
 						nivel_value="Básico"
 					/>
-					<HomeCard1
+					<ArticleCard
 						image={image}
 						title="Vue 3-Composition"
 						description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						nivel="Nivel"
 						nivel_value="Avanzado"
 					/>
-					<HomeCard1
+					<ArticleCard
 						image={image1}
 						title="React 18 with hooks"
 						description="Aprende a dominar los hooks de react y crea magnificas UIs"
 						nivel="Nivel"
 						nivel_value="Intermedio"
 					/>
-					<HomeCard1
+					<ArticleCard
 						image={image2}
 						title="Arquitecturas Limpias"
 						description="Aprende arquitecturas limpias y las mejores herramientas DevOps"

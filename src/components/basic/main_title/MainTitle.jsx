@@ -6,7 +6,7 @@ export const MainTitle = () => {
 	return (
 		<>
 			<div className={styles.main_title_wrapper}>
-				<h1 className={styles.main_title}>XK Community</h1>
+				<h2 className={styles.main_title}>Conectar, crear y compartir.</h2>
 			</div>
 		</>
 	);
