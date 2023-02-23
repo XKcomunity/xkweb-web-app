@@ -26,6 +26,30 @@ li {
 	list-style: none;
 }
 
+.main_title_wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	.main_title {
+	    @include total-center;
+		margin-top: 1em;
+		margin-bottom: 50px;
+		color: $white-color;
+		font-size: $font-size__h1;
+		font-weight: 900;
+	}
+}
+
+
+.title {
+
+}
+
+.subtitle {
+	
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;

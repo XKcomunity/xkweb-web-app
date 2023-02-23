@@ -1,0 +1,32 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.main_title_wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	.main_title {
+	    @include total-center;
+		margin: 2em 0em 1em 0em;
+		color: $white-color;
+		font-size: $font-size__h1;
+		font-weight: 200;
+        font-style: italic;
+	}
+}
+
+
+.title {
+   font-size: $font-size__title;
+   color: $white-color;
+   display: flex;
+   justify-content: center;
+   margin: 3em 0em 3em 0em;
+}
+
+.blog_category_title {
+    color: $white-color;
+    font-weight: 400;
+    margin: 0em 2em 1.5em 2em;
+}

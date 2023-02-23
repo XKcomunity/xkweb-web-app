@@ -8,7 +8,7 @@ const Button = () => {
 	return (
 		<>
 			<button className={styles.outline_button} onClick={ShowMessage}>
-				Leer más
+			   	Leer más
 			</button>
 		</>
 	);

@@ -1,11 +1,10 @@
-// import styles from "./page.module.scss";
-import { MainTitle } from "@/components/basic/main_title/MainTitle";
-import { SecondaryTitle } from "@/components/basic/secondary_title/SecondaryTitle";
+import { MainTitle } from "@/components/basic/titles/MainTitle";
 import { MainBanner } from "@/components/complex/HomeBanner/MainBanner";
 import { AboutSection } from "@/components/complex/about-section/AboutSection";
 import { HintSection } from "@/components/complex/hint-section/HintSection";
+import { NormalTitle } from "@/components/basic/titles/NormalTitle";
 import { SliderCard } from "@/components/complex/slider/SliderCard";
-import Button from "@/components/basic/button/Button";
+import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
 
 export default function Home() {
 	return (
@@ -14,11 +13,12 @@ export default function Home() {
 			<MainTitle />
 			<AboutSection />
 			<HintSection />
-			<SecondaryTitle secondary_title="Articulos Recientes" />
+			<NormalTitle homeTitle="Articulos Recientes" />
+			<BlogCategoryTitle blogTitle="Frontend" />
 			<SliderCard />
-			{/* <Button /> */}
-			<SecondaryTitle secondary_title="Backend" />
+			<BlogCategoryTitle blogTitle="Backend" />
 			<SliderCard />
+			<NormalTitle homeTitle="Snippets Recientes" />
 		</>
 	);
 }
