@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import styles from "./home-banner.module.scss";
+import styles from "./main-banner.module.scss";
 import robot from "../../../../public/images/robots/robot.png";
 import { motion } from "framer-motion";
 
-export const HomeBanner = () => {
+export const MainBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
-				<span className={styles.banner_title}>XK Community</span>
+				<h1 className={styles.banner_title}>XK Community</h1>
 				<div className={styles.space_background}></div>
 
 				<motion.div

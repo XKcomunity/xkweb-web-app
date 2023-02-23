@@ -24,7 +24,7 @@ export const NavBar = () => {
 			<nav className={styles.navbar_wrapper}>
 				<div className={styles.navbar_logo}>
 					<Link href="/">
-						<h2>XK-Community</h2>
+						<h2>XK</h2>
 					</Link>
 				</div>
 				<div className={styles.navbar_pages}>
@@ -89,22 +89,24 @@ export const NavBar = () => {
 				direction="left"
 				size={width}
 				duration={400}
-				style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
+				style={{ backgroundColor: "rgba(0, 0, 0)" }}
 			>
 				<div className={styles.drawer_logo_wrapper}>
-					<Image src={logo} width={135} height={135} alt="mobile menu logo" />
+					<Link href="/">
+						<Image src={logo} width={135} height={135} alt="mobile menu logo" />
+					</Link>
 				</div>
 				<hr style={{ lineHeight: "5", color: "white" }} />
 				<div className={styles.drawer_links}>
 					<ul className={styles.list_links}>
 						<li className={styles.link}>
-							<Link href="#">Inicio</Link>
+							<Link href="/">Inicio</Link>
 						</li>
 						<li className={styles.link}>
 							<Link href="#">Artículos</Link>
 						</li>
 						<li className={styles.link}>
-							<Link href="#">Snippets</Link>
+							<Link href="/snippets">Snippets</Link>
 						</li>
 						<li className={styles.link}>
 							<Link href="#">Contacto</Link>

@@ -34,11 +34,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
+    margin-top: 3em;
 }
 
 .snippetHeadingLinks {
    @include snippetButton;
-
 }
 
 .snippetHeadingLinks:hover {
@@ -61,7 +61,7 @@
 .techcard_container {
     width: $width-80-percent;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 5em;
 }
 
@@ -94,7 +94,7 @@
      width: 50%;
   }
 
-  .tech_card__title {
+  .tech_card_title {
     font-weight: lighter;
     font-size: 1.5em;
   }

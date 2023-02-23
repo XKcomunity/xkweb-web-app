@@ -1,6 +1,7 @@
 @import "variables";
 
 @mixin button {
+	width: 200px;
 	padding: 15px 20px;
 	border-radius: 10px;
 	border: none;
@@ -55,13 +56,22 @@
 }
 
 @mixin paragraph {
-	font-size: var(--font-size_paragraph);
-	font-weight: lighter;
-	line-height: 20px;
+	font-weight: 500;
+	font-size: $font-size__paragraph;
 }
 
 @mixin cardDescription {
    @include paragraph;
    color: $grey-color;
-   margin-bottom: $margin-2;
+   margin: 1rem 0rem 2rem 0rem;
+}
+
+@mixin glass {
+	background-color: $dark-alt-color;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 2em;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }

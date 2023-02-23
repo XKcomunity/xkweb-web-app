@@ -4,7 +4,7 @@
 .card_wrapper {
 	width: $width-75-percent;
 	height: 60vh;
-	background-color: white;
+	background-color: $white-color;
 	cursor: pointer;
 
 	.image_wrapper {
@@ -30,16 +30,11 @@
 		}
 
 		.card_description {
-			margin-top: 15px;
-			font-size: 15px;
-			font-weight: 600;
-			line-height: 20px;
-			color: #696f79;
+			@include cardDescription;
 		}
 
 		.footer_wrapper {
-			margin-top: 40px;
-			font-size: 15px;
+			margin-top: 50px;
 			font-weight: 500;
 
 			.footer {
@@ -49,10 +44,12 @@
 			.bold_footer {
 				font-size: 17px;
 				font-weight: bold;
+				color: #13547a;
 			}
 
 			.level_text {
-				margin-left: 3px;
+				margin-left: 8px;
+				color: #696f79;
 			}
 		}
 	}
