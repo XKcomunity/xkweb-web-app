@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./hint-section.module.scss";
-import { BsFillGearFill, BsFillLightbulbFill, BsWindowDock } from 'react-icons/bs';
+import { BsFillGearFill, BsFillLightbulbFill, BsWindowDock, BsNewspaper} from 'react-icons/bs';
 
 export const HintSection = () => {
 	return (
@@ -24,14 +24,14 @@ export const HintSection = () => {
                 </div>
 
                 <div className={styles.hint_card}>
-                    <BsFillLightbulbFill className={styles.hint_icon}/>
+                <BsNewspaper className={styles.hint_icon}/>
                     <h2 className={styles.hint_card__title}>Articulos</h2>
                     <p className={styles.hint_card__paragraph}>
                     Te mantendrán actualizado sobre las últimas tendencias y herramientas de diseńo y desarrollo web.
                     </p>
                 </div>
                 <div className={styles.hint_card}>
-                <BsWindowDock className={styles.hint_icon}/>
+                <BsFillLightbulbFill className={styles.hint_icon}/>
                     <h2 className={styles.hint_card__title}>Documentación</h2>
                     <p className={styles.hint_card__paragraph}>
                         Te brindamos links a documentación, libros y articulos para que aprendas de fuentes confiables.
