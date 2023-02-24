@@ -4,9 +4,8 @@
 .footer {
 	width: 100vw;
 	height: 55vh;
-	background-color: $dark-alt-color;
+	@include glass;
 	color: $white-color;
-	background-attachment: fixed;
 }
 
 .footer_wrapper {

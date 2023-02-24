@@ -5,6 +5,7 @@ import { HintSection } from "@/components/complex/hint-section/HintSection";
 import { NormalTitle } from "@/components/basic/titles/NormalTitle";
 import { SliderCard } from "@/components/complex/slider/SliderCard";
 import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
+import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
 
 export default function Home() {
 	return (
@@ -16,9 +17,8 @@ export default function Home() {
 			<NormalTitle homeTitle="Articulos Recientes" />
 			<BlogCategoryTitle blogTitle="Frontend" />
 			<SliderCard />
-			<BlogCategoryTitle blogTitle="Backend" />
-			<SliderCard />
 			<NormalTitle homeTitle="Snippets Recientes" />
+			<RecentSnippets />
 		</>
 	);
 }
