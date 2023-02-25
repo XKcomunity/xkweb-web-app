@@ -16,7 +16,7 @@ export default function Home() {
 			<AboutSection />
 			<HintSection />
 			<NormalTitle homeTitle="Articulos Recientes" />
-			<BlogCategoryTitle blogTitle="Frontend" />
+			<BlogCategoryTitle blogTitle="Frontend - Backend" />
 			<SliderCard />
 			<ContainerButton buttonText="Explorar Articulos" />
 			<NormalTitle homeTitle="Snippets Recientes" />
