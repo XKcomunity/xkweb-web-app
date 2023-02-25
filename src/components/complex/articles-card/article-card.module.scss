@@ -2,10 +2,10 @@
 @import "../../../app/variables";
 
 .card_wrapper {
-	width: $width-75-percent;
-	height: 60vh;
-	background-color: $white-color;
+	width: $width-85-percent;
+	background-color: $light-color;
 	cursor: pointer;
+	border-radius: 1.5em;
 
 	.image_wrapper {
 		max-width: 100%;
@@ -20,13 +20,10 @@
 		@include flex-column;
 		align-content: space-between;
 		flex-flow: wrap;
-		margin-top: 10px;
-		margin-left: 10px;
-		padding: 10px;
-
+		padding: 20px;
 		.card_title {
 			font-size: 25px;
-			color: #13547a;
+			color: $terceary-color;
 		}
 
 		.card_description {
@@ -34,29 +31,45 @@
 		}
 
 		.footer_wrapper {
-			margin-top: 50px;
+			width: 100%;
 			font-weight: 500;
+			@include flex-v-center;
+			justify-content: space-between;
 
 			.footer {
 				@include total-center;
 			}
 
-			.bold_footer {
+			.bold_footer,
+			.section_avatar_name {
 				font-size: 17px;
 				font-weight: bold;
-				color: #13547a;
+				color: $terceary-color;
 			}
 
 			.level_text {
 				margin-left: 8px;
-				color: #696f79;
+				color: $grey-color;
 			}
+			.section_avatar {
+				@include flex;
+				align-items: center;
+				gap: .5em;
+				width: 170px;
+			}
+			.card_avatar {
+				width: 50px;
+				height: 50px;
+				background-color: #696f79;
+				border-radius: 50%;
+			}
+			.card_avatar_img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+
 		}
 	}
 }
 
-@media (max-width: 600px) {
-	.card_wrapper {
-		height: 65vh;
-	}
-}

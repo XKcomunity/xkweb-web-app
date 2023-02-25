@@ -27,7 +27,7 @@ export const HintSection = () => {
                 <BsNewspaper className={styles.hint_icon}/>
                     <h2 className={styles.hint_card__title}>Articulos</h2>
                     <p className={styles.hint_card__paragraph}>
-                    Te mantendrán actualizado sobre las últimas tendencias y herramientas de diseńo y desarrollo web.
+                    Te mantendrán actualizado sobre las últimas tendencias, tips y herramientas de diseńo y desarrollo web.
                     </p>
                 </div>
                 <div className={styles.hint_card}>
