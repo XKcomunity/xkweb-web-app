@@ -1,5 +1,5 @@
 import styles from "./about-section.module.scss";
-import Button from "../../basic/button/Button";
+import OutlineButton from "@/components/basic/button/Outline_buttton";
 
 export const AboutText = () => {
 	return (
@@ -11,7 +11,7 @@ export const AboutText = () => {
                 <p className={styles.main_subtitle_text}>
                 Xk-Community es de código abierto, lo que significa que tú también puedes contribuir al desarrollo de la plataforma y  ser parte de esta comunidad.
                 </p>
-                <Button />
+                <OutlineButton buttonText="Leer mas"/>
             </div>
         </>
     );

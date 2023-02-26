@@ -5,6 +5,8 @@ import { HintSection } from "@/components/complex/hint-section/HintSection";
 import { NormalTitle } from "@/components/basic/titles/NormalTitle";
 import { SliderCard } from "@/components/complex/slider/SliderCard";
 import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
+import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
+import ContainerButton from "@/components/complex/container-button/ContainerButton";
 
 export default function Home() {
 	return (
@@ -14,11 +16,12 @@ export default function Home() {
 			<AboutSection />
 			<HintSection />
 			<NormalTitle homeTitle="Articulos Recientes" />
-			<BlogCategoryTitle blogTitle="Frontend" />
+			<BlogCategoryTitle blogTitle="Frontend - Backend" />
 			<SliderCard />
-			<BlogCategoryTitle blogTitle="Backend" />
-			<SliderCard />
+			<ContainerButton buttonText="Explorar Articulos" />
 			<NormalTitle homeTitle="Snippets Recientes" />
+			<RecentSnippets />
+			<ContainerButton buttonText="Explorar Snippets" />
 		</>
 	);
 }
