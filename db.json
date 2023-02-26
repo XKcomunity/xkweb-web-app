@@ -1,0 +1,58 @@
+{
+	"technologies": [
+		{
+			"id": 1,
+			"title": "Vue",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/vue.png"
+		},
+		{
+			"id": 2,
+			"title": "HTML",
+			"category": "Web Design",
+			"img": "/images/tech-logos/html.png"
+		},
+		{
+			"id": 3,
+			"title": "CSS",
+			"category": "Web Design",
+			"img": "/images/tech-logos/css.png"
+		},
+		{
+			"id": 4,
+			"title": "Angular",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/angular.png"
+		},
+		{
+			"id": 5,
+			"title": "React",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/React.png"
+		},
+		{
+			"id": 6,
+			"title": "Responsive",
+			"category": "Web Design",
+			"img": "/images/tech-logos/node.png"
+		},
+		{
+			"id": 7,
+			"title": "JavaScript",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/js.jpeg"
+		},
+		{
+			"id": 8,
+			"title": "Java",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/java.png"
+		},
+		{
+			"id": 9,
+			"title": "Python",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/python.png"
+		}
+	]
+}
