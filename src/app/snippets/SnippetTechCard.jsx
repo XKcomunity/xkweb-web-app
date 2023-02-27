@@ -24,9 +24,9 @@ export default async function SnippetTechCard() {
 							<Image
 								src={tecno.img}
 								alt=""
-								// style={{ width: "100%", height: "100%", objectFit: "cover" }}
-								width={50}
-								height={50}
+								width={40}
+								height={40}
+								className={styles.tech_card_img}
 							/>
 						</div>
 						<div className={styles.tech_card_title_content}>

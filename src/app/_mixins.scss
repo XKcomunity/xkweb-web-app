@@ -22,7 +22,7 @@
 @mixin snippetButton {
 	@include button;
 	background: none;
-	color: $dark-alt-color;
+	color: $light-color;
 	margin-top: 3em;
 }
 

@@ -28,7 +28,7 @@
 
 .button {
 	@include outline-button;
-  }
+}
 
 .button:hover {
 	@include outline-button-hover;

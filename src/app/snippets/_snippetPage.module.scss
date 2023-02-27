@@ -59,16 +59,15 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: $width-80-percent;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+	margin-bottom: 5em;
+	gap: 1rem;
 }
 
 .techcard_container {
-	// width: $width-80-percent;
 	cursor: pointer;
 	margin: 0 auto;
 	margin-top: 3em;
-	margin-bottom: 5em;
 }
 
 .tech_card {
@@ -84,15 +83,15 @@
 .tech_card_img_content {
 	width: 4em;
 	height: 100%;
-	border-radius: 1.3rem;
+	border-radius: 1.1rem;
 	background-color: rgba(40, 143, 222, 0.821);
 	@include total-center;
 }
 
-.tech_card__img {
-	width: 60%;
-	height: 60%;
-}
+// .tech_card__img {
+// 	width: 60%;
+// 	height: 60%;
+// }
 
 .tech_card_title_content {
 	@include flex-h-center;
@@ -104,17 +103,3 @@
 	font-size: 1.5em;
 }
 
-.technologies {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: $white-color;
-	border: 1px solid blue;
-	margin-bottom: 50px;
-	width: 40%;
-}
-
-.technologies:nth-child(n) {
-	margin-top: 10px;
-}
