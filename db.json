@@ -54,5 +54,7 @@
 			"category": "Lenguajes",
 			"img": "/images/tech-logos/python.png"
 		}
-	]
+	],
+
+	"categories": ["Frameworks", "Lenguajes", "Web Design", "Todos"]
 }

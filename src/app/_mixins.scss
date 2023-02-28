@@ -16,7 +16,7 @@
 	@include button;
 	background: none;
 	color: $white-color;
-	border: 1px solid #56dbff;;
+	border: 1px solid #56dbff;
 }
 
 @mixin snippetButton {
@@ -61,17 +61,17 @@
 }
 
 @mixin cardDescription {
-   @include paragraph;
-   color: $grey-color;
-   margin: 1rem 0rem 2rem 0rem;
+	@include paragraph;
+	color: $grey-color;
+	margin: 1rem 0rem 2rem 0rem;
 }
 
 @mixin glass {
 	background-color: $dark-alt-color;
-    backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.25);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 2em;
-    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+	backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.25);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 2em;
+	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }
