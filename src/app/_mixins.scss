@@ -22,8 +22,18 @@
 @mixin snippetButton {
 	@include button;
 	background: none;
-	color: $dark-alt-color;
+	color: $light-color;
 	margin-top: 3em;
+}
+
+@mixin pilsButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: $dark-alt-color;
+	color: $white-color;
+	font-size: 1rem;
+	cursor: pointer;
 }
 
 @mixin outline-button-hover {
@@ -66,12 +76,22 @@
 	margin: 1rem 0rem 2rem 0rem;
 }
 
+@mixin snippetCard {
+	width: 80%;
+	color: $white-color;
+    background-color: $dark-alt-color;
+	padding: 2em;
+	border-radius: 10px;
+	margin: 1em 0em 1em 0em;
+}
+
 @mixin glass {
 	background-color: $dark-alt-color;
-	backdrop-filter: blur(16px) saturate(180%);
-	background-color: rgba(17, 25, 40, 0.25);
-	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
-	padding: 2em;
-	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+	filter: drop-shadow(0 30px 10px r
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 2em;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }
