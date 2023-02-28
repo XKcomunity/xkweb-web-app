@@ -26,6 +26,16 @@
 	margin-top: 3em;
 }
 
+@mixin pilsButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: $dark-alt-color;
+	color: $white-color;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
 @mixin outline-button-hover {
 	background-color: $secondary-color;
 	color: $bg-color;
@@ -64,6 +74,15 @@
    @include paragraph;
    color: $grey-color;
    margin: 1rem 0rem 2rem 0rem;
+}
+
+@mixin snippetCard {
+	width: 80%;
+	color: $white-color;
+    background-color: $dark-alt-color;
+	padding: 2em;
+	border-radius: 10px;
+	margin: 1em 0em 1em 0em;
 }
 
 @mixin glass {

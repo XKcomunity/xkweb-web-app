@@ -43,7 +43,7 @@ export const NavBar = () => {
 							whileHover={{ translateY: -5 }}
 							transition={{ duration: 0.5 }}
 						>
-							<Link href="#">
+							<Link href="/snippet-tech">
 								<li className={styles.navbar_item}>Articulos</li>
 							</Link>
 						</motion.li>
@@ -103,7 +103,7 @@ export const NavBar = () => {
 							<Link href="/">Inicio</Link>
 						</li>
 						<li className={styles.link}>
-							<Link href="#">Artículos</Link>
+							<Link href="/snippet-tech">Artículos</Link>
 						</li>
 						<li className={styles.link}>
 							<Link href="/snippets">Snippets</Link>
