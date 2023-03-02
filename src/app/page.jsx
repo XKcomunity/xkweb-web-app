@@ -7,7 +7,7 @@ import { SliderCard } from "@/components/complex/slider/SliderCard";
 import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
 import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/complex/container-button/ContainerButton";
-import styles from "./globals.scss";
+import { OurTeam } from "@/components/complex/our-team/OurTeam";
 
 export default function Home() {
 	return (
@@ -23,6 +23,8 @@ export default function Home() {
 			<NormalTitle homeTitle="Snippets Recientes" />
 			<RecentSnippets />
 			<ContainerButton buttonText="Explorar Snippets" route="/snippets"/>
+			<NormalTitle homeTitle="Our Team" />
+			<OurTeam />
 		</>
 	);
 }
