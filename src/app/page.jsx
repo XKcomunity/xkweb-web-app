@@ -9,6 +9,8 @@ import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnipp
 import ContainerButton from "@/components/complex/container-button/ContainerButton";
 import { OurTeam } from "@/components/complex/our-team/OurTeam";
 
+import styles from "./globals.scss";
+
 export default function Home() {
 	return (
 		<>
