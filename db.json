@@ -4,55 +4,94 @@
 			"id": 1,
 			"title": "Vue",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/vue.png"
+			"img": "/images/tech-logos/vue.png",
+			"color": "#000"
 		},
 		{
 			"id": 2,
 			"title": "HTML",
 			"category": "Web Design",
-			"img": "/images/tech-logos/html.png"
+			"img": "/images/tech-logos/html.png",
+			"color": "#fff"
 		},
 		{
 			"id": 3,
 			"title": "CSS",
 			"category": "Web Design",
-			"img": "/images/tech-logos/css.png"
+			"img": "/images/tech-logos/css.png",
+			"color": "#000"
 		},
 		{
 			"id": 4,
 			"title": "Angular",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/angular.png"
+			"img": "/images/tech-logos/angular.png",
+			"color": "#000"
 		},
 		{
 			"id": 5,
 			"title": "React",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/React.png"
+			"img": "/images/tech-logos/React.png",
+			"color": "#000"
 		},
 		{
 			"id": 6,
 			"title": "Responsive",
 			"category": "Web Design",
-			"img": "/images/tech-logos/node.png"
+			"img": "/images/tech-logos/node.png",
+			"color": "#000"
 		},
 		{
 			"id": 7,
 			"title": "JavaScript",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/js.jpeg"
+			"img": "/images/tech-logos/js.jpeg",
+			"color": "#000"
 		},
 		{
 			"id": 8,
 			"title": "Java",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/java.png"
+			"img": "/images/tech-logos/java.png",
+			"color": "#000"
 		},
 		{
 			"id": 9,
 			"title": "Python",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/python.png"
+			"img": "/images/tech-logos/python.png",
+			"color": "#000"
+		}
+	],
+	"snippetCardList": [
+		{
+			"id": 1,
+			"img": "/images/tech-logos/css.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 2,
+			"img": "/images/tech-logos/js.jpeg",
+			"title": "High order functions",
+			"subTitle": "JavaScript",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 3,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 4,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
 		}
 	]
 }
