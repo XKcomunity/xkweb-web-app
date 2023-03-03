@@ -64,6 +64,7 @@
 			"color": "#000"
 		}
 	],
+	"categoryLinks": ["Frameworks", "Lenguajes", "Web Design", "Todos"],
 	"snippetCardList": [
 		{
 			"id": 1,
