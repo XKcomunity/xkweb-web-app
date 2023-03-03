@@ -1,15 +1,28 @@
-"use client";
+
 import styles from "../snippets/_snippetPage.module.scss";
 
-export default function SnippetHeadingLinks() {
-	return (
-		<>
+async function fetchTechnologies() {
+    const url = "http://localhost:3001/categoryLinks";
+    const response = await fetch(url, { cache: "no-store" });
+    const categoryLinkList = response.json();
+    return categoryLinkList;
+  }
+
+  export default async function SnippetHeadingLinks() {
+
+    const categoryLinks = await fetchTechnologies();
+    const uniqueCategories = Array.from(new Set(categoryLinks.map((category) => category.category)));
+
+    return (
+        <>
             <div className={styles.headings_links_container}>
-                <button className={styles.snippetHeadingLinks}>Todos</button>
-                <button className={styles.snippetHeadingLinks}>Web Design</button>
-                <button className={styles.snippetHeadingLinks}>Lenguajes</button>
-                <button className={styles.snippetHeadingLinks}>Frameworks</button>
+                {uniqueCategories.map((category) => (
+                <button className={styles.snippetHeadingLinks} key={category}>
+                    {category}
+                </button>
+                ))}
+
             </div>
-		</>
-	);
-}
+        </>
+    );
+  }
