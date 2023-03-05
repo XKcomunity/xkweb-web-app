@@ -3,7 +3,6 @@
 
 .footer {
 	width: 100vw;
-	height: 55vh;
 	@include glass;
 	color: $white-color;
 }
@@ -13,12 +12,11 @@
 	height: 80%;
 	display: grid;
 	place-items: center;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	padding: $padding-1;
 }
 
 .footer_section_1 {
-	grid-column: 2/8;
 	.footer_logo {
 		@include flex-v-center;
 		margin-left: -17px;
@@ -46,7 +44,6 @@
 
 .footer_section_2 {
 	margin-top: 2em;
-	grid-column: 10/12;
 	@include flex-column;
 
 	.heading {
