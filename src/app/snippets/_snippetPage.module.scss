@@ -8,6 +8,9 @@
 	margin: 0 auto;
 	color: $white-color;
 	margin-top: 5em;
+	@media screen and (max-width: 550px){
+		width: 90%;
+	}
 }
 
 .h1 {
@@ -16,15 +19,18 @@
 	.h1_span {
 		color: $secondary-color;
 	}
+	@media screen and (max-width: 550px){
+		align-self: flex-start;
+	}
 }
 
 .headings_snippets_text {
 	color: $white-color;
 	margin: 1rem 0rem 1rem 0rem;
-	width: 80%;
 	font-size: $font-size__h5;
-	text-align: center;
+
 }
+
 
 .headings_links_container {
 	width: 80%;
@@ -33,6 +39,9 @@
 	flex-wrap: wrap;
 	gap: 2em;
 	margin-top: 3em;
+	@media screen and (max-width: 550px){
+		gap: 1em;
+	}
 }
 
 .snippetHeadingLinks {
