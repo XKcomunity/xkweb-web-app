@@ -11,7 +11,7 @@ async function fetchTechnologies() {
   export default async function SnippetHeadingLinks() {
 
     const categoryLinks = await fetchTechnologies();
-    const uniqueCategories = Array.from(new Set(categoryLinks.map((category) => category.category)));
+    const uniqueCategories = Array.from(new Set(categoryLinks.map((category) => category)));
 
     return (
         <>
