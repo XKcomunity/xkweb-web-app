@@ -1,5 +1,4 @@
-"use client";
-
+// "use client";
 import { ReusableBanner } from "@/components/complex/reusable-banner/ReusableBanner";
 import SnippetTechPils from "./SnippetTechPils";
 import SnippetCard from "./SnippetCard";

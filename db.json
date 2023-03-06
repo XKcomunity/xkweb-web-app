@@ -1,4 +1,34 @@
 {
+	"snippets": [
+		{
+			"id": 1,
+			"img": "/images/tech-logos/css.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 2,
+			"img": "/images/tech-logos/js.jpeg",
+			"title": "High order functions",
+			"subTitle": "JavaScript",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 3,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		},
+		{
+			"id": 4,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+		}
+	],
 	"technologies": [
 		{
 			"id": 1,
@@ -62,36 +92,6 @@
 			"category": "Lenguajes",
 			"img": "/images/tech-logos/python.png",
 			"color": "#000"
-		}
-	],
-	"snippetCardList": [
-		{
-			"id": 1,
-			"img": "/images/tech-logos/css.png",
-			"title": "Como centrar un div en css",
-			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
-		},
-		{
-			"id": 2,
-			"img": "/images/tech-logos/js.jpeg",
-			"title": "High order functions",
-			"subTitle": "JavaScript",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
-		},
-		{
-			"id": 3,
-			"img": "/images/tech-logos/vue.png",
-			"title": "Como centrar un div en css",
-			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
-		},
-		{
-			"id": 4,
-			"img": "/images/tech-logos/vue.png",
-			"title": "Como centrar un div en css",
-			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
 		}
 	]
 }
