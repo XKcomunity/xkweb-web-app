@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import styles from "./snippet-tech.module.scss";
 
 export default function SnippetTechPils() {
