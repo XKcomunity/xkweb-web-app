@@ -93,5 +93,7 @@
 			"img": "/images/tech-logos/python.png",
 			"color": "#000"
 		}
-	]
+	],
+	"categoryLinks": ["Frameworks", "Lenguajes", "Web Design", "Todos"],
+	
 }

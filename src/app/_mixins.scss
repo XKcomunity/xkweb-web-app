@@ -16,14 +16,13 @@
 	@include button;
 	background: none;
 	color: $white-color;
-	border: 1px solid #56dbff;;
+	border: 1px solid #56dbff;
 }
 
 @mixin snippetButton {
 	@include button;
 	background: none;
 	color: $light-color;
-	margin-top: 3em;
 }
 
 @mixin pilsButton {

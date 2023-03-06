@@ -23,8 +23,8 @@ export const OurTeam = () => {
                         <h3 class="full-name">Michael Linares</h3>
                         <span class="speciality">Frontend Developer</span>
                         <section className={styles.our_team_icon_content}>
-                            <BsInstagram className={styles.ourTeam_sotial}/>
-                            <BsLinkedin className={styles.ourTeam_sotial}/>
+                            <BsInstagram className={styles.ourTeam_sotial_network}/>
+                            <BsLinkedin className={styles.ourTeam_sotial_network}/>
                         </section>
                     </div>
                     </div>
