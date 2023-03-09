@@ -71,28 +71,56 @@
 			"img": "/images/tech-logos/css.png",
 			"title": "Como centrar un div en css",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "Basic"
 		},
 		{
 			"id": 2,
 			"img": "/images/tech-logos/js.jpeg",
 			"title": "High order functions",
 			"subTitle": "JavaScript",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "High Order Functions"
 		},
 		{
 			"id": 3,
 			"img": "/images/tech-logos/vue.png",
 			"title": "Como centrar un div en css",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "Responsive"
 		},
 		{
 			"id": 4,
 			"img": "/images/tech-logos/vue.png",
 			"title": "Como centrar un div en css",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,"
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "Basic"
+		},
+		{
+			"id": 5,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "Basic"
+		},
+		{
+			"id": 6,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "Responsive"
+		},
+		{
+			"id": 7,
+			"img": "/images/tech-logos/vue.png",
+			"title": "Como centrar un div en css",
+			"subTitle": "CSS",
+			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"topic": "BEM"
 		}
 	]
 }
