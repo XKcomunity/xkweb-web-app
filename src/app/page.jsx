@@ -16,14 +16,14 @@ export default function Home() {
 			<MainTitle />
 			<AboutSection />
 			<HintSection />
-			<NormalTitle homeTitle="Articulos Recientes" />
+			<NormalTitle title="Articulos Recientes" />
 			<BlogCategoryTitle blogTitle="Frontend - Backend" />
 			<SliderCard />
 			<ContainerButton buttonText="Explorar Articulos" route="/snippet-tech"/>
-			<NormalTitle homeTitle="Snippets Recientes" />
+			<NormalTitle title="Snippets Recientes" />
 			<RecentSnippets />
 			<ContainerButton buttonText="Explorar Snippets" route="/snippets"/>
-			<NormalTitle homeTitle="Our Team" />
+			<NormalTitle title="Our Team" />
 			<OurTeam />
 		</>
 	);
