@@ -61,6 +61,16 @@ export function Footer() {
 							</Link>
 						</div>
 					</div>
+					<div className={styles.footer_section_2}>
+						<div className={styles.links_heading}>
+							<span className={styles.heading}>Enlaces</span>
+						</div>
+						<div className={styles.footer_links}>
+							<Link href="/snippet-chosen" className={styles.link}>
+								<li className={styles.navbar_item}><a>snippet-chosen</a></li>
+							</Link>
+						</div>
+					</div>
 				</div>
 			</footer>
 		</>

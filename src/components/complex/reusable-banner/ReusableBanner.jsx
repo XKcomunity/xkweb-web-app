@@ -1,11 +1,11 @@
-"use client";
+import { NormalTitle } from "@/components/basic/titles/NormalTitle";
 import styles from "./reusable-banner.module.scss";
 
-export const ReusableBanner = () => {
+export const ReusableBanner = (props) => {
 	return (
 		<>
             <main className={styles.reusable_banner_wrapper}>
-                <h1 className={styles.reusable_banner_wrapper_text}>Hola aqui estamos en los detalles</h1>
+                <NormalTitle title={props.title} />
             </main>
         </>
     );

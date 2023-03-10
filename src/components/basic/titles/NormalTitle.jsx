@@ -1,9 +1,9 @@
 import styles from "./titles.module.scss";
 
-export const NormalTitle = ({ homeTitle }) => {
+export const NormalTitle = (props) => {
 	return (
 		<>
-			<h2 className={styles.title}>{homeTitle}</h2>
+			<h2 className={styles.title}>{props.title}</h2>
 		</>
 	);
 };
