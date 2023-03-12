@@ -25,9 +25,12 @@ export default function Snippet() {
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
-    const filtered = technologies.filter((technology) => technology.category === category);
-    setFilteredTechnologies(filtered);
-  };
+    if (category === null) {
+      setFilteredTechnologies(technologies);
+    } else {
+      const filtered = technologies.filter((technology) => technology.category === category);
+      setFilteredTechnologies(filtered);
+    }  };
 
 
   return (
