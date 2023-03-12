@@ -8,6 +8,7 @@ import SnippetTechCard from "./snippetTechCard";
 export default function Snippet() {
   const [technologies, setTechnologies] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [filteredTechnologies, setFilteredTechnologies] = useState([]);
 
   useEffect(() => {
     async function fetchSnippetCards() {
@@ -16,6 +17,7 @@ export default function Snippet() {
       });
       const cardsJson = await cardsResponse.json();
       setTechnologies(cardsJson);
+      setFilteredTechnologies(cardsJson);
     }
 
     fetchSnippetCards();
@@ -23,21 +25,21 @@ export default function Snippet() {
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    const filtered = technologies.filter((technology) => technology.category === category);
+    setFilteredTechnologies(filtered);
   };
-
-    // Filtrar las tecnologías en función del tema seleccionado.
-    const filteredTechnologies = selectedCategory ? technologies.filter((technology) => technology.category === selectedCategory) : technologies;
 
 
   return (
     <>
       <main className={styles.main_snippet}>
-        <MainTitle_snipet />
-        <SnippetHeadingLinks technologies={technologies} handleCategoryClick={handleCategoryClick} />
-        <div className={styles.divider}></div>
-        <div className={styles.tech_cards_wrapper}>
-          <SnippetTechCard technologies={technologies}  />
-        </div>
+          <MainTitle_snipet />
+          <SnippetHeadingLinks technologies={technologies}
+                             handleCategoryClick={handleCategoryClick}/>
+          <div className={styles.divider}></div>
+          <div className={styles.tech_cards_wrapper}>
+            <SnippetTechCard technologies={filteredTechnologies}/>
+          </div>
       </main>
     </>
   );

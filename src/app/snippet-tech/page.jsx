@@ -9,6 +9,7 @@ import { NormalTitle } from "@/components/basic/titles/NormalTitle";
 export default function SnippetTech() {
   const [snippetCardList, setSnippetCardList] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState(null);
+  const [filterTopics, setFilterTopics] = useState([]);
 
   useEffect(() => {
     async function fetchSnippetCards() {
@@ -17,6 +18,7 @@ export default function SnippetTech() {
       });
       const cardsJson = await cardsResponse.json();
       setSnippetCardList(cardsJson);
+      setFilterTopics(cardsJson);
     }
 
     fetchSnippetCards();
@@ -24,14 +26,16 @@ export default function SnippetTech() {
 
   const handleTopicClick = (topic) => {
     setSelectedTopic(topic);
+    const filtered = snippetCardList.filter((item) => item.topic === topic);
+    setFilterTopics(filtered);
   };
-
 
   return (
     <>
       <ReusableBanner title="snippets" />
-      <SnippetTechPils snippetCardList={snippetCardList} onTopicClick={handleTopicClick} />
-      <SnippetCard snippetCardList={snippetCardList} />
+      <SnippetTechPils snippetCardList={snippetCardList}
+                       handleTopicClick={handleTopicClick} />
+      <SnippetCard snippetCardList={filterTopics} />
       <NormalTitle title="Snippets Recientes" />
       <RecentSnippets />
     </>
