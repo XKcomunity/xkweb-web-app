@@ -26,8 +26,12 @@ export default function SnippetTech() {
 
   const handleTopicClick = (topic) => {
     setSelectedTopic(topic);
-    const filtered = snippetCardList.filter((item) => item.topic === topic);
-    setFilterTopics(filtered);
+    if (topic === null) {
+      setFilterTopics(snippetCardList);
+    } else {
+      const filtered = snippetCardList.filter((item) => item.topic === topic);
+      setFilterTopics(filtered);
+    }
   };
 
   return (

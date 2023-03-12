@@ -8,6 +8,7 @@ export default function SnippetTechPils({ snippetCardList, handleTopicClick }) {
     <>
       <section className={styles.snippet_tech_wrapper}>
         <article className={styles.snippet_tech_content}>
+        <button className={styles.pils_button} onClick={() => handleTopicClick(null)}>Todas</button>
           {uniquePils.map((topic, index) => (
             <button className={styles.pils_button} key={index}
             onClick={() => handleTopicClick(topic)}>
