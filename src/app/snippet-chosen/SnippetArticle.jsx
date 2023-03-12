@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-key */
 import styles from "./snippet_chosen.module.scss";
 
+
 export default function SnippetArticle() {
+
 	return (
 		<>
             <section className={styles.snippet_article_content}>

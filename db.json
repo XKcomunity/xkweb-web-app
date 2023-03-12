@@ -70,7 +70,7 @@
 			"img": "/images/tech-logos/css.png",
 			"title": "Como centrar un div en css",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
+			"description": "En este tutorial, iremos aprendiendo como centrar elementos de forma horizontal, vertical, y de ambas formas..",
 			"topic": "Basic"
 		},
 		{
@@ -78,32 +78,32 @@
 			"img": "/images/tech-logos/js.jpeg",
 			"title": "High order functions",
 			"subTitle": "JavaScript",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "High Order Functions"
+			"description": "Una función de orden mayor (HOF) se denomina a (1) cualquier función que reciba una función como parámetro o (2) cualquier función que retorne otra función.",
+			"topic": "High Order Functions."
 		},
 		{
 			"id": 3,
 			"img": "/images/tech-logos/vue.png",
-			"title": "Como centrar un div en css",
-			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "Responsive"
+			"title": "Ventajas y desventajas de Vue.js",
+			"subTitle": "Vue.js",
+			"description": "Vue.js es el segundo framework más popular en uso hoy en día. Veamos por qué le gusta a los desarrolladores web y por qué se alejan de él.",
+			"topic": "Frameworks"
 		},
 		{
 			"id": 4,
-			"img": "/images/tech-logos/vue.png",
-			"title": "Como centrar un div en css",
+			"img": "/images/tech-logos/css.png",
+			"title": "Como utilizar BEM",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "Basic"
+			"description": "BEM CSS es una metodología de nomenclatura para definir las clases en los nodos HTML del documento. Es decir, es una manera de nombrar las clases de los nodos de tu HTML para posteriormente atacarlos con CSS de una manera fácil, sencilla y clara.",
+			"topic": "BEM"
 		},
 		{
 			"id": 5,
-			"img": "/images/tech-logos/vue.png",
-			"title": "Como centrar un div en css",
+			"img": "/images/tech-logos/css.png",
+			"title": "Responsive Web Design",
 			"subTitle": "CSS",
-			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "Basic"
+			"description": "Responsive Web Design es la técnica que nos permite crear sitios adaptables a las condiciones del ordenador o dispositivo desde donde se van a acceder, sobre todo en lo que tiene relación con la pantalla del sistema donde se están visualizando. ",
+			"topic": "Responsive"
 		},
 		{
 			"id": 6,
@@ -120,6 +120,15 @@
 			"subTitle": "CSS",
 			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
 			"topic": "BEM"
+		}
+	],
+	"snippets": [
+		{
+			"id": 1,
+			"title": "Como centrar un div en css",
+			"author": "",
+			"date": "",
+			"description": ""
 		}
 	]
 }

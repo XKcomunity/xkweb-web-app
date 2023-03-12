@@ -28,7 +28,6 @@
 	color: $white-color;
 	margin: 1rem 0rem 1rem 0rem;
 	font-size: $font-size__h5;
-
 }
 
 
@@ -93,7 +92,8 @@
 	width: 4em;
 	height: 100%;
 	border-radius: 1.1rem;
-	background-color: rgba(40, 143, 222, 0.821);
+	@include glass;
+	border: none;
 	@include total-center;
 }
 

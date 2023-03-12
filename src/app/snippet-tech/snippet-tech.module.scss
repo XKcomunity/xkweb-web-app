@@ -19,6 +19,12 @@
    @include pilsButton;
 }
 
+.pils_button:hover {
+   background-color: $secondary-color;
+   color: $bg-color;
+   transition: .5s ease-in-out;
+}
+
 .snippet_card_container {
     @include total-center;
     flex-direction: column;
