@@ -1,6 +1,7 @@
 import "./globals.scss";
 import { NavBar } from "@/components/complex/navbar/NavBar";
 import { Footer } from "@/components/complex/footer/Footer";
+import ScrollTopButton from "@/components/basic/button/ScrollTopButton";
 
 export default function RootLayout({ children }) {
 	return (
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       */}
 			<head />
 			<NavBar />
+			<ScrollTopButton />
 			<body>{children}</body>
 			<Footer />
 		</html>

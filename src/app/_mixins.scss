@@ -35,6 +35,27 @@
 	cursor: pointer;
 }
 
+@mixin scrollTopButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: $secondary-color;
+	color: $bg-color;
+	font-size: 2em;
+	border: none;
+	border-radius: 10%;
+	width: 40px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1;
+	&:hover {
+		background-color: $primary-color;
+	}
+}
+
 @mixin outline-button-hover {
 	background-color: $secondary-color;
 	color: $bg-color;
