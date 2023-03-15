@@ -12,3 +12,7 @@
 .outline_button:hover {
    @include outline-button-hover;
 }
+
+.scroll_btn {
+  @include scrollTopButton;
+}

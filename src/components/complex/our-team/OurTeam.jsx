@@ -20,8 +20,8 @@ export const OurTeam = () => {
                         </span>
                     </div>
                     <div className={styles.our_team_card_info}>
-                        <h3 class="full-name">Michael Linares</h3>
-                        <span class="speciality">Frontend Developer</span>
+                        <h3 className="full-name">Michael Linares</h3>
+                        <span className="speciality">Frontend Developer</span>
                         <section className={styles.our_team_icon_content}>
                             <BsInstagram className={styles.ourTeam_sotial_network}/>
                             <BsLinkedin className={styles.ourTeam_sotial_network}/>
