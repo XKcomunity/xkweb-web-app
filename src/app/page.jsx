@@ -8,13 +8,13 @@ import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
 import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/complex/container-button/ContainerButton";
 import { OurTeam } from "@/components/complex/our-team/OurTeam";
-// import styles from "./page.module.scss";
+import styles from "./page.module.scss";
 
 export default function Home() {
 	return (
 		<>
 			<MainBanner />
-			{/* <div className={styles.main_wrapper}> */}
+			<div className={styles.main_wrapper}>
 				<MainTitle />
 				<AboutSection />
 				<HintSection />
@@ -27,7 +27,7 @@ export default function Home() {
 				<ContainerButton buttonText="Explorar Snippets" route="/snippets"/>
 				<NormalTitle title="Our Team" />
 				<OurTeam />
-			{/* </div> */}
+			</div>
 		</>
 	);
 }
