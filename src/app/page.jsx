@@ -8,7 +8,7 @@ import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
 import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/complex/container-button/ContainerButton";
 import { OurTeam } from "@/components/complex/our-team/OurTeam";
-import styles from "./page.module.scss";
+// import styles from "./page.module.scss";
 
 export default function Home() {
 	return (
@@ -21,6 +21,7 @@ export default function Home() {
 				<NormalTitle title="Articulos Recientes" />
 				<BlogCategoryTitle blogTitle="Frontend - Backend" />
 				<SliderCard />
+				<ContainerButton buttonText="Explorar Articulos" route="/snippet-tech"/>				<NormalTitle title="Snippets Recientes" />
 				<ContainerButton buttonText="Explorar Articulos" />
 				<NormalTitle title="Snippets Recientes" />
 				<RecentSnippets />

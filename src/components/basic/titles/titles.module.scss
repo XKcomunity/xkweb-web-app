@@ -25,11 +25,16 @@
    margin: 3em 0em 3em 0em;
 }
 
+
+.blogTitle_container {
+	width: 100%;
+}
+
 .blogTitle {
 	font-size: $font-size__blog_title;
 	font-weight: bold;
 	margin-bottom: .5em;
-	width: 100%;
+	width: 90%;
 }
 
 .blog_category_title {
