@@ -4,7 +4,6 @@
 
 .containerFluid {
   width: 100%;
-  height: 100vh;
   padding: 2em;
 }
 
@@ -12,7 +11,7 @@
     padding: 2em;
     color: $text-color;
     background-color: $bg-light-color;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -27,7 +26,7 @@
 }
 
 .snippet_article_content {
-    width: 80%;
+    width: 95%;
 }
 
 .article_text {

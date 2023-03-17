@@ -8,7 +8,7 @@
 
 	.main_title {
 	    @include total-center;
-		margin: 2em 0em 1em 0em;
+		margin: 1.5em 0em 1em 0em;
 		color: $white-color;
 		font-size: $font-size__h1;
 		font-weight: 200;
@@ -23,6 +23,17 @@
    display: flex;
    justify-content: center;
    margin: 3em 0em 3em 0em;
+}
+
+.blogTitle_container {
+	width: 100%;
+}
+
+.blogTitle {
+	font-size: $font-size__blog_title;
+	font-weight: bold;
+	margin-bottom: .5em;
+	width: 90%;
 }
 
 .blog_category_title {
