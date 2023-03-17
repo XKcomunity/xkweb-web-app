@@ -16,7 +16,7 @@ export function Footer() {
 				<div className={styles.footer_wrapper}>
 					<div className={styles.footer_section_1}>
 						<div className={styles.footer_logo}>
-							<Image src={logo} width={90} height={90} alt="" />
+							<Image src={logo} width={90} height={90} alt="Xk-web logo" />
 							<span className={styles.logo_text}>XK Community</span>
 						</div>
 						<div>
@@ -50,7 +50,7 @@ export function Footer() {
 							<Link href="/" className={styles.link}>
 								<li className={styles.navbar_item}><a>Inicio</a></li>
 							</Link>
-							<Link href="#" className={styles.link}>
+							<Link href="/snippet-tech" className={styles.link}>
 								<li className={styles.navbar_item}><a>Articulos</a></li>
 							</Link>
 							<Link href="/snippets" className={styles.link}>

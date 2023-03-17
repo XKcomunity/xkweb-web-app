@@ -14,21 +14,20 @@ export default function Home() {
 	return (
 		<>
 			<MainBanner />
-			<div className={styles.main_wrapper}>
+			{/* <div className={styles.main_wrapper}> */}
 				<MainTitle />
 				<AboutSection />
 				<HintSection />
 				<NormalTitle title="Articulos Recientes" />
 				<BlogCategoryTitle blogTitle="Frontend - Backend" />
 				<SliderCard />
-				<ContainerButton buttonText="Explorar Articulos" route="/snippet-tech"/>				<NormalTitle title="Snippets Recientes" />
-				<ContainerButton buttonText="Explorar Articulos" />
+				<ContainerButton buttonText="Explorar Articulos" route="/snippet-tech"/>
 				<NormalTitle title="Snippets Recientes" />
 				<RecentSnippets />
 				<ContainerButton buttonText="Explorar Snippets" route="/snippets"/>
 				<NormalTitle title="Our Team" />
 				<OurTeam />
-			</div>
+			{/* </div> */}
 		</>
 	);
 }

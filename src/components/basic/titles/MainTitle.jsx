@@ -1,7 +1,5 @@
 "use client";
-
 import styles from "./titles.module.scss";
-
 
 export const MainTitle = () => {
 	return (
