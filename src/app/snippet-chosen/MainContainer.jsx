@@ -1,4 +1,3 @@
-
 import { BlogTitle } from "@/components/basic/titles/BlogTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./snippetAuthor";
