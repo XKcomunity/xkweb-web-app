@@ -8,6 +8,7 @@ export const OurTeam = () => {
                 <OurTeamCard />
                 <OurTeamCard />
             </article>
+   
         </>
     );
 };

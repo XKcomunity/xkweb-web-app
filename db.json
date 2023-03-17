@@ -157,10 +157,10 @@
 		},
 		{
 			"id": 5,
-			"title": "Como centrar un div en css",
+			"title": "Responsive Web Design",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
-			"topic": "Basic",
+			"topic": "Responsive",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		}
 	]
