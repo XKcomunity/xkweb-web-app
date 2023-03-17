@@ -21,7 +21,7 @@ export default function Home() {
 				<NormalTitle title="Articulos Recientes" />
 				<BlogCategoryTitle blogTitle="Frontend - Backend" />
 				<SliderCard />
-				<ContainerButton buttonText="Explorar Articulos" route="/snippet-tech"/>
+				<ContainerButton buttonText="Explorar Articulos" />
 				<NormalTitle title="Snippets Recientes" />
 				<RecentSnippets />
 				<ContainerButton buttonText="Explorar Snippets" route="/snippets"/>
