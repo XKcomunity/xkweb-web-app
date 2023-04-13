@@ -3,7 +3,11 @@ import { NavBar } from "@/components/complex/navbar/NavBar";
 import { Footer } from "@/components/complex/footer/Footer";
 import ScrollTopButton from "@/components/basic/button/ScrollTopButton";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
 	return (
 		<html lang="es">
 			{/*
@@ -11,10 +15,13 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
-			<NavBar />
-			<ScrollTopButton />
-			<body>{children}</body>
-			<Footer />
+
+			<body>
+				<NavBar />
+				<ScrollTopButton />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }

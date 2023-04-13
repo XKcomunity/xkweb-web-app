@@ -1,9 +1,13 @@
 import styles from "./titles.module.scss";
 
-export const NormalTitle = (props) => {
+type Props = {
+	title: string;
+};
+
+export const NormalTitle = ({ title }: Props) => {
 	return (
 		<>
-			<h2 className={styles.title}>{props.title}</h2>
+			<h2 className={styles.title}>{title}</h2>
 		</>
 	);
 };

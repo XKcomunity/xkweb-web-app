@@ -1,7 +1,15 @@
 "use client";
 import styles from "./article-card.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
+
+type Props = {
+	image: StaticImageData;
+	title: string;
+	description: string;
+	nivel: string;
+	nivel_value: string;
+};
 
 export const ArticleCard = ({
 	image,
@@ -9,7 +17,7 @@ export const ArticleCard = ({
 	description,
 	nivel,
 	nivel_value,
-}) => {
+}: Props) => {
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>

@@ -2,7 +2,11 @@
 
 import styles from "./titles.module.scss";
 
-export const BlogCategoryTitle = ({ blogTitle }) => {
+type Props = {
+	blogTitle: string;
+};
+
+export const BlogCategoryTitle = ({ blogTitle }: Props) => {
 	return (
 		<>
 			<div className={styles.main_title_wrapper}>
