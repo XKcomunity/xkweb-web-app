@@ -50,6 +50,11 @@
 	height: 130px;
 }
 
+.line {
+	color: white;
+	line-height: 5px;
+}
+
 .drawer_links {
 	@include total-center;
 	margin-top: 5vh;

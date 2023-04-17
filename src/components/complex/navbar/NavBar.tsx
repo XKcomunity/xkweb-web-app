@@ -87,13 +87,14 @@ export const NavBar = () => {
 				onClose={toogleDrawer}
 				direction="left"
 				duration={400}
-				style={{ backgroundColor: "rgba(0, 0, 0)" }}>
+				style={{ backgroundColor: "rgba(0, 0, 0)" }}
+			>
 				<div className={styles.drawer_logo_wrapper}>
 					<Link href="/">
 						<Image src={logo} width={135} height={135} alt="mobile menu logo" />
 					</Link>
 				</div>
-				<hr style={{ lineHeight: "5", color: "white" }} />
+				<hr className={styles.line} />
 				<div className={styles.drawer_links}>
 					<ul className={styles.list_links}>
 						<li className={styles.link}>
