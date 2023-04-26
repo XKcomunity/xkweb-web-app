@@ -2,66 +2,57 @@
 	"technologies": [
 		{
 			"id": 1,
-			"title": "Vue",
+			"tech": "Vue",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/vue.png",
-			"color": "#000"
+			"img": "/images/tech-logos/vue.png"
 		},
 		{
 			"id": 2,
-			"title": "HTML",
+			"tech": "HTML",
 			"category": "Web-Design",
-			"img": "/images/tech-logos/html.png",
-			"color": "#fff"
+			"img": "/images/tech-logos/html.png"
 		},
 		{
 			"id": 3,
-			"title": "CSS",
+			"tech": "CSS",
 			"category": "Web-Design",
-			"img": "/images/tech-logos/css.png",
-			"color": "#000"
+			"img": "/images/tech-logos/css.png"
 		},
 		{
 			"id": 4,
-			"title": "Angular",
+			"tech": "Angular",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/angular.png",
-			"color": "#000"
+			"img": "/images/tech-logos/angular.png"
 		},
 		{
 			"id": 5,
-			"title": "React",
+			"tech": "React",
 			"category": "Frameworks",
-			"img": "/images/tech-logos/React.png",
-			"color": "#000"
+			"img": "/images/tech-logos/React.png"
 		},
 		{
 			"id": 6,
-			"title": "Responsive",
+			"tech": "Responsive",
 			"category": "Web-Design",
-			"img": "/images/tech-logos/node.png",
-			"color": "#000"
+			"img": "/images/tech-logos/node.png"
 		},
 		{
 			"id": 7,
-			"title": "JavaScript",
+			"tech": "JavaScript",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/js.jpeg",
-			"color": "#000"
+			"img": "/images/tech-logos/js.jpeg"
 		},
 		{
 			"id": 8,
-			"title": "Java",
+			"tech": "Java",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/java.png",
-			"color": "#000"
+			"img": "/images/tech-logos/java.png"
 		},
 		{
 			"id": 9,
-			"title": "Python",
+			"tech": "Python",
 			"category": "Lenguajes",
-			"img": "/images/tech-logos/python.png",
-			"color": "#000"
+			"img": "/images/tech-logos/python.png"
 		}
 	],
 	"snippetCardList": [
@@ -69,158 +60,175 @@
 			"id": 1,
 			"img": "/images/tech-logos/css.png",
 			"title": "Como centrar un div en css",
-			"category": "CSS",
 			"description": "En este tutorial, iremos aprendiendo como centrar elementos de forma horizontal, vertical, y de ambas formas..",
-			"topic": "Basic"
+			"topic": "Basic",
+			"category": "Web-Design",
+			"tech": "CSS"
 		},
 		{
 			"id": 2,
 			"img": "/images/tech-logos/js.jpeg",
 			"title": "High order functions",
-			"category": "JavaScript",
 			"description": "Una función de orden mayor (HOF) se denomina a (1) cualquier función que reciba una función como parámetro o (2) cualquier función que retorne otra función.",
-			"topic": "High Order Functions."
+			"category": "Frameworks",
+			"topic": "High Order Functions.",
+			"tech": "Javascript"
 		},
 		{
 			"id": 3,
 			"img": "/images/tech-logos/vue.png",
 			"title": "Ventajas y desventajas de Vue.js",
-			"category": "Vue.js",
 			"description": "Vue.js es el segundo framework más popular en uso hoy en día. Veamos por qué le gusta a los desarrolladores web y por qué se alejan de él.",
-			"topic": "Frameworks"
+			"category": "Frameworks",
+			"topic": "Basic",
+			"tech": "Vue.js"
 		},
 		{
 			"id": 4,
 			"img": "/images/tech-logos/css.png",
 			"title": "Como utilizar BEM",
-			"category": "CSS",
 			"description": "BEM CSS es una metodología de nomenclatura para definir las clases en los nodos HTML del documento. Es decir, es una manera de nombrar las clases de los nodos de tu HTML para posteriormente atacarlos con CSS de una manera fácil, sencilla y clara.",
-			"topic": "BEM"
+			"category": "Web-Design",
+			"topic": "BEM",
+			"tech": "CSS"
 		},
 		{
 			"id": 5,
 			"img": "/images/tech-logos/css.png",
 			"title": "Responsive Web Design",
-			"category": "CSS",
 			"description": "Responsive Web Design es la técnica que nos permite crear sitios adaptables a las condiciones del ordenador o dispositivo desde donde se van a acceder, sobre todo en lo que tiene relación con la pantalla del sistema donde se están visualizando. ",
-			"topic": "Responsive"
+			"category": "Web-Design",
+			"topic": "Responsive",
+			"tech": "CSS"
 		},
 		{
 			"id": 6,
-			"img": "/images/tech-logos/css.png",
-			"title": "Como centrar un div en css",
-			"category": "CSS",
+			"img": "/images/tech-logos/java.png",
+			"title": "Introduccion a java",
 			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "Responsive"
+			"category": "Lenguajes",
+			"topic": "Responsive",
+			"tech": "Java"
 		},
 		{
 			"id": 7,
-			"img": "/images/tech-logos/css.png",
-			"title": "Como centrar un div en css",
-			"category": "CSS",
+			"img": "/images/tech-logos/python.png",
+			"title": "Como empezar con Python",
 			"description": "En este snippet tratamos varias maneras de centrar un div con css,",
-			"topic": "BEM"
+			"category": "Lenguajes",
+			"topic": "Basic",
+			"tech": "Python"
 		}
 	],
 	"snippets": [
 		{
 			"id": 1,
 			"title": "Como centrar un div en css",
-			"category": "CSS",
 			"img": "/images/tech-logos/css.png",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
-			"tocpi": "Basic",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"category": "Web-Design",
+			"topic": "Basic",
+			"tech": "CSS",
+			"description": "<p>Cuando trabajamos con diseño web, es común necesitar centrar elementos como divs, imágenes y textos. En CSS, existen varias maneras de hacerlo. Aquí te presentamos algunas de las más comunes:</p>"
 		},
 		{
 			"id": 2,
 			"title": "High order functions",
-			"category": "JavaScript",
 			"img": "/images/tech-logos/js.jpeg",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
+			"category": "Lenguajes",
 			"topic": "High Order Functions.",
+			"tech": "Javascript",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 3,
 			"title": "Ventajas y desventajas de Vue.js",
-			"topic": "Vue.js",
 			"img": "/images/tech-logos/vue.png",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
 			"category": "Frameworks",
+			"topic": "Basic",
+			"tech": "Vue.js",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 4,
-			"title": "Como centrar un div en css",
-			"topic": "CSS",
-			"img": "/images/tech-logos/css.png",
+			"title": "useEffect vs useState",
+			"img": "/images/tech-logos/React.png",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
 			"category": "Frameworks",
+			"topic": "Directivas",
+			"tech": "React",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 5,
 			"title": "Perfect pixel architecture",
-			"topic": "CSS",
 			"img": "/images/tech-logos/css.png",
 			"author": "Andres Quesada",
 			"date": "22-02-2023",
-			"category": "Lenguajes",
+			"category": "Web-Design",
+			"topic": "Responsive",
+			"tech": "CSS",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 6,
 			"title": "Mastering Chakra UI",
-			"topic": "CSS",
-			"img": "/images/tech-logos/css.png",
+			"img": "/images/tech-logos/React.png",
 			"author": "Andres Quesada",
 			"date": "22-02-2023",
-			"category": "Lenguajes",
+			"category": "Frameworks",
+			"topic": "Librerias",
+			"tech": "React",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 7,
-			"title": "Responsive Web Design",
-			"subTitle": "CSS",
-			"img": "/images/tech-logos/js.jpeg",
+			"title": "Inputs que no conoces de HTML",
+			"img": "/images/tech-logos/html.png",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
 			"category": "Web-Design",
+			"topic": "Formularios",
+			"tech": "HTML",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 8,
-			"title": "Mastering TailwindCSS",
-			"topic": "CSS",
-			"img": "/images/tech-logos/js.jpeg",
+			"title": "Crear API con Node.js",
+			"img": "/images/tech-logos/node.png",
 			"author": "Andres Quesada",
 			"date": "22-02-2023",
-			"category": "Web-Design",
+			"category": "Lenguajes",
+			"topic": "Servidor",
+			"tech": "Node.js",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 9,
-			"title": "New CSS grid features",
-			"topic": "CSS",
+			"title": "Manejo de errores en JS",
 			"img": "/images/tech-logos/js.jpeg",
 			"author": "Michael Linares",
 			"date": "22-02-2023",
-			"category": "Web-Design",
+			"category": "Lenguajes",
+			"topic": "Tips",
+			"tech": "Javascript",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
 			"id": 10,
-			"title": "Building APIs with Spring Boot",
-			"topic": "JavaScript",
-			"img": "/images/tech-logos/js.jpeg",
+			"title": "Entendiendo rutas en Angular",
+			"img": "/images/tech-logos/angular.png",
 			"author": "Andres Quesada",
 			"date": "22-02-2023",
 			"category": "Frameworks",
+			"topic": "Rutas",
+			"tech": "Angular",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		}
 	]

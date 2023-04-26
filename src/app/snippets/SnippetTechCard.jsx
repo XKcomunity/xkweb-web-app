@@ -19,7 +19,7 @@ export default function SnippetTechCard({ technologies }) {
 								/>
 							</div>
 							<div className={styles.tech_card_title_content}>
-								<h4 className={styles.tech_card_title}>{tech.title}</h4>
+								<h4 className={styles.tech_card_title}>{tech.tech}</h4>
 							</div>
 						</div>
 					</Link>
