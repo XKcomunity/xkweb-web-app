@@ -7,7 +7,7 @@ export default function SnippetTechCard({ technologies }) {
 		<>
 			{technologies.map((tech) => (
 				<div key={tech.id} className={styles.techcard_container}>
-					<Link href={`/snippets/${tech.category}`}>
+					<Link href={`/snippets/${tech.tech}`}>
 						<div className={styles.tech_card}>
 							<div className={styles.tech_card_img_content}>
 								<Image
