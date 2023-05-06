@@ -151,7 +151,7 @@
 			"date": "22-02-2023",
 			"category": "Frameworks",
 			"topic": "Basic",
-			"tech": "Vue.js",
+			"tech": "Vue",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		},
 		{
@@ -229,6 +229,39 @@
 			"category": "Frameworks",
 			"topic": "Rutas",
 			"tech": "Angular",
+			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+		},
+		{
+			"id": 11,
+			"title": "Vue-Router for Vue.js 3 ",
+			"img": "/images/tech-logos/vue.png",
+			"author": "Michael Linares",
+			"date": "22-02-2023",
+			"category": "Frameworks",
+			"topic": "Rutas",
+			"tech": "Vue",
+			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+		},
+		{
+			"id": 12,
+			"title": "Pinia for beginners ",
+			"img": "/images/tech-logos/vue.png",
+			"author": "Michael Linares",
+			"date": "22-02-2023",
+			"category": "Frameworks",
+			"topic": "State",
+			"tech": "Vue",
+			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+		},
+		{
+			"id": 13,
+			"title": "Advanced Vuex state managament",
+			"img": "/images/tech-logos/vue.png",
+			"author": "Michael Linares",
+			"date": "22-02-2023",
+			"category": "Frameworks",
+			"topic": "State",
+			"tech": "Vue",
 			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
 		}
 	]

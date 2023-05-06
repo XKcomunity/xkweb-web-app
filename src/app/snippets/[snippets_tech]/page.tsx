@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./snippet-tech.module.scss";
@@ -8,19 +9,25 @@ import { ReusableBanner } from "@/components/complex/reusable-banner/ReusableBan
 // import SnippetCard from "./SnippetCard";
 import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
 import { NormalTitle } from "@/components/basic/titles/NormalTitle";
+import ParentTechSnippet from "./ParentTechSnippet";
 
 type Params = {
 	params: {
-		snippets_category: string;
+		snippets_tech: string;
 	};
 };
 
 export default async function SnippetTech({
-	params: { snippets_category },
+	params: { snippets_tech },
 }: Params) {
-	// const [snippetCardList, setSnippetCardList] = useState([]);
-	// const [selectedTopic, setSelectedTopic] = useState(null);
-	// const [filterTopics, setFilterTopics] = useState([]);
+	// const [snippetCardList, setSnippetCardList] = useState<Snippet[]>([]);
+	// const [selectedTopic, setSelectedTopic] = useState<string>("");
+	// const [filterTopics, setFilterTopics] = useState<Snippet[]>([]);
+
+	const dataSnippets: Promise<Snippet[]> = getSnippets();
+	const snippets = await dataSnippets;
+
+	const snippets_type = snippets.filter((item) => item.tech === snippets_tech);
 
 	// useEffect(() => {
 	// 	async function fetchSnippetCards() {
@@ -39,58 +46,31 @@ export default async function SnippetTech({
 	// 	fetchSnippetCards();
 	// }, []);
 
-	// const handleTopicClick = (topic: any) => {
+	// setSnippetCardList(snippets_type);
+	// setFilterTopics(snippets_type);
+
+	// const handleTopicClick = (topic: string) => {
 	// 	setSelectedTopic(topic);
-	// 	if (topic === null) {
+	// 	if (topic === "") {
 	// 		setFilterTopics(snippetCardList);
 	// 	} else {
 	// 		const filtered = snippetCardList.filter(
-	// 			(item: any) => item.topic === topic
+	// 			(item: Snippet) => item.topic === topic
 	// 		);
 	// 		setFilterTopics(filtered);
 	// 	}
 	// };
 
-	const dataSnippets: Promise<Snippet[]> = getSnippets();
-	const snippets = await dataSnippets;
-
-	const snippets_type = snippets.filter(
-		(item) => item.category === snippets_category
-	);
-
 	return (
 		<>
 			<ReusableBanner title="snippets" />
+			<ParentTechSnippet />
 			{/* <SnippetTechPils
 				snippetCardList={snippetCardList}
 				handleTopicClick={handleTopicClick}
 			/>
-			<SnippetCard /> */}
+			<SnippetCard snippets_type={filterTopics} /> */}
 
-			<section className={styles.snippet_card_container}>
-				{snippets_type.map((snippet) => (
-					<article key={snippet.id} className={styles.snippet_card}>
-						<Link href={`/snippets/${snippet.category}/${snippet.id}`}>
-							<div className={styles.snippet_card_heading}>
-								<Image
-									src={snippet.img}
-									className={styles.snippet_card_img}
-									alt=""
-									width={50}
-									height={50}
-								/>
-								<div className={styles.snippet_card_heading_text}>
-									<h3>{snippet.title}</h3>
-									<h5>{snippet.subTitle}</h5>
-								</div>
-							</div>
-							<p className={styles.snippet_card_paragraph}>
-								{snippet.description}
-							</p>
-						</Link>
-					</article>
-				))}
-			</section>
 			<NormalTitle title="Snippets Recientes" />
 			<RecentSnippets />
 		</>
