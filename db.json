@@ -130,7 +130,7 @@
 			"category": "Web-Design",
 			"topic": "Basic",
 			"tech": "CSS",
-			"description": "<p>Cuando trabajamos con diseño web, es común necesitar centrar elementos como divs, imágenes y textos. En CSS, existen varias maneras de hacerlo. Aquí te presentamos algunas de las más comunes:</p>"
+			"description": "Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any element. An ID may only be applied to a single element."
 		},
 		{
 			"id": 2,
@@ -141,7 +141,7 @@
 			"category": "Lenguajes",
 			"topic": "High Order Functions.",
 			"tech": "Javascript",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "The choice of the JavaScript name has caused confusion, implying that it is directly related to Java. At the time, the dot-com boom had begun and Java was the hot new language, so Eich considered the JavaScript name a marketing ploy by Netscape.[15]å"
 		},
 		{
 			"id": 3,
@@ -152,7 +152,7 @@
 			"category": "Frameworks",
 			"topic": "Basic",
 			"tech": "Vue",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "Vue.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. The core library is focused on the view layer only.[4]"
 		},
 		{
 			"id": 4,
@@ -163,7 +163,7 @@
 			"category": "Frameworks",
 			"topic": "Directivas",
 			"tech": "React",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "React adheres to the declarative programming paradigm. Developers design views for each state of an application, and React updates and renders components when data changes. This is in contrast with imperative programming.[10]"
 		},
 		{
 			"id": 5,
@@ -174,7 +174,7 @@
 			"category": "Web-Design",
 			"topic": "Responsive",
 			"tech": "CSS",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]"
 		},
 		{
 			"id": 6,
@@ -185,7 +185,7 @@
 			"category": "Frameworks",
 			"topic": "Librerias",
 			"tech": "React",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[8][9]"
 		},
 		{
 			"id": 7,
@@ -196,7 +196,7 @@
 			"category": "Web-Design",
 			"topic": "Formularios",
 			"tech": "HTML",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5, is used to display video and audio, primarily using the <canvas> element, together with JavaScript."
 		},
 		{
 			"id": 8,
@@ -207,7 +207,7 @@
 			"category": "Lenguajes",
 			"topic": "Servidor",
 			"tech": "Node.js",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser."
 		},
 		{
 			"id": 9,
@@ -218,7 +218,7 @@
 			"category": "Lenguajes",
 			"topic": "Tips",
 			"tech": "Javascript",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "¿Alguna vez te has preguntado cómo funcionan las páginas web interactivas y por qué son tan atractivas? Existe un lenguaje de programación que ha revolucionado la web, y su nombre es JavaScript."
 		},
 		{
 			"id": 10,
@@ -229,7 +229,7 @@
 			"category": "Frameworks",
 			"topic": "Rutas",
 			"tech": "Angular",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "Si eres un desarrollador o desarrolladora web principiante, seguramente has escuchado hablar sobre diferentes tipos de framework que pueden ayudarte al desarrollo de tus proyectos. Para crear sitios web dinámicos, entonces debes conocer qué es Angular."
 		},
 		{
 			"id": 11,
@@ -240,7 +240,7 @@
 			"category": "Frameworks",
 			"topic": "Rutas",
 			"tech": "Vue",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "So why don't we extract the shared state out of the components, and manage it in a global singleton? With this, our component tree becomes a big 'view', and any component can access the state or trigger actions, no matter where they are in the tree"
 		},
 		{
 			"id": 12,
@@ -251,7 +251,7 @@
 			"category": "Frameworks",
 			"topic": "State",
 			"tech": "Vue",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "This is the basic idea behind Vuex, inspired by Flux, Redux and The Elm Architecture. Unlike the other patterns, Vuex is also a library implementation tailored specifically for Vue.js to take advantage of its granular reactivity system for efficient updates."
 		},
 		{
 			"id": 13,
@@ -262,7 +262,7 @@
 			"category": "Frameworks",
 			"topic": "State",
 			"tech": "Vue",
-			"description": "<p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p> <p>CSS trigonometry functions are here! Well, they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought we’d dip our toes in the water to get a feel for a couple of the newer functions: sin() and cos().</p>"
+			"description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
 		}
 	]
 }
