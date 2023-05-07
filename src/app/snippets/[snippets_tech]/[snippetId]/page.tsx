@@ -19,7 +19,7 @@ export default async function SnippetChosen({ params: { snippetId } }: Params) {
 
 	return (
 		<>
-			<ReusableBanner title={title} />
+			<ReusableBanner title={snippet.tech} />
 			<MainContainer snippet={snippet} />
 			<NormalTitle title={subTitle} />
 			<RecentSnippets />

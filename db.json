@@ -152,7 +152,7 @@
 			"date": "13-03-2023",
 			"category": "Lenguajes",
 			"topic": "Tips",
-			"tech": "Javascript",
+			"tech": "JavaScript",
 			"description": "Este es un ejemplo de descripción que incluye texto y código: \n\nAquí empieza el texto normal.\n\n ```typescript\nconst x: string = 'Hola mundo';\nconsole.log(x);\n```\n\n Aquí continúa el texto normal. ¿Alguna vez te has preguntado cómo funcionan las páginas web interactivas y por qué son tan atractivas? Existe un lenguaje de programación que ha revolucionado la web, y su nombre es JavaScript."
 		},
 		{
