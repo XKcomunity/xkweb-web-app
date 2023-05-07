@@ -18,4 +18,5 @@ type Snippet = {
 	description: string;
 	img: string;
 	subTitle: string;
+	code: string;
 };

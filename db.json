@@ -125,12 +125,13 @@
 			"id": 1,
 			"title": "Como centrar un div en css",
 			"img": "/images/tech-logos/css.png",
-			"author": "Michael Linares",
+			"author": "Francisco Panda",
 			"date": "22-02-2023",
 			"category": "Web-Design",
 			"topic": "Basic",
 			"tech": "CSS",
-			"description": "Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any element. An ID may only be applied to a single element."
+			"description": "Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any element. An ID may only be applied to a single element.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 2,
@@ -141,7 +142,8 @@
 			"category": "Lenguajes",
 			"topic": "High Order Functions.",
 			"tech": "Javascript",
-			"description": "The choice of the JavaScript name has caused confusion, implying that it is directly related to Java. At the time, the dot-com boom had begun and Java was the hot new language, so Eich considered the JavaScript name a marketing ploy by Netscape.[15]å"
+			"description": "The choice of the JavaScript name has caused confusion, implying that it is directly related to Java. At the time, the dot-com boom had begun and Java was the hot new language, so Eich considered the JavaScript name a marketing ploy by Netscape.[15]å",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 3,
@@ -152,18 +154,20 @@
 			"category": "Frameworks",
 			"topic": "Basic",
 			"tech": "Vue",
-			"description": "Vue.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. The core library is focused on the view layer only.[4]"
+			"description": "Vue.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. The core library is focused on the view layer only.[4]",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 4,
 			"title": "useEffect vs useState",
 			"img": "/images/tech-logos/React.png",
-			"author": "Michael Linares",
+			"author": "Francisco Panda",
 			"date": "22-02-2023",
 			"category": "Frameworks",
 			"topic": "Directivas",
 			"tech": "React",
-			"description": "React adheres to the declarative programming paradigm. Developers design views for each state of an application, and React updates and renders components when data changes. This is in contrast with imperative programming.[10]"
+			"description": "React adheres to the declarative programming paradigm. Developers design views for each state of an application, and React updates and renders components when data changes. This is in contrast with imperative programming.[10]",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 5,
@@ -174,7 +178,8 @@
 			"category": "Web-Design",
 			"topic": "Responsive",
 			"tech": "CSS",
-			"description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]"
+			"description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 6,
@@ -185,84 +190,92 @@
 			"category": "Frameworks",
 			"topic": "Librerias",
 			"tech": "React",
-			"description": "React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[8][9]"
+			"description": "React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[8][9]",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 7,
 			"title": "Inputs que no conoces de HTML",
 			"img": "/images/tech-logos/html.png",
 			"author": "Michael Linares",
-			"date": "22-02-2023",
+			"date": "22-01-2023",
 			"category": "Web-Design",
 			"topic": "Formularios",
 			"tech": "HTML",
-			"description": "HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5, is used to display video and audio, primarily using the <canvas> element, together with JavaScript."
+			"description": "HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5, is used to display video and audio, primarily using the <canvas> element, together with JavaScript.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 8,
 			"title": "Crear API con Node.js",
 			"img": "/images/tech-logos/node.png",
 			"author": "Andres Quesada",
-			"date": "22-02-2023",
+			"date": "5-02-2023",
 			"category": "Lenguajes",
 			"topic": "Servidor",
 			"tech": "Node.js",
-			"description": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser."
+			"description": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 9,
 			"title": "Manejo de errores en JS",
 			"img": "/images/tech-logos/js.jpeg",
 			"author": "Michael Linares",
-			"date": "22-02-2023",
+			"date": "13-03-2023",
 			"category": "Lenguajes",
 			"topic": "Tips",
 			"tech": "Javascript",
-			"description": "¿Alguna vez te has preguntado cómo funcionan las páginas web interactivas y por qué son tan atractivas? Existe un lenguaje de programación que ha revolucionado la web, y su nombre es JavaScript."
+			"description": "¿Alguna vez te has preguntado cómo funcionan las páginas web interactivas y por qué son tan atractivas? Existe un lenguaje de programación que ha revolucionado la web, y su nombre es JavaScript.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 10,
 			"title": "Entendiendo rutas en Angular",
 			"img": "/images/tech-logos/angular.png",
 			"author": "Andres Quesada",
-			"date": "22-02-2023",
+			"date": "20-03-2023",
 			"category": "Frameworks",
 			"topic": "Rutas",
 			"tech": "Angular",
-			"description": "Si eres un desarrollador o desarrolladora web principiante, seguramente has escuchado hablar sobre diferentes tipos de framework que pueden ayudarte al desarrollo de tus proyectos. Para crear sitios web dinámicos, entonces debes conocer qué es Angular."
+			"description": "Si eres un desarrollador o desarrolladora web principiante, seguramente has escuchado hablar sobre diferentes tipos de framework que pueden ayudarte al desarrollo de tus proyectos. Para crear sitios web dinámicos, entonces debes conocer qué es Angular.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 11,
 			"title": "Vue-Router for Vue.js 3 ",
 			"img": "/images/tech-logos/vue.png",
-			"author": "Michael Linares",
-			"date": "22-02-2023",
+			"author": "Andres Quesada",
+			"date": "22-04-2023",
 			"category": "Frameworks",
 			"topic": "Rutas",
 			"tech": "Vue",
-			"description": "So why don't we extract the shared state out of the components, and manage it in a global singleton? With this, our component tree becomes a big 'view', and any component can access the state or trigger actions, no matter where they are in the tree"
+			"description": "So why don't we extract the shared state out of the components, and manage it in a global singleton? With this, our component tree becomes a big 'view', and any component can access the state or trigger actions, no matter where they are in the tree",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 12,
 			"title": "Pinia for beginners ",
 			"img": "/images/tech-logos/vue.png",
 			"author": "Michael Linares",
-			"date": "22-02-2023",
+			"date": "3-05-2023",
 			"category": "Frameworks",
 			"topic": "State",
 			"tech": "Vue",
-			"description": "This is the basic idea behind Vuex, inspired by Flux, Redux and The Elm Architecture. Unlike the other patterns, Vuex is also a library implementation tailored specifically for Vue.js to take advantage of its granular reactivity system for efficient updates."
+			"description": "This is the basic idea behind Vuex, inspired by Flux, Redux and The Elm Architecture. Unlike the other patterns, Vuex is also a library implementation tailored specifically for Vue.js to take advantage of its granular reactivity system for efficient updates.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		},
 		{
 			"id": 13,
 			"title": "Advanced Vuex state managament",
 			"img": "/images/tech-logos/vue.png",
-			"author": "Michael Linares",
-			"date": "22-02-2023",
+			"author": "Francisco Panda",
+			"date": "14-05-2023",
 			"category": "Frameworks",
 			"topic": "State",
 			"tech": "Vue",
-			"description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+			"description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.",
+			"code": "const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]; console.log(arr);"
 		}
 	]
 }
