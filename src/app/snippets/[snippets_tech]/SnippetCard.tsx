@@ -26,7 +26,7 @@ export default function SnippetCard({ snippets_type }: Props) {
 							</div>
 						</div>
 						<p className={styles.snippet_card_paragraph}>
-							{snippet.description}
+							{snippet.description.slice(0, 200)}...
 						</p>
 					</Link>
 				</article>
