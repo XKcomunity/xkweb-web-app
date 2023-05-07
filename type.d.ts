@@ -8,6 +8,7 @@ type Tecnologie = {
 };
 
 type Snippet = {
+	codeList: LibraryCode[] | undefined;
 	id: string;
 	title: string;
 	author: string;

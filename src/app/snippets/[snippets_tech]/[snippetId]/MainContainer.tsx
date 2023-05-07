@@ -9,17 +9,18 @@ type Props = {
 
 export default function MainContainer({ snippet }: Props) {
 	return (
-		<>
-			<main className={styles.containerFluid}>
-				<div className={styles.container}>
-					<BlogTitle title={snippet.title} />
-					<SnippetAuthor author={snippet.author} date={snippet.date} />
-					<SnippetArticle
-						description={snippet.description}
-						code={snippet.code}
-					/>
-				</div>
-			</main>
-		</>
+	  <>
+		<main className={styles.containerFluid}>
+		  <div className={styles.container}>
+			<BlogTitle title={snippet.title} />
+			<SnippetAuthor author={snippet.author} date={snippet.date} />
+			<SnippetArticle description={snippet.description} code={{
+				title: "",
+				code: ""
+			}} />
+		  </div>
+		</main>
+	  </>
 	);
-}
+  }
+

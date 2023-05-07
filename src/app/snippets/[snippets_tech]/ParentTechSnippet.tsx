@@ -29,7 +29,7 @@ export default function ParentTechSnippet() {
 		}
 
 		fetchSnippetCards();
-	}, []);
+	}, [params?.snippets_tech]);
 
 	const snippets_type = snippetCardList.filter(
 		(item) => item.tech === params?.snippets_tech

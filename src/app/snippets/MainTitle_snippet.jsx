@@ -14,7 +14,6 @@ export default function MainTitle_snipet() {
 					relacionados con ese tema en específico.
 				</p>
 				<h3 className={styles.h3}>
-					{" "}
 					¡Imagina todo lo que puedes aprender y descubrir en esta sección!
 				</h3>
 			</main>

@@ -3,28 +3,28 @@ import styles from "./snippet_chosen.module.scss";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-type Props = {
-	code: string;
-	description: string;
-};
+type LibraryCode = {
+    title: string;
+    code: string;
+  };
 
-export default function SnippetArticle({ description, code }: Props) {
-	const code1 = "const x = 'Hello, world!'; console.log(x);";
+  type Props = {
+    description: string;
+    code: LibraryCode;
+  };
 
-	return (
-		<>
-			<section className={styles.snippet_article_content}>
-				<br />
-				<p className={styles.article_text}>{description}</p>
-				<br />
-				<p className={styles.article_text}>{description}</p>
-				<SyntaxHighlighter language="javascript" style={atomDark}>
-					{code1}
-				</SyntaxHighlighter>
-				<SyntaxHighlighter language="typescript" style={atomDark}>
-					{code}
-				</SyntaxHighlighter>
-			</section>
-		</>
-	);
-}
+  export default function SnippetArticle({ description }: Props) {
+    const [text, code] = description.split('```');
+
+    return (
+      <section className={styles.snippet_article_content}>
+        <p className={styles.article_text}>{text}</p>
+        <div>
+          <SyntaxHighlighter language="typescript" style={atomDark}>
+            {code}
+          </SyntaxHighlighter>
+        </div>
+      </section>
+    );
+  }
+
