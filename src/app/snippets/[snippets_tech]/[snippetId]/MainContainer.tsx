@@ -14,7 +14,10 @@ export default function MainContainer({ snippet }: Props) {
 				<div className={styles.container}>
 					<BlogTitle title={snippet.title} />
 					<SnippetAuthor author={snippet.author} date={snippet.date} />
-					<SnippetArticle />
+					<SnippetArticle
+						description={snippet.description}
+						code={snippet.code}
+					/>
 				</div>
 			</main>
 		</>
