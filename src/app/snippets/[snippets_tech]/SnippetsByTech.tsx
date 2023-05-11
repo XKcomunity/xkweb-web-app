@@ -6,7 +6,7 @@ import SnippetCard from "./SnippetCard";
 
 type Props = {};
 
-export default function ParentTechSnippet() {
+export default function SnippetsByTech() {
 	const params = useParams();
 
 	const [snippetCardList, setSnippetCardList] = useState<Snippet[]>([]);

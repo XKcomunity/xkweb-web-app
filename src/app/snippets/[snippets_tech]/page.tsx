@@ -1,7 +1,7 @@
 import { ReusableBanner } from "@/components/complex/reusable-banner/ReusableBanner";
 import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
-import { NormalTitle } from "@/components/basic/titles/NormalTitle";
-import ParentTechSnippet from "./ParentTechSnippet";
+import { TitleComponent } from "@/components/basic/titles/TitleComponent";
+import SnippetsByTech from "./SnippetsByTech";
 
 type Params = {
 	params: {
@@ -15,8 +15,8 @@ export default async function SnippetTech({
 	return (
 		<>
 			<ReusableBanner title={snippets_tech} />
-			<ParentTechSnippet />
-			<NormalTitle title="Snippets Recientes" />
+			<SnippetsByTech />
+			<TitleComponent title="Snippets Recientes" />
 			<RecentSnippets />
 		</>
 	);

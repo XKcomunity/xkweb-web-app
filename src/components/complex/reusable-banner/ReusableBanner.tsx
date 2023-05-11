@@ -1,4 +1,4 @@
-import { NormalTitle } from "@/components/basic/titles/NormalTitle";
+import { TitleComponent } from "@/components/basic/titles/TitleComponent";
 import styles from "./reusable-banner.module.scss";
 
 type Props = {
@@ -9,7 +9,7 @@ export const ReusableBanner = ({ title }: Props) => {
 	return (
 		<>
 			<main className={styles.reusable_banner_wrapper}>
-				<NormalTitle title={title} />
+				<TitleComponent title={title} />
 			</main>
 		</>
 	);

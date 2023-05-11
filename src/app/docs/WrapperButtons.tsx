@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/basic/button/Button";
-import OutlineButton from "@/components/basic/button/Outline_buttton";
+import OutlineButton from "@/components/basic/button/OutlineButtton";
 import styles from "./docs.module.scss";
 
 export default function Docs() {

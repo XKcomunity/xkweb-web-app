@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./_snippetPage.module.scss";
-import MainTitle_snipet from "./MainTitle_snippet";
-import SnippetHeadingLinks from "./SnippetHeadingLinks";
+import MainTitleSnippet from "./MainTitleSnippet";
+import SnippetCategoryLinks from "./SnippetCategoryLinks";
 import SnippetTechCard from "./snippetTechCard";
 
 export default function Snippet() {
@@ -38,8 +38,8 @@ export default function Snippet() {
 	return (
 		<>
 			<main className={styles.main_snippet}>
-				<MainTitle_snipet />
-				<SnippetHeadingLinks
+				<MainTitleSnippet />
+				<SnippetCategoryLinks
 					technologies={technologies}
 					handleCategoryClick={handleCategoryClick}
 				/>

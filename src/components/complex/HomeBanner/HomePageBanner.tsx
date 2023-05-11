@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import styles from "./main-banner.module.scss";
+import styles from "./home-page-banner.module.scss";
 import robot from "../../../../public/images/robots/robot.png";
 import { motion } from "framer-motion";
 
-export const MainBanner = () => {
+export const HomePageBanner = () => {
 	return (
 		<>
 			<div className={styles.image_background}>
