@@ -1,7 +1,7 @@
 "use client";
 import styles from "./titles.module.scss";
 
-export const MainTitle = () => {
+export const MainHomeTitle = () => {
 	return (
 		<>
 			<div className={styles.main_title_wrapper}>

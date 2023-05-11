@@ -1,6 +1,6 @@
 import styles from "./_snippetPage.module.scss";
 
-export default function SnippetHeadingLinks({
+export default function SnippetCategoryLinks({
 	technologies,
 	handleCategoryClick,
 }) {
