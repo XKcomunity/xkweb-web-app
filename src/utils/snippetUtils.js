@@ -23,7 +23,7 @@ function extractCodeBlocks(description) {
 function splitTextIntoBlocks(description, codeBlocks) {
     const textBlocks = [];
 
-    for (const [index, block] of description.split(/```([\w\W]+?)```/)).entries()) {
+    for (const [index, block] of description.split(/```([\w\W]+?)```/).entries()) {
         const isCodeBlock = index % 2 === 1;
         if (isCodeBlock) {
         const matchingBlockIndex = codeBlocks.findIndex(({ code }) => code === block);
