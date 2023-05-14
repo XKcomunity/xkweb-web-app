@@ -9,3 +9,54 @@
     margin: 2em 0em 2em 0em;
     gap: 1em;
 }
+
+.main {
+    width: 100%;
+    margin-bottom: 3em;
+    padding: $padding-1;
+}
+
+.bookCardContent {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.bookCard {
+    width: 150px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.bookCardImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bookCardCaption {
+    color: #fff;
+    font-size: $font-size__h5;
+}
+
+.downloadBtn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: $secondary-color;
+    cursor: pointer;
+  }
+
+  .bookCard:hover .downloadBtn {
+    display: block;
+  }
