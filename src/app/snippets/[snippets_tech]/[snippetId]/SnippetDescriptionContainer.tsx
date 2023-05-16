@@ -1,4 +1,4 @@
-import { BlogTitle } from "@/components/basic/titles/BlogTitle";
+import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./SnippetAuthor";
 import styles from "./snippet_chosen.module.scss";

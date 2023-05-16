@@ -1,5 +1,5 @@
 import styles from "./about-section.module.scss";
-import OutlineButton from "@/components/basic/button/OutlineButtton";
+import OutlineButton from "@/components/stateless/buttons/OutlineButtton";
 
 export const AboutText = () => {
 	return (

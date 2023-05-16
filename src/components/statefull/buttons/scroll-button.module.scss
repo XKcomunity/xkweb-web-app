@@ -1,0 +1,6 @@
+@import "../../../../src/app/variables";
+@import "../../../../src/app/mixins";
+
+.scroll_btn {
+	@include scrollTopButton;
+}

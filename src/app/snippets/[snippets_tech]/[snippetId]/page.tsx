@@ -1,8 +1,8 @@
-import { ReusableBanner } from "@/components/complex/reusable-banner/ReusableBanner";
-import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
-import { TitleComponent } from "@/components/basic/titles/TitleComponent";
+import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
+import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
+import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import SnippetDescriptionContainer from "./SnippetDescriptionContainer";
-import getSnippetId from "lib/getSnippetId";
+import getSnippetId from "@/lib/getSnippetId";
 
 type Params = {
 	params: {

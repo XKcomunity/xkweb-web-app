@@ -1,5 +1,5 @@
 "use client";
-import styles from "./button.module.scss";
+import styles from "./scroll-button.module.scss";
 import { useState, useEffect } from "react";
 import { BsArrowUpShort } from "react-icons/bs";
 
@@ -32,6 +32,7 @@ const ScrollTopButton = () => {
 			className={styles.scroll_btn}
 			style={{ display: isVisible ? "block" : "none" }}
 			onClick={scrollToTop}
+			title="icon"
 		>
 			<BsArrowUpShort />
 		</button>
