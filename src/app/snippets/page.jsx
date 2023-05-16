@@ -5,6 +5,15 @@ import SnippetCategoryLinks from "./SnippetCategoryLinks";
 import SnippetTechCard from "./snippetTechCard";
 import MainTitleSection from "../../components/stateless/main-title-section/MainTitleSection";
 
+const data = {
+	title1: "Explora por",
+	title2: "Temas",
+	description:
+		"Esta sección está organizada por temas, al seleccionar uno en particular, podrás explorar una gran cantidad de snippets de código relacionados con ese tema en específico.",
+
+	subTitle: "¡Imagina todo lo que puedes aprender y descubrir en esta sección!",
+};
+
 export default function Snippet() {
 	const [technologies, setTechnologies] = useState([]);
 	const [selectedCategory, setSelectedCategory] = useState(null);
@@ -39,12 +48,10 @@ export default function Snippet() {
 		<>
 			<main className={styles.main_snippet}>
 				<MainTitleSection
-					title1="Explora Por"
-					title2="Temas"
-					description="Esta sección está organizada por temas, al seleccionar uno en
-					particular, podrás explorar una gran cantidad de snippets de código
-					relacionados con ese tema en específico."
-					subTitle="¡Imagina todo lo que puedes aprender y descubrir en esta sección!"
+					title1={data.title1}
+					title2={data.title2}
+					description={data.description}
+					subTitle={data.subTitle}
 				/>
 				<SnippetCategoryLinks
 					technologies={technologies}
