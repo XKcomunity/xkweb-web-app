@@ -1,21 +1,21 @@
-import MainTitleSection from "@/components/stateless/main-title-section/MainTitleSection";
+import MainTitleSection from "@/components/stateless/titles/MainTitleSection";
 import WapperButtons from "./WrapperButtons";
 
 const data = {
-	title1: "Explora por",
-	title2: "Temas",
+	title: "Aprende y ",
+	span: "Crea",
 	description:
-		"Esta sección está organizada por temas, al seleccionar uno en particular, podrás explorar una gran cantidad de documentaciones y articulos relacionados con ese tema en específico.",
+		"Sumérgete en nuestra sección especializada que alberga una amplia variedad de enlaces, documentos, PDFs e información valiosa sobre el mundo del diseño y desarrollo web. Obtén acceso a los recursos necesarios para potenciar tus habilidades.",
 	subTitle:
-		"¡En esta sección tendrás a tu disposición un rico caudal de información!",
+		"Recursos y Conocimientos para el Diseño y Desarrollo Web",
 };
 
 export default function Docs() {
 	return (
 		<>
 			<MainTitleSection
-				title1={data.title1}
-				title2={data.title2}
+				title={data.title}
+				span={data.span}
 				description={data.description}
 				subTitle={data.subTitle}
 			/>
