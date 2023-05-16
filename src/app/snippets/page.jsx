@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import styles from "./_snippetPage.module.scss";
 import SnippetCategoryLinks from "./SnippetCategoryLinks";
 import SnippetTechCard from "./snippetTechCard";
-import MainTitleSection from "../../components/stateless/main-title-section/MainTitleSection";
+import MainTitleSection from "../../components/stateless/titles/MainTitleSection";
 
 const data = {
-	title1: "Explora por",
-	title2: "Temas",
+	title: "Explora por",
+	span: "Temas",
 	description:
 		"Esta sección está organizada por temas, al seleccionar uno en particular, podrás explorar una gran cantidad de snippets de código relacionados con ese tema en específico.",
 
@@ -48,8 +48,8 @@ export default function Snippet() {
 		<>
 			<main className={styles.main_snippet}>
 				<MainTitleSection
-					title1={data.title1}
-					title2={data.title2}
+					title={data.title}
+					span={data.span}
 					description={data.description}
 					subTitle={data.subTitle}
 				/>
