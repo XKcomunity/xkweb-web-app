@@ -1,13 +1,13 @@
-import { MainHomeTitle } from "@/components/basic/titles/MainHomeTitle";
-import { HomePageBanner } from "@/components/complex/HomeBanner/HomePageBanner";
-import { AboutSection } from "@/components/complex/about-section/AboutSection";
-import { HintSection } from "@/components/complex/hint-section/HintSection";
-import { TitleComponent } from "@/components/basic/titles/TitleComponent";
-import { SliderCard } from "@/components/complex/slider/SliderCard";
-import { BlogCategoryTitle } from "@/components/basic/titles/BlogCategoryTitle";
-import { RecentSnippets } from "@/components/complex/recent-snippets/RecentSnippets";
-import ContainerButton from "@/components/complex/container-button/ContainerButton";
-import { OurTeam } from "@/components/complex/our-team/OurTeam";
+import { MainHomeTitle } from "@/components/stateless/titles/MainHomeTitle";
+import { HomePageBanner } from "@/components/stateless/HomeBanner/HomePageBanner";
+import { AboutSection } from "@/components/stateless/about-section/AboutSection";
+import { HintSection } from "@/components/stateless/hint-section/HintSection";
+import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
+import { SliderCard } from "@/components/stateless/slider/SliderCard";
+import { BlogCategoryTitle } from "@/components/stateless/titles/BlogCategoryTitle";
+import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
+import ContainerButton from "@/components/stateless/container-button/ContainerButton";
+import { OurTeam } from "@/components/stateless/our-team/OurTeam";
 // import styles from "./page.module.scss";
 
 export default function Home() {

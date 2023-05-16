@@ -1,4 +1,4 @@
-import { TitleComponent } from "@/components/basic/titles/TitleComponent";
+import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import styles from "./reusable-banner.module.scss";
 
 type Props = {

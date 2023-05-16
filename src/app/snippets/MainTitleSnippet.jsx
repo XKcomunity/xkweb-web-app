@@ -1,7 +1,7 @@
 "use client";
 import styles from "./_snippetPage.module.scss";
 
-export default function MainTitle_snipet() {
+export default function MainTitleSnippet() {
 	return (
 		<>
 			<main className={styles.main_snippet}>

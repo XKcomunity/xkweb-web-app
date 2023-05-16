@@ -1,7 +1,7 @@
 import "./globals.scss";
-import { NavBar } from "@/components/complex/navbar/NavBar";
-import { Footer } from "@/components/complex/footer/Footer";
-import ScrollTopButton from "@/components/basic/button/ScrollTopButton";
+import { NavBar } from "@/components/statefull/navbar/NavBar";
+import { Footer } from "@/components/stateless/footer/Footer";
+import ScrollTopButton from "@/components/statefull/buttons/ScrollTopButton";
 
 export default function RootLayout({
 	children,

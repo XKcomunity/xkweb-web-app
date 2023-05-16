@@ -2,17 +2,13 @@
 @import "../../../app/mixins";
 
 .button {
-  @include button;
+	@include button;
 }
 
 .outline_button {
-  @include outline-button;
+	@include outline-button;
 }
 
 .outline_button:hover {
-   @include outline-button-hover;
-}
-
-.scroll_btn {
-  @include scrollTopButton;
+	@include outline-button-hover;
 }
