@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./_snippetPage.module.scss";
-import MainTitleSnippet from "./MainTitleSnippet";
 import SnippetCategoryLinks from "./SnippetCategoryLinks";
 import SnippetTechCard from "./snippetTechCard";
+import MainTitleSection from "../../components/stateless/main-title-section/MainTitleSection";
 
 export default function Snippet() {
 	const [technologies, setTechnologies] = useState([]);
@@ -38,7 +38,14 @@ export default function Snippet() {
 	return (
 		<>
 			<main className={styles.main_snippet}>
-				<MainTitleSnippet />
+				<MainTitleSection
+					title1="Explora Por"
+					title2="Temas"
+					description="Esta sección está organizada por temas, al seleccionar uno en
+					particular, podrás explorar una gran cantidad de snippets de código
+					relacionados con ese tema en específico."
+					subTitle="¡Imagina todo lo que puedes aprender y descubrir en esta sección!"
+				/>
 				<SnippetCategoryLinks
 					technologies={technologies}
 					handleCategoryClick={handleCategoryClick}
