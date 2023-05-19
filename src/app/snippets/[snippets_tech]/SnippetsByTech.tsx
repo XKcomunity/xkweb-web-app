@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useFetchSnippets } from "@/hooks/useFetchSnippets";
 import { useParams } from "next/navigation";
 import SnippetTechPils from "./SnippetTechPils";
 import SnippetCard from "./SnippetCard";
@@ -9,50 +9,36 @@ type Props = {};
 export default function SnippetsByTech() {
 	const params = useParams();
 
-	const [snippetCardList, setSnippetCardList] = useState<Snippet[]>([]);
-	const [selectedTopic, setSelectedTopic] = useState<string>("");
-	const [filterTopics, setFilterTopics] = useState<Snippet[]>([]);
+	const {
+		snippets,
+		selectedTech,
+		filteredSnippets,
+		setSelectedTech,
+		setFilteredSnippets,
+	} = useFetchSnippets("http://localhost:3001/snippets");
 
-	useEffect(() => {
-		async function fetchSnippetCards() {
-			const cardsResponse = await fetch("http://localhost:3001/snippets", {
-				cache: "no-store",
-			});
-			const cardsJson = await cardsResponse.json();
-
-			const snippets_type: Snippet[] = cardsJson.filter(
-				(item: Snippet) => item.tech === params?.snippets_tech
-			);
-
-			setSnippetCardList(snippets_type);
-			setFilterTopics(snippets_type);
-		}
-
-		fetchSnippetCards();
-	}, [params?.snippets_tech]);
-
-	const snippets_type = snippetCardList.filter(
+	const snippets_type: Snippet[] = snippets.filter(
 		(item) => item.tech === params?.snippets_tech
 	);
 
-	const handleTopicClick = (topic: string) => {
-		setSelectedTopic(topic);
-		if (topic === "") {
-			setFilterTopics(snippets_type);
+	const handleSnippetsTopic = (topic: string): void => {
+		setSelectedTech(topic);
+		if (topic === selectedTech) {
+			setFilteredSnippets(snippets_type);
 		} else {
 			const filtered = snippets_type.filter(
 				(item: Snippet) => item.topic === topic
 			);
-			setFilterTopics(filtered);
+			setFilteredSnippets(filtered);
 		}
 	};
 	return (
 		<>
 			<SnippetTechPils
-				snippetCardList={snippetCardList}
-				handleTopicClick={handleTopicClick}
+				snippetCardList={snippets}
+				handleTopicClick={handleSnippetsTopic}
 			/>
-			<SnippetCard snippets_type={filterTopics} />
+			<SnippetCard snippets_type={filteredSnippets} />
 		</>
 	);
 }
