@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useFetchTechnologies } from "@/hooks/useFetchTechnologies";
 import styles from "./_snippetPage.module.scss";
 import SnippetCategoryLinks from "./SnippetCategoryLinks";
 import SnippetTechCard from "./snippetTechCard";
@@ -15,22 +15,12 @@ const data = {
 };
 
 export default function Snippet() {
-	const [technologies, setTechnologies] = useState([]);
-	const [selectedCategory, setSelectedCategory] = useState(null);
-	const [filteredTechnologies, setFilteredTechnologies] = useState([]);
-
-	useEffect(() => {
-		async function fetchSnippetCards() {
-			const cardsResponse = await fetch("http://localhost:3001/technologies", {
-				cache: "no-store",
-			});
-			const cardsJson = await cardsResponse.json();
-			setTechnologies(cardsJson);
-			setFilteredTechnologies(cardsJson);
-		}
-
-		fetchSnippetCards();
-	}, []);
+	const {
+		technologies,
+		setSelectedCategory,
+		filteredTechnologies,
+		setFilteredTechnologies,
+	} = useFetchTechnologies("http://localhost:3001/technologies");
 
 	const handleCategoryClick = (category) => {
 		setSelectedCategory(category);

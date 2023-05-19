@@ -1,0 +1,30 @@
+import { useState, useEffect } from "react";
+
+export const useFetchTechnologies = (url: string) => {
+	const [technologies, setTechnologies] = useState<Tecnologie[]>([]);
+	const [selectedCategory, setSelectedCategory] = useState(null);
+	const [filteredTechnologies, setFilteredTechnologies] = useState<
+		Tecnologie[]
+	>([]);
+
+	useEffect(() => {
+		async function fetchSnippetCards() {
+			const cardsResponse = await fetch(url, {
+				cache: "no-store",
+			});
+			const cardsJson = await cardsResponse.json();
+			setTechnologies(cardsJson);
+			setFilteredTechnologies(cardsJson);
+		}
+
+		fetchSnippetCards();
+	}, [url]);
+
+	return {
+		technologies,
+		selectedCategory,
+		filteredTechnologies,
+		setSelectedCategory,
+		setFilteredTechnologies,
+	};
+};
