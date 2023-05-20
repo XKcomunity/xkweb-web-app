@@ -1,15 +1,15 @@
-import Image from "next/image";
-import styles from "./snippet-tech.module.scss";
-import Link from "next/link";
+import Image from 'next/image';
+import styles from './snippet-tech.module.scss';
+import Link from 'next/link';
 
 type Props = {
-	snippets_type: Snippet[];
+	snippetsType: Snippet[];
 };
 
-export default function SnippetCard({ snippets_type }: Props) {
+export default function SnippetCard({ snippetsType }: Props) {
 	return (
 		<section className={styles.snippet_card_container}>
-			{snippets_type.map((snippet) => (
+			{snippetsType.map((snippet) => (
 				<article key={snippet.id} className={styles.snippet_card}>
 					<Link href={`/snippets/${snippet.tech}/${snippet.id}`}>
 						<div className={styles.snippet_card_heading}>

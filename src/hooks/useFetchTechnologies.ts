@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const useFetchTechnologies = (url: string) => {
-	const [technologies, setTechnologies] = useState<Tecnologie[]>([]);
+	const [technologies, setTechnologies] = useState<Tecnology[]>([]);
 	const [selectedCategory, setSelectedCategory] = useState(null);
-	const [filteredTechnologies, setFilteredTechnologies] = useState<
-		Tecnologie[]
-	>([]);
+	const [filteredTechnologies, setFilteredTechnologies] = useState<Tecnology[]>(
+		[]
+	);
 
 	useEffect(() => {
 		async function fetchSnippetCards() {
 			const cardsResponse = await fetch(url, {
-				cache: "no-store",
+				cache: 'no-store',
 			});
 			const cardsJson = await cardsResponse.json();
 			setTechnologies(cardsJson);

@@ -1,4 +1,4 @@
-type Tecnologie = {
+type Tecnology = {
 	id: string;
 	title: string;
 	category: string;
