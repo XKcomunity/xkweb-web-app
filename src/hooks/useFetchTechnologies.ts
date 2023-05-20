@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 export const useFetchTechnologies = (url: string) => {
-	const [technologies, setTechnologies] = useState<Tecnologie[]>([]);
+	const [technologies, setTechnologies] = useState<Technology[]>([]);
 	const [selectedCategory, setSelectedCategory] = useState(null);
 	const [filteredTechnologies, setFilteredTechnologies] = useState<
-		Tecnologie[]
+		Technology[]
 	>([]);
 
 	useEffect(() => {
