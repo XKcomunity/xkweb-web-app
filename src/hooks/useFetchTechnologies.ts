@@ -5,6 +5,7 @@ export const useFetchTechnologies = (url: string) => {
 	const [selectedCategory, setSelectedCategory] = useState(null);
 	const [filteredTechnologies, setFilteredTechnologies] = useState<
 		Technology[]
+
 	>([]);
 
 	useEffect(() => {
