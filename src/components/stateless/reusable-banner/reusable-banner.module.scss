@@ -2,7 +2,7 @@
 @import "../../../app/variables";
 
 .reusable_banner_wrapper {
-    width: 100%;
+    width: $width-100-percent;
     height: 300px;
     @include total-center;
     color: $white-color;

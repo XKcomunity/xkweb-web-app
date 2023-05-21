@@ -4,7 +4,7 @@
 
 .slider {
 	position: relative;
-	width: 90%;
+	width: $width-90-percent;
 	height: 60vh;
 	margin: 0 auto;
 	padding-top: 1.5rem;
@@ -18,7 +18,7 @@
 	right: 0;
 	@include total-center;
 	width: 55px;
-	border-radius: 50%;
+	border-radius: $width-50-percent;
 	background-color: rgba($color: $dark-alt-color, $alpha: 0.7);
 }
 
@@ -27,6 +27,6 @@
 	left: 0;
 	@include total-center;
 	width: 55px;
-	border-radius: 50%;
+	border-radius: $width-50-percent;
 	background-color: rgba($color: $dark-alt-color, $alpha: 0.7);
 }

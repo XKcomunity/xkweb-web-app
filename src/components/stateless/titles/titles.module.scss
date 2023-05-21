@@ -2,7 +2,7 @@
 @import "../../../app/variables";
 
 .main_title_wrapper {
-	width: 90%;
+	width: $width-90-percent;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -27,14 +27,14 @@
 
 
 .blogTitle_container {
-	width: 100%;
+	width: $width-100-percent;
 }
 
 .blogTitle {
 	font-size: $font-size__blog_title;
 	font-weight: bold;
 	margin-bottom: .5em;
-	width: 90%;
+	width: $width-90-percent;
 }
 
 .blog_category_title {
@@ -44,5 +44,5 @@
 }
 
 .blogTitle_container {
-	width: 100%;
+	width: $width-100-percent;
 }
