@@ -1,36 +1,15 @@
-"use client";
-import styles from "./scroll-button.module.scss";
-import { useState, useEffect } from "react";
-import { BsArrowUpShort } from "react-icons/bs";
+'use client';
+import { useScrollTop } from '@/hooks/useScrollTop';
+import { scrollToTop } from '@/utils/scrollToTop';
+import styles from './scroll-button.module.scss';
+import { BsArrowUpShort } from 'react-icons/bs';
 
 const ScrollTopButton = () => {
-	const [isVisible, setIsVisible] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			if (window.pageYOffset > 300) {
-				setIsVisible(true);
-			} else {
-				setIsVisible(false);
-			}
-		};
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-
+	const { isVisible } = useScrollTop();
 	return (
 		<button
 			className={styles.scroll_btn}
-			style={{ display: isVisible ? "block" : "none" }}
+			style={{ display: isVisible ? 'block' : 'none' }}
 			onClick={scrollToTop}
 			title="icon"
 		>

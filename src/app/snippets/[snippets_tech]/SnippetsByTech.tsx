@@ -1,8 +1,8 @@
-"use client";
-import { useFetchSnippets } from "@/hooks/useFetchSnippets";
-import { useParams } from "next/navigation";
-import SnippetTechPils from "./SnippetTechPils";
-import SnippetCard from "./SnippetCard";
+'use client';
+import { useFetchSnippets } from '@/hooks/useFetchSnippets';
+import { useParams } from 'next/navigation';
+import SnippetTechPils from './SnippetTechPils';
+import SnippetCard from './SnippetCard';
 
 type Props = {};
 
@@ -15,18 +15,18 @@ export default function SnippetsByTech() {
 		filteredSnippets,
 		setSelectedTech,
 		setFilteredSnippets,
-	} = useFetchSnippets("http://localhost:3001/snippets");
+	} = useFetchSnippets('http://localhost:3001/snippets');
 
-	const snippets_type: Snippet[] = snippets.filter(
+	const snippetsType: Snippet[] = snippets.filter(
 		(item) => item.tech === params?.snippets_tech
 	);
 
 	const handleSnippetsTopic = (topic: string): void => {
 		setSelectedTech(topic);
 		if (topic === selectedTech) {
-			setFilteredSnippets(snippets_type);
+			setFilteredSnippets(snippetsType);
 		} else {
-			const filtered = snippets_type.filter(
+			const filtered = snippetsType.filter(
 				(item: Snippet) => item.topic === topic
 			);
 			setFilteredSnippets(filtered);
@@ -38,7 +38,7 @@ export default function SnippetsByTech() {
 				snippetCardList={snippets}
 				handleTopicClick={handleSnippetsTopic}
 			/>
-			<SnippetCard snippets_type={filteredSnippets} />
+			<SnippetCard snippetsType={filteredSnippets} />
 		</>
 	);
 }
