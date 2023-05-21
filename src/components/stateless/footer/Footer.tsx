@@ -20,7 +20,12 @@ export function Footer() {
 							<span className={styles.logo_text}>XK Community</span>
 						</div>
 						<div>
-							<p className={styles.footer_description}>Somos una comunidad apasionada por la programación que se dedica a compartir snippet de código, componentes y animaciones, así como artículos sobre lenguajes de programación, frameworks y ejercicios para puedas crecer en tu emprendimiento.</p>
+							<p className={styles.footer_description}>
+								Somos una comunidad apasionada por la programación que se dedica
+								a compartir snippet de código, componentes y animaciones, así
+								como artículos sobre lenguajes de programación, frameworks y
+								ejercicios para puedas crecer en tu emprendimiento.
+							</p>
 						</div>
 						<div className={styles.footer_social_media}>
 							<div className={styles.social_icons_wrapper}>
@@ -35,7 +40,10 @@ export function Footer() {
 									</Link>
 								</motion.div>
 								<motion.div whileHover={{ scale: 1.1 }}>
-									<Link href='https://www.youtube.com/c/XkWeb/videos' target="_blank">
+									<Link
+										href="https://www.youtube.com/c/XkWeb/videos"
+										target="_blank"
+									>
 										<FaYoutube color="white" size={35} />
 									</Link>
 								</motion.div>
@@ -48,16 +56,24 @@ export function Footer() {
 						</div>
 						<div className={styles.footer_links}>
 							<Link href="/" className={styles.link}>
-								<li className={styles.navbar_item}><a>Inicio</a></li>
+								<li className={styles.navbar_item}>
+									<a>Inicio</a>
+								</li>
 							</Link>
-							<Link href="/snippet-tech" className={styles.link}>
-								<li className={styles.navbar_item}><a>Articulos</a></li>
+							<Link href="/articles" className={styles.link}>
+								<li className={styles.navbar_item}>
+									<a>Articulos</a>
+								</li>
 							</Link>
 							<Link href="/snippets" className={styles.link}>
-								<li className={styles.navbar_item}><a>Snippets</a></li>
+								<li className={styles.navbar_item}>
+									<a>Snippets</a>
+								</li>
 							</Link>
 							<Link href="/docs" className={styles.link}>
-								<li className={styles.navbar_item}><a>Docs</a></li>
+								<li className={styles.navbar_item}>
+									<a>Docs</a>
+								</li>
 							</Link>
 						</div>
 					</div>
