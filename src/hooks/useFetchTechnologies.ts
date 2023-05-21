@@ -7,6 +7,7 @@ export const useFetchTechnologies = (url: string) => {
 		[]
 	);
 
+
 	useEffect(() => {
 		async function fetchSnippetCards() {
 			const cardsResponse = await fetch(url, {
