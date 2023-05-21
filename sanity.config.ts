@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
+import schemas from "./sanity/schemas";
 
 const config = defineConfig({
   projectId:  "nq7xymor",
@@ -7,7 +8,8 @@ const config = defineConfig({
   title: "xkweb-articles",
   apiVersion: "2023-21-05",
   basePath: "/articles",
-  plugins: [deskTool()]
+  plugins: [deskTool()],
+  schema: { types: schemas }
 })
 
 
