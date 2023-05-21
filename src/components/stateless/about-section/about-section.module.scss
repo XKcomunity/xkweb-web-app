@@ -2,7 +2,7 @@
 @import "../../../app/variables";
 
 .main_container {
-	width: 90%;
+	width: $width-90-percent;
 	padding: 1em;
 	margin: 0 auto;
 	display: grid;

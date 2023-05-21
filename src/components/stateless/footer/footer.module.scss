@@ -2,14 +2,14 @@
 @import "../../../app/mixins";
 
 .footer {
-	width: 100vw;
+	width: $width-100vw;
 	@include glass;
 	color: $white-color;
 }
 
 .footer_wrapper {
-	width: 80%;
-	height: 80%;
+	width: $width-80-percent;
+	height: $width-80-percent;
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -31,7 +31,7 @@
 	}
 
 	.footer_social_media {
-		width: 20%;
+		width: $width-20-percent;
 		margin-top: 1em;
 
 		.social_icons_wrapper {

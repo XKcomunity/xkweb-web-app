@@ -2,14 +2,14 @@
 @import "../mixins";
 
 .main_snippet {
-	width: 80%;
+	width: $width-80-percent;
 	@include total-center;
 	flex-direction: column;
 	margin: 0 auto;
 	color: $white-color;
 	margin-top: 5em;
 	@media screen and (max-width: 550px){
-		width: 90%;
+		width: $width-90-percent;
 	}
 }
 
@@ -32,7 +32,7 @@
 
 
 .headings_links_container {
-	width: 80%;
+	width: $width-80-percent;
 	@include flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -54,7 +54,7 @@
 }
 
 .divider {
-	width: 80%;
+	width: $width-80-percent;
 	height: 1px;
 	background-color: $dark-alt-color;
 	margin: 2em;
@@ -90,7 +90,7 @@
 
 .tech_card_img_content {
 	width: 4em;
-	height: 100%;
+	height: $width-100-percent;
 	border-radius: 1.1rem;
 	@include glass;
 	border: none;
@@ -99,7 +99,7 @@
 
 .tech_card_title_content {
 	@include flex-h-center;
-	width: 50%;
+	width: $width-50-percent;
 }
 
 .tech_card_title {
