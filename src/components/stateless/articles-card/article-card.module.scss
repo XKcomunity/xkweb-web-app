@@ -31,7 +31,7 @@
 		}
 
 		.footer_wrapper {
-			width: 100%;
+			width: $width-100-percent;
 			font-weight: 500;
 			@include flex-v-center;
 			justify-content: space-between;

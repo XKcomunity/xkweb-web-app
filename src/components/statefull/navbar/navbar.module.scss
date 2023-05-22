@@ -6,7 +6,7 @@
 	top: 0;
 	z-index: 1;
 	@include glass;
-	width: 100%;
+	width: $width-100-percent;
 	height: 8vh;
 	@include flex-v-center;
 	justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .navbar_pages {
-	width: 40%;
+	width: $width-40-percent;
 	margin-right: 5%;
 }
 
@@ -46,7 +46,7 @@
 
 .drawer_logo_wrapper {
 	@include total-center;
-	width: 100%;
+	width: $width-100-percent;
 	height: 130px;
 }
 
@@ -91,12 +91,12 @@
 
 @media (max-width: 1200px) {
 	.navbar_pages {
-		width: 50%;
+		width: $width-50-percent;
 	}
 }
 @media (max-width: 1024px) {
 	.navbar_pages {
-		width: 65%;
+		width: $width-65-percent;
 	}
 	.navbar_list {
 		font-size: 1.3rem;
@@ -113,7 +113,7 @@
 }
 @media (max-width: 800px) {
 	.navbar_pages {
-		width: 60%;
+		width: $width-60-percent;
 	}
 	.navbar_list {
 		font-size: 1.1rem;

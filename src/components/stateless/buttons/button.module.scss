@@ -12,3 +12,15 @@
 .outline_button:hover {
 	@include outline-button-hover;
 }
+
+.scroll_btn {
+	@include scrollTopButton;
+}
+
+.button_wrapper {
+	width: $width-100-percent;
+	margin: 0 auto;
+	@include flex-h-center;
+	margin: 2em 0em 2em 0em;
+	gap: 1em;
+}

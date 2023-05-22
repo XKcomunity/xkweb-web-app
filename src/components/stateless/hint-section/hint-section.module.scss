@@ -3,13 +3,13 @@
 
 
 .hint_wrapper {
-    width: 100%;
+    width: $width-100-percent;
     margin: 7em 0em 7em 0em;
     padding: 2em;
 }
 
 .hint_container {
-    width: 80%;
+    width: $width-80-percent;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -1,7 +1,7 @@
 "use client";
 import Button from "@/components/stateless/buttons/Button";
 import OutlineButton from "@/components/stateless/buttons/OutlineButtton";
-import styles from "./docs.module.scss";
+import styles from "../../components/stateless/buttons/button.module.scss";
 
 export default function Docs() {
 	return (

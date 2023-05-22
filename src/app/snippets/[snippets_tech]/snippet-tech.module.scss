@@ -2,12 +2,12 @@
 @import "../../mixins";
 
 .snippet_tech_wrapper {
-	width: 100%;
+	width: $width-100-percent;
 	@include total-center;
 }
 
 .snippet_tech_content {
-	width: 60%;
+	width: $width-60-percent;
 	@include total-center;
 	flex-wrap: wrap;
 	gap: 1em;
