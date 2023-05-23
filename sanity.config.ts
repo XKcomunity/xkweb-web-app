@@ -5,9 +5,9 @@ import schemas from "./sanity/schemas";
 const config = defineConfig({
   projectId:  "nq7xymor",
   dataset: "production",
-  title: "xkweb-articles",
-  apiVersion: "2023-21-05",
-  basePath: "/articles",
+  title: "Articles",
+  apiVersion: "2023-05-25",
+  basePath: "/admin",
   plugins: [deskTool()],
   schema: { types: schemas }
 })

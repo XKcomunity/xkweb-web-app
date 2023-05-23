@@ -1,6 +1,6 @@
+import { PortableTextBlock } from "sanity";
 
-type Tecnology = {
-
+type Technology = {
 	id: string;
 	title: string;
 	category: string;
@@ -23,3 +23,14 @@ type Snippet = {
 	subTitle: string;
 	code: string;
 };
+
+interface Article {
+	_id: string;
+	_createdA?: Date;
+	name: string;
+	slug: string;
+	content: PortableTextBlock[];
+	code?: string;
+	title?: string;
+	author?: string;
+}

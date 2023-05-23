@@ -2,6 +2,6 @@
 import config from "../../../../sanity.config";
 import { NextStudio } from "next-sanity/studio";
 
-export default function Articles() {
+export default function Admin() {
 	return <NextStudio config={config} />;
 }
