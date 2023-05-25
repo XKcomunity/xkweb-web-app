@@ -1,6 +1,6 @@
-const project = {
-	name: "project",
-	title: "projects",
+const article = {
+	name: "article",
+	title: "Articles",
 	type: "document",
 	fields: [
 		{
@@ -41,4 +41,4 @@ const project = {
 	],
 };
 
-export default project;
+export default article;
