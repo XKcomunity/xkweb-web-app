@@ -3,6 +3,7 @@ import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSni
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import SnippetDescriptionContainer from "./SnippetDescriptionContainer";
 import getSnippetId from "@/lib/getSnippetId";
+import { Snippet } from "type";
 
 type Params = {
 	params: {
@@ -11,7 +12,6 @@ type Params = {
 };
 
 export default async function SnippetChosen({ params: { snippetId } }: Params) {
-	const title = "Snippet elegido";
 	const subTitle = "Snippets Recientes";
 
 	const dataSnippetId: Promise<Snippet> = getSnippetId(snippetId);

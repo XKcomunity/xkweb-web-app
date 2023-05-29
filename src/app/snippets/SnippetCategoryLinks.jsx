@@ -17,13 +17,12 @@ export default function SnippetCategoryLinks({
 				>
 					Todas
 				</button>
-				{uniqueCategories.map((cat, index) => (
+				{uniqueCategories.map((art, index) => (
 					<button
 						className={styles.snippetHeadingLinks}
 						key={index}
-						onClick={() => handleCategoryClick(cat)}
 					>
-						{cat}
+						{art}
 					</button>
 				))}
 			</div>

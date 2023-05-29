@@ -27,8 +27,12 @@ type Snippet = {
 type Article = {
 	_id: string;
 	_createdAt: Date;
-	name: string;
+  title: string;
+  image: image;
+  author: string;
+  level: string;
 	slug: string;
 	url: string;
+	shortDescription: string;
 	content: PortableTextBlock[];
 }
