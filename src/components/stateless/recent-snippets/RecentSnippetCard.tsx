@@ -7,7 +7,7 @@ export const RecentSnippetCard = () => {
 	return (
 		<>
             <div className={styles.recent_snippet__card}>
-                <Image src={react} 
+                <Image src={react}
                     width={60}
                     height={50}
                     alt=""

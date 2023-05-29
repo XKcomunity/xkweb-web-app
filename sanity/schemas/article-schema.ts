@@ -1,18 +1,18 @@
 const article = {
-	name: "article",
+	name: "articles",
 	title: "Articles",
 	type: "document",
 	fields: [
 		{
-			name: "name",
-			title: "Name",
+			name: "title",
+			title: "Title",
 			type: "string",
 		},
 		{
 			name: "slug",
 			title: "slug",
 			type: "slug",
-			options: { source: "name" },
+			options: { source: "title" },
 		},
     {
       name: "image",
@@ -28,9 +28,25 @@ const article = {
       ]
     },
     {
+      name: "author",
+      title: "Author",
+      type: "string",
+    },
+    {
+      name: "level",
+      title: "Level",
+      type: "string",
+    },
+    {
       name: "url",
       title: "URL",
       type: "url"
+    },
+    {
+      name: "shortDescription",
+      title: "Short Description",
+      type: "string",
+      of: [{ type: "block" }]
     },
     {
       name: "content",

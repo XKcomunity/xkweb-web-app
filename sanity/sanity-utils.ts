@@ -8,10 +8,13 @@ export async function getArticles(): Promise<Article[]> {
     groq`*[_type == "article"]{
       _id,
       _createdAt,
-      name,
+      title,
+      author,
+      level,
       "slug": slug.current,
       "image": image.asset-url,
       url,
+      shortDescription,
       content
     }`
   )
@@ -23,7 +26,9 @@ export async function getArticle(slug:string): Promise<Article> {
     groq`*[_type == "article" && slug.current == $slug][0]{
       _id,
       _createdAt,
-      name,
+      title,
+      author,
+      level,
       "slug": slug.current,
       "image": image.asset-url,
       url,

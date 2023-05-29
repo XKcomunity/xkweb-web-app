@@ -132,3 +132,9 @@
 	padding: 2em;
 	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }
+
+@mixin grid {
+	width: 90%;
+	padding: $padding-1;
+	@include total-center;
+}
