@@ -41,6 +41,12 @@ li {
 	}
 }
 
+.grid {
+	width: $width-50-percent;
+	margin: 0 auto;
+	padding: $padding-2;
+}
+
 
 @media (prefers-color-scheme: dark) {
 	html {

@@ -2,6 +2,7 @@ import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./SnippetAuthor";
 import styles from "./snippet_chosen.module.scss";
+import { Snippet } from "type";
 
 type Props = {
 	snippet: Snippet;

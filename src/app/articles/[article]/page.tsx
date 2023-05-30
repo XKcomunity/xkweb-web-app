@@ -1,21 +1,32 @@
+import styles from "./article-id.module.scss";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { getArticle } from "../../../../sanity/sanity-utils";
+import { PortableText } from "@portabletext/react";
+import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
+import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
+import Image from "next/image";
 
 type Props = {
-  params: { article: string }
-}
+	params: { article: string };
+};
 
-export default async function Article({ params }:Props ) {
-
-const slug = params.article;
-const article = await getArticle(slug);
+export default async function Article({ params }: Props) {
+	const slug = params.article;
+	const article = await getArticle(slug);
 
 	return (
-    <>
-    <ReusableBanner title={"Pagina de articulos"} />
-    <main>
-      <h1 key={article._id}>{article.slug}</h1>
-    </main>
-    </>
-  )
+		<>
+			<ReusableBanner title={"Articulo por ID"} />
+			<div className={styles.wrapper}>
+				<main>
+					<h1>{article.level}</h1>
+					<h1>{article.author}</h1>
+					<p>{article.shortDescription}</p>
+					<PortableText value={article.content} />
+				</main>
+			</div>
+			<TitleComponent title="Articulos Recientes" />
+      <RecentSnippets />
+		</>
+	);
 }

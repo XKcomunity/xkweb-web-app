@@ -1,5 +1,6 @@
 import MainTitleSection from "@/components/stateless/titles/MainTitleSection";
 import WapperButtons from "./WrapperButtons";
+import { SliderCard } from "@/components/stateless/slider/SliderCard";
 
 const data = {
 	title: "Aprende y ",
@@ -20,6 +21,7 @@ export default function Docs() {
 				subTitle={data.subTitle}
 			/>
 			<WapperButtons />
+			<SliderCard />
 		</>
 	);
 }
