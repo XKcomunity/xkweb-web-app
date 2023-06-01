@@ -1,18 +1,18 @@
 "use client";
 import styles from "./article-card.module.scss";
-// import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-	// image?: StaticImageData;
+	image: StaticImageData;
 	title: string;
 	shortDescription: string;
 	level: string;
-	author: string;
+	author?: string;
 };
 
 export const ArticleCard = ({
-	// image,
+	image,
 	title,
 	shortDescription,
 	level,
@@ -23,7 +23,7 @@ export const ArticleCard = ({
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-						{/* <Image className={styles.card_image} src={image} alt="Vue Image" /> */}
+						 <Image className={styles.card_image} src={image} alt="Vue Image" /> 
 					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
@@ -33,11 +33,11 @@ export const ArticleCard = ({
 						<footer className={styles.footer_wrapper}>
 							<div className={styles.section_avatar}>
 								<div className={styles.card_avatar}>
-									{/* <Image
+									<Image
 										className={styles.card_avatar_img}
 										src={image}
 										alt="Avatar articulos card"
-									/> */}
+									/> 
 								</div>
 								<h6 className={styles.section_avatar_name}>{author}</h6>
 							</div>

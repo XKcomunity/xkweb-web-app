@@ -5,7 +5,7 @@ import styles from "./slider.module.scss";
 import { ArticleCard } from "../articles-card/ArticleCard";
 import { HiArrowRight } from "react-icons/hi";
 import { HiArrowLeft } from "react-icons/hi";
-import image from "../../../../public/images/article-cards/vuecard.png";
+import image from "../../../../public/images/tech-logos/vue.png";
 import image1 from "../../../../public/images/article-cards/react.png";
 import image2 from "../../../../public/images/article-cards/handcard.png";
 
@@ -54,44 +54,44 @@ export const SliderCard = () => {
 					<ArticleCard
 						image={image}
 						title="Vue 3 - Composition"
-						description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-						nivel="Nivel"
-						nivel_value="Intermedio"
+						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
+						level="Nivel"
+						// level_value="Intermedio"
 					/>
 					<ArticleCard
 						image={image1}
 						title="React 18 with hooks"
-						description="Aprende a dominar los hooks de react y crea magnificas UIs"
-						nivel="Nivel"
-						nivel_value="Avanzado"
+						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
+						level="Nivel"
+						// level_value="Avanzado"
 					/>
 					<ArticleCard
 						image={image2}
 						title="Arquitecturas Limpias"
-						description="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-						nivel="Nivel"
-						nivel_value="Básico"
-					/>
+						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
+						level="Nivel"
+					// 	level_value="Básico"
+					 />
 					<ArticleCard
 						image={image}
 						title="Vue 3-Composition"
-						description="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-						nivel="Nivel"
-						nivel_value="Avanzado"
+						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
+						level="Nivel"
+						// level_value="Avanzado"
 					/>
 					<ArticleCard
 						image={image1}
 						title="React 18 with hooks"
-						description="Aprende a dominar los hooks de react y crea magnificas UIs"
-						nivel="Nivel"
-						nivel_value="Intermedio"
+						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
+						level="Nivel"
+						// level_value="Intermedio"
 					/>
 					<ArticleCard
 						image={image2}
 						title="Arquitecturas Limpias"
-						description="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-						nivel="Nivel"
-						nivel_value="Intermedio"
+						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
+						level="Nivel"
+						// level_value="Intermedio"
 					/>
 				</Carousel>
 			</div>

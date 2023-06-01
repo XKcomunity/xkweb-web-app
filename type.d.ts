@@ -1,5 +1,4 @@
 import { PortableTextBlock } from "sanity";
-
 type Tecnology = {
 	id: string;
 	title: string;
@@ -35,4 +34,4 @@ type Article = {
 	url: string;
 	shortDescription: string;
 	content: PortableTextBlock[];
-}
+};
