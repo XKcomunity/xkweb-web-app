@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './snippet-tech.module.scss';
 import Link from 'next/link';
+import { Snippet } from 'type';
 
 type Props = {
 	snippetsType: Snippet[];
