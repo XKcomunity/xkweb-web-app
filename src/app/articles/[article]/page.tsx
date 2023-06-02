@@ -4,6 +4,7 @@ import { getArticle } from "../../../../sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
+import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import Image from "next/image";
 
 type Props = {
@@ -17,6 +18,7 @@ export default async function Article({ params }: Props) {
 	return (
 		<>
 			<ReusableBanner title={"Articulo por ID"} />
+			<WrapperInfoDetails data={article}>
 			<div className={styles.wrapper}>
 				<main>
 					<h1>{article.level}</h1>
@@ -25,6 +27,7 @@ export default async function Article({ params }: Props) {
 					<PortableText value={article.content} />
 				</main>
 			</div>
+			</WrapperInfoDetails>
 			<TitleComponent title="Articulos Recientes" />
       <RecentSnippets />
 		</>

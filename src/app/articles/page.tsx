@@ -2,6 +2,7 @@ import { getArticles } from "../../../sanity/sanity-utils";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import styles from "../../components/stateless/articles-card/article-card.module.scss";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
+import { Article } from "type";
 
 export default async function Articles() {
 
