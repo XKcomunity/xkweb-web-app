@@ -2,13 +2,17 @@
 @import "../../../app/variables";
 
 .card_wrapper {
-	width: $width-85-percent;
+	width: 320px;
+	min-height: 400px;
+  height: auto;
 	background-color: $light-color;
 	cursor: pointer;
 	border-radius: 1.5em;
+	gap: 1em;
 
 	.image_wrapper {
 		max-width: 100%;
+		height: 200px;
 
 		.card_image {
 			width: 100%;

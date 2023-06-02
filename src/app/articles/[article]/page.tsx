@@ -19,7 +19,6 @@ export default async function Article({ params }: Props) {
 		<>
 			<ReusableBanner title={"Articulo por ID"} />
 			<WrapperInfoDetails data={article}>
-			<div className={styles.wrapper}>
 				<main>
 					<h1>{article.level}</h1>
 					<h1>{article.author}</h1>

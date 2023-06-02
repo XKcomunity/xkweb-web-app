@@ -18,6 +18,8 @@ export const ArticleCard = ({
 	level,
 	author
 }: Props) => {
+
+
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
@@ -38,6 +40,7 @@ export const ArticleCard = ({
 										src={image}
 										alt="Avatar articulos card"
 									/> 
+								
 								</div>
 								<h6 className={styles.section_avatar_name}>{author}</h6>
 							</div>

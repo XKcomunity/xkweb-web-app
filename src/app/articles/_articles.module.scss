@@ -1,0 +1,16 @@
+@import "../variables";
+@import "../mixins";
+
+
+.container {
+  padding: 3em 0em 3em 0em;
+  width: $width-90-percent;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.articleCardWrapper {
+  width: 100%;
+  margin-bottom: 1.3em;
+}
+
