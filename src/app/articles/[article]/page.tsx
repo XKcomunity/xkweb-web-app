@@ -4,7 +4,6 @@ import { getArticle } from "../../../../sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
-import Image from "next/image";
 
 type Props = {
 	params: { article: string };
@@ -17,7 +16,7 @@ export default async function Article({ params }: Props) {
 	return (
 		<>
 			<ReusableBanner title={"Articulo por ID"} />
-			<div className={styles.wrapper}>
+			<div>
 				<main>
 					<h1>{article.level}</h1>
 					<h1>{article.author}</h1>

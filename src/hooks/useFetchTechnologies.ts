@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Tecnology } from 'type';
 
 export const useFetchTechnologies = (url: string) => {
 	const [technologies, setTechnologies] = useState<Tecnology[]>([]);
