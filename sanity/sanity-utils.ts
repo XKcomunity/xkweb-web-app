@@ -12,7 +12,7 @@ export async function getArticles(): Promise<Article[]> {
       author,
       level,
       "slug": slug.current,
-      "image": image.asset-url,
+      "image": image.asset->url,
       url,
       shortDescription,
       content
@@ -30,10 +30,11 @@ export async function getArticle(slug:string): Promise<Article> {
       author,
       level,
       "slug": slug.current,
-      "image": image.asset-url,
+      "image": image.asset->url,
       url,
       content
     }`,
     { slug }
   )
 }
+

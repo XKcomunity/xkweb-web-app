@@ -93,7 +93,7 @@
 @mixin cardDescription {
 	@include paragraph;
 	color: $grey-color;
-	margin: 1rem 0rem 2rem 0rem;
+	margin: .5rem 0rem 2rem 0rem;
 }
 
 @mixin articleText {
@@ -133,8 +133,4 @@
 	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }
 
-@mixin grid {
-	width: 90%;
-	padding: $padding-1;
-	@include total-center;
-}
+

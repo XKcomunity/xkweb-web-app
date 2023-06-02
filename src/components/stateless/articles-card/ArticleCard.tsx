@@ -18,12 +18,14 @@ export const ArticleCard = ({
 	level,
 	author
 }: Props) => {
+
+
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-						 <Image className={styles.card_image} src={image} alt="Vue Image" /> 
+						 <Image className={styles.card_image} src={image} alt="Vue Image" />
 					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
@@ -37,7 +39,7 @@ export const ArticleCard = ({
 										className={styles.card_avatar_img}
 										src={image}
 										alt="Avatar articulos card"
-									/> 
+									/>
 								</div>
 								<h6 className={styles.section_avatar_name}>{author}</h6>
 							</div>

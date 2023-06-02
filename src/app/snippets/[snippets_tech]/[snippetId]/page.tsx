@@ -29,11 +29,11 @@ export default async function SnippetChosen({ params: { snippetId } }: Params) {
 					<AuthorInfo authorName={snippet.author} date={snippet.date} />
 					<SnippetArticle
 						description={snippet.description}
-						code={{
-							title: "",
-							code: "",
-						}}
-					/>	
+						// code={{
+						// 	title: "",
+						// 	code: "",
+						// }}
+					/>
 			</WrapperInfoDetails>
 
 			<TitleComponent title={subTitle} />
