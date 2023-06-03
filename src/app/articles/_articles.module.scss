@@ -10,7 +10,22 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .articleCardWrapper {
-  width: 100%;
+  width: $width-100-percent;
   margin-bottom: 1.3em;
+}
+
+.nivel_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex {
+  width: 100%;
+  display: inline-block;
+}
+.bold_footer {
+  font-size: 17px;
+	font-weight: bold;
+	color: $terceary-color;
 }
 
