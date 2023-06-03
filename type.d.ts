@@ -1,5 +1,5 @@
 import { PortableTextBlock } from "sanity";
-type Tecnology = {
+type Technology = {
 	id: string;
 	title: string;
 	category: string;
