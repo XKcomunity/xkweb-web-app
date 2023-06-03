@@ -4,11 +4,11 @@ import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-	image: StaticImageData;
+	image: string;
 	title: string;
 	shortDescription: string;
 	level: string;
-	author?: string;
+	author: string;
 };
 
 export const ArticleCard = ({
@@ -19,13 +19,12 @@ export const ArticleCard = ({
 	author
 }: Props) => {
 
-
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-						 <Image className={styles.card_image} src={image} alt="Vue Image" />
+						<Image className={styles.card_image} src={image} alt="Vue Image" />
 					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
