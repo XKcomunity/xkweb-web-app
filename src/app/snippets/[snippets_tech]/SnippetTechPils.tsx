@@ -1,3 +1,4 @@
+import { Snippet } from "type";
 import styles from "./snippet-tech.module.scss";
 
 type Props = {

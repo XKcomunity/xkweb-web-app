@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
+
+.container {
+  padding: 3em 0em 3em 0em;
+  width: $width-90-percent;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.articleCardWrapper {
+  width: $width-100-percent;
+  margin-bottom: 1.3em;
+}
+
+.nivel_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex {
+  width: 100%;
+  display: inline-block;
+}
+.bold_footer {
+  font-size: 17px;
+	font-weight: bold;
+	color: $terceary-color;
+}
+

@@ -3,6 +3,7 @@ import { useFetchSnippets } from '@/hooks/useFetchSnippets';
 import { useParams } from 'next/navigation';
 import SnippetTechPils from './SnippetTechPils';
 import SnippetCard from './SnippetCard';
+import { Snippet } from 'type';
 
 type Props = {};
 
@@ -23,7 +24,7 @@ export default function SnippetsByTech() {
 
 	const handleSnippetsTopic = (topic: string): void => {
 		setSelectedTech(topic);
-		if (topic === selectedTech) {
+		if (selectedTech !== null && topic === selectedTech) {
 			setFilteredSnippets(snippetsType);
 		} else {
 			const filtered = snippetsType.filter(
@@ -32,6 +33,7 @@ export default function SnippetsByTech() {
 			setFilteredSnippets(filtered);
 		}
 	};
+
 	return (
 		<>
 			<SnippetTechPils
