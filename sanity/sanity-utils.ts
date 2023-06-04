@@ -5,7 +5,7 @@ import clientConfig from "./config/client-config";
 export async function getArticles(): Promise<Article[]> {
 
   return createClient(clientConfig).fetch(
-    groq`*[_type == "article"]{
+    groq`*[_type == "articles"]{
       _id,
       _createdAt,
       title,
