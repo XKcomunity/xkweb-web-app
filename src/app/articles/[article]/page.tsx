@@ -1,13 +1,13 @@
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { getArticle } from "../../../../sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
-import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
-import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { AuthorInfo } from "@/components/stateless/author-info/AuthorInfo";
 import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import Image from "next/image";
 import styles from "../_articles.module.scss";
+import { formatDate } from "@/utils/dateTime";
+
 
 type Props = {
 	params: { article: string };
@@ -37,14 +37,12 @@ export default async function Article({ params }: Props) {
 					</div>
 					<BlogTitle title={article.title} />
 					<section className={styles.flex}>
-						<AuthorInfo authorName={article.author} date={article._createdAt} />
+						<AuthorInfo authorName={article.author} date={formatDate(article._createdAt)} />
 					</section>
 					<p>{article.shortDescription}</p>
 					<PortableText value={article.content} />
 				</main>
 				</WrapperInfoDetails>
-				<TitleComponent title="Articulos Recientes" />
-				<RecentSnippets />
 		</>
 	);
 }

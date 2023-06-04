@@ -1,6 +1,6 @@
 "use client";
 import styles from "./article-card.module.scss";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -19,6 +19,8 @@ export const ArticleCard = ({
 	author
 }: Props) => {
 
+	const truncatedShortDescription = shortDescription.length > 100 ? shortDescription.slice(0, 100) + '...' : shortDescription;
+
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
@@ -29,7 +31,7 @@ export const ArticleCard = ({
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
 							<h2 className={styles.card_title}>{title}</h2>
-							<p className={styles.card_description}>{shortDescription}</p>
+							<p className={styles.card_description}>{truncatedShortDescription}</p>
 						</div>
 						<footer className={styles.footer_wrapper}>
 							<div className={styles.section_avatar}>
