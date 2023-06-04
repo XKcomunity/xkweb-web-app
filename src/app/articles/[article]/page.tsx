@@ -43,8 +43,6 @@ export default async function Article({ params }: Props) {
 					<PortableText value={article.content} />
 				</main>
 				</WrapperInfoDetails>
-				<TitleComponent title="Articulos Recientes" />
-				<RecentSnippets />
 		</>
 	);
 }
