@@ -1,3 +1,4 @@
+"use client"
 import { getArticles } from "../../../sanity/sanity-utils";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
@@ -17,8 +18,8 @@ export default async function Articles() {
       <main className={styles.container}>
         {articles.map((article) => (
           <div key={article._id} className={styles.articleCardWrapper}>
-            <ArticleCard 
-              // image={article.image}
+            <ArticleCard
+              image={article.image}
               title={article.title}
               shortDescription={article.shortDescription}
               author={article.author}
