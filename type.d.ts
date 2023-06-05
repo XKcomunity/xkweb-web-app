@@ -34,4 +34,5 @@ type Article = {
 	url: string;
 	shortDescription: string;
 	content: PortableTextBlock[];
+
 };

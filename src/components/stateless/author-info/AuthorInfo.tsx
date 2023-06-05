@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 type AuthorInfoProps = {
   authorName: string;
-  date: Date;
+  date: string;
 }
 
 
