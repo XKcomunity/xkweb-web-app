@@ -13,7 +13,7 @@ export default async function Articles() {
 
 	return (
     <>
-      <ReusableBanner title={"Pagina de articulos"} />
+      <ReusableBanner title={"Lista De Articulos"} />
 
       <main className={styles.container}>
         {articles.map((article) => (

@@ -13,7 +13,7 @@ type Props = {
 	params: { article: string };
 };
 
-export default async function Article({ params }: Props) {
+export default async function Slug({ params }: Props) {
 	const slug = params.article;
 	const article = await getArticle(slug);
 
