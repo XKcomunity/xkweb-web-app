@@ -1,0 +1,11 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.author_wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.author_name {
+  font-size: $font-size__title;
+}
