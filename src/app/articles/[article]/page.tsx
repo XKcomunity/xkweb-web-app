@@ -17,7 +17,7 @@ export default async function Article({ params }: Props) {
 
 	return (
 		<>
-			<BannerHeaderInfo />
+			<BannerHeaderInfo authorName={article.author} image={""} description={""} />
 			<WrapperInfoDetails data={article}>
 				<main>
 					<section className={styles.article_reference}>
