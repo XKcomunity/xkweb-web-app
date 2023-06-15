@@ -3,7 +3,6 @@ import { PortableText } from "@portabletext/react";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import styles from "./article-slug.module.scss";
-// import { formatDate } from "@/utils/dateTime";
 import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
 
 type Props = {
@@ -24,7 +23,6 @@ export default async function Article({ params}: Props) {
 						<div className={styles.author_date}>
 							<h4>Fecha:</h4>
 							<p>
-								{/* {formatDate(article._createdAt)} */}
 								{article.createdAt}
 							</p>
 						</div>

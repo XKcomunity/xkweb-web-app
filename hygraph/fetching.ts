@@ -1,8 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
 
 const url: any = process.env.NEXT_PUBLIC_HYGRAPH_API;
-// const url =
-// 	"https://api-us-east-1-shared-usea1-02.hygraph.com/v2/clirrk7nd1r9b01um4y3oh32p/master";
 
 const graphContent = new GraphQLClient(url);
 
@@ -44,6 +42,7 @@ export const getArticle = async (slug: string) => {
 	const query = gql`
 		query ($slug: String!) {
 			article(where: { slug: $slug }) {
+				createdAt
 				author {
 					photo {
 						url
