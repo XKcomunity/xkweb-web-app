@@ -4,9 +4,9 @@
 .card_wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	max-width: 420px;
+	max-width: 380px;
 	height: auto;
-  min-height: 420px;
+  min-height: 380px;
 	background-color: $light-color;
 	cursor: pointer;
 	border-radius: 1.5em;
@@ -28,6 +28,7 @@
 		flex-flow: wrap;
 		padding: 20px;
 		.card_title {
+			margin-top: 15px;
 			font-size: 25px;
 			color: $terceary-color;
 		}

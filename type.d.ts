@@ -1,4 +1,5 @@
 import { PortableTextBlock } from "sanity";
+
 type Technology = {
 	id: string;
 	title: string;
@@ -35,3 +36,11 @@ type Article = {
 	shortDescription: string;
 	content: PortableTextBlock[];
 };
+
+
+type Author = {
+	name: string;
+	photo: string;
+	bio:string;
+	articles: Article[];
+}
