@@ -1,5 +1,4 @@
-"use client"
-import { getArticles } from "../../../sanity/sanity-utils";
+import { getArticles } from "../../../hygraph/fetchings";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
@@ -17,16 +16,17 @@ export default async function Articles() {
       <ReusableBanner title={"Lista De Articulos"} />
 
       <main className={styles.container}>
-        {articles.map((article) => (
-          <Link href={`/article/${article.slug}`} key={article._id}>
-              <div className={styles.articleCardWrapper}>
-                <ArticleCard
-                    image={article.image}
-                    title={article.title}
-                    shortDescription={article.shortDescription}
-                    author={article.author}
-                    level={article.level}
-                />
+      {articles.map((article:any) => (
+          <Link  href={`/articles/${article.slug}`} key={article._id}>
+            <div className={styles.articleCardWrapper}>
+              <ArticleCard
+                imageArticle={article.image.url}
+                imageAuthor={article.author.photo.url}
+                title={article.title}
+                shortDescription={article.shortDescription}
+                author={article.author.name}
+                level={article.level}
+              />
             </div>
             </Link>
         ))}
