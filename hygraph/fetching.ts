@@ -43,12 +43,18 @@ export const getArticle = async (slug: string) => {
 		query ($slug: String!) {
 			article(where: { slug: $slug }) {
 				createdAt
+				title
+				content
 				author {
 					photo {
 						url
 					}
 					name
 					bio
+					description
+					linkedIn
+					twitter
+					github
 				}
 				content
 				shortDescription

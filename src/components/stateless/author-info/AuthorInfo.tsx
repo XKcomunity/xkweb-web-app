@@ -1,29 +1,33 @@
 import styles from './author-info.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 
 type AuthorInfoProps = {
-	image: string;
-  authorName: string;
-	description: string;
+	data:Article
 }
 
-export function AuthorInfo({authorName, description, image}: AuthorInfoProps){
+export function AuthorInfo({data}: AuthorInfoProps){
+
+	console.log(typeof data.author.description);
+	
   return(
 			<section className={styles.author_wrapper}>
-				<Image src={image} alt={""} className='' width={110} height={100} />
+				<Image src={data.author.photo.url} alt={""} className='' width={110} height={100} />
 				<article>
-					<h2 className={styles.author_name}>Michael Linares Abreu</h2>
-					<h4>fronted developer</h4>
+					<h2 className={styles.author_name}>{data.author.name}</h2>
+					<h4>{data.author.description}</h4>
 					<div className="author_sotialnetworks">
-						<Link href="https://www.google.com/" target='_blank'>
-							Linkedin
+						<Link href={data.author.linkedIn} target='_blank'>
+							<FaLinkedin size={24}/>
 						</Link>
-						<Link href="https://www.google.com/" target='_blank'>
-							twitter
+						<Link href={data.author.twitter} target='_blank'>
+							<FaTwitter size={24}/>
 						</Link>
-						<Link href="https://www.google.com/" target='_blank'>
-							github
+						<Link href={data.author.github} target='_blank'>
+							<FaGithub size={24}/>
 						</Link>
 					</div>
 				</article>

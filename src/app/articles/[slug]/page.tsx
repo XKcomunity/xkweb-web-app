@@ -16,7 +16,7 @@ export default async function Article({ params}: Props) {
 
 	return (
 		<>
-			<BannerHeaderInfo />
+			<BannerHeaderInfo data={article}/>
 			<WrapperInfoDetails data={article}>
 				<main>
 					<section className={styles.article_reference}>
@@ -35,6 +35,7 @@ export default async function Article({ params}: Props) {
 
 					<p>{article.shortDescription}</p>
 					<PortableText value={article.content} />
+					<p>{article.content}</p>
 				</main>
 			</WrapperInfoDetails>
 		</>

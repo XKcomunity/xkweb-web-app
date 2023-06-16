@@ -27,7 +27,7 @@ type Article = {
 	_createdAt: Date;
 	title: string;
 	image: string;
-	author: string;
+	author: Author;
 	level: string;
 	slug: string;
 	url: string;
@@ -37,7 +37,12 @@ type Article = {
 
 type Author = {
 	name: string;
-	photo: string;
+	photo: { url: string };
 	bio: string;
+	description: string;
+	linkedIn: string;
+	twitter: string;
+	github: string;
 	articles: Article[];
+	snippets: Snippet[];
 };
