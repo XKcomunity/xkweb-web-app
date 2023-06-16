@@ -1,6 +1,7 @@
 import MainTitleSection from "@/components/stateless/titles/MainTitleSection";
 import WapperButtons from "./WrapperButtons";
 import { SliderCard } from "@/components/stateless/slider/SliderCard";
+import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 
 const data = {
 	title: "Aprende y ",
@@ -9,9 +10,15 @@ const data = {
 		"Sumérgete en nuestra sección especializada que alberga una amplia variedad de enlaces, documentos, PDFs e información valiosa sobre el mundo del diseño y desarrollo web. Obtén acceso a los recursos necesarios para potenciar tus habilidades.",
 	subTitle:
 		"Recursos y Conocimientos para el Diseño y Desarrollo Web",
+	titleComponet: "Recursos"
 };
 
+
+
 export default function Docs() {
+	let titleComponentProps = data.titleComponet;
+	console.log(titleComponentProps)
+
 	return (
 		<>
 			<MainTitleSection
@@ -22,6 +29,8 @@ export default function Docs() {
 			/>
 			<WapperButtons />
 			<SliderCard />
+
+			<TitleComponent title={titleComponentProps} />
 		</>
 	);
 }

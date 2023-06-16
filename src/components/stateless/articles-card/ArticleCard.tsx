@@ -4,7 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-	image: string;
+	imageArticle: string;
+	imageAuthor: string;
 	title: string;
 	shortDescription: string;
 	level: string;
@@ -12,7 +13,8 @@ type Props = {
 };
 
 export const ArticleCard = ({
-	image,
+	imageArticle,
+	imageAuthor,
 	title,
 	shortDescription,
 	level,
@@ -26,8 +28,7 @@ export const ArticleCard = ({
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-						<Image className={styles.card_image} src={image} alt={title} width={200} height={200} />
-					</div>
+					<Image className={styles.card_image} src={imageArticle} alt={title} width={200} height={200} />					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
 							<h2 className={styles.card_title}>{title}</h2>
@@ -38,8 +39,8 @@ export const ArticleCard = ({
 								<div className={styles.card_avatar}>
 									<Image
 										className={styles.card_avatar_img}
-										src={image}
-										alt="Avatar articulos card"
+										src={imageAuthor}
+										alt={title}
 										width={60}
 										height={60}
 									/>

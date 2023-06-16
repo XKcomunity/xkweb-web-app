@@ -1,4 +1,4 @@
-import { PortableTextBlock } from "sanity";
+
 type Technology = {
 	id: string;
 	title: string;
@@ -33,5 +33,13 @@ type Article = {
 	slug: string;
 	url: string;
 	shortDescription: string;
-	content: PortableTextBlock[];
+	content: string;
+};
+
+type Author = {
+	_id: string,
+	name: string;
+	photo: string;
+	bio: string;
+	articles: Article[];
 };
