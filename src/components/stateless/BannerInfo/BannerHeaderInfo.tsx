@@ -2,17 +2,15 @@ import { AuthorInfo } from "../author-info/AuthorInfo";
 import styles from "./banner-header-info.module.scss";
 
 type Props = {
-	name: string,
-	photo: string,
-	bio: string
+	data: Article;
 };
 
-export const BannerHeaderInfo = ({name, photo, bio }: Props) => {
+export const BannerHeaderInfo = ({data}: Props) => {
 	return (
 		<>
 			<section className={styles.banner_header_wrapper}>
         <div className={styles.banner_content}>
-          <AuthorInfo photo={photo} name={name} bio={bio} />
+				<AuthorInfo data={data} />
         </div>
 			</section>
 		</>

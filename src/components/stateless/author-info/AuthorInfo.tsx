@@ -3,18 +3,17 @@ import Image from 'next/image';
 import { AuthorSotialNetwork } from './SotialNetwork';
 
 type AuthorInfoProps = {
-	photo: string;
-  name: string;
-	bio: string;
+	data: Article;
 }
 
-export function AuthorInfo({name, photo, bio}: AuthorInfoProps){
+export function AuthorInfo({data}: AuthorInfoProps){
+
   return(
 			<section className={styles.author_wrapper}>
-				<Image src={photo} alt={name} width={110} height={100} />
+				<Image src={data.author.photo.url} alt={data.author.name} className='' width={110} height={100} />
 				<div>
-					<h2 className={styles.author_name}>{ name }</h2>
-					<h4>{ bio }</h4>
+					<h2 className={styles.author_name}>{data.author.name}</h2>
+					<p>{data.author.bio}</p>
 					<AuthorSotialNetwork />
 				</div>
 			</section>

@@ -41,9 +41,16 @@ type Author = {
 	photo: { url: string };
 	bio: string;
 	description: string;
-	linkedIn: string;
-	twitter: string;
-	github: string;
+	sotialNetworks: SotialNetworks;
 	articles: Article[];
 	snippets: Snippet[];
 };
+
+type SotialNetworks = {
+	linkedin: string;
+	twitter: string;
+	instagram: string;
+	github: string;
+	youtube: string;
+	discord: string;
+}
