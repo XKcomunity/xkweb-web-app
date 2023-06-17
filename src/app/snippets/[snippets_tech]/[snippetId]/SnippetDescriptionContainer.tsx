@@ -2,7 +2,6 @@ import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./SnippetAuthor";
 import styles from "./snippet_chosen.module.scss";
-import { Snippet } from "type";
 
 type Props = {
 	snippet: Snippet;
@@ -17,10 +16,10 @@ export default function SnippetDescriptionContainer({ snippet }: Props) {
 					<SnippetAuthor author={snippet.author} date={snippet.date} />
 					<SnippetArticle
 						description={snippet.description}
-						code={{
-							title: "",
-							code: "",
-						}}
+						// code={{
+						// 	title: "",
+						// 	code: "",
+						// }}
 					/>
 				</div>
 			</main>

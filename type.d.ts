@@ -26,10 +26,10 @@ type Snippet = {
 type Article = {
 	_id: string;
 	_createdAt: Date;
-  title: string;
-  image: string;
-  author: string;
-  level: string;
+	title: string;
+	image: string;
+	author: Author;
+	level: string;
 	slug: string;
 	url: string;
 	shortDescription: string;
@@ -37,9 +37,13 @@ type Article = {
 };
 
 type Author = {
-	_id: string,
 	name: string;
-	photo: string;
+	photo: { url: string };
 	bio: string;
+	description: string;
+	linkedIn: string;
+	twitter: string;
+	github: string;
 	articles: Article[];
+	snippets: Snippet[];
 };
