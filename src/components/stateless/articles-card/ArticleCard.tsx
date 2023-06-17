@@ -28,7 +28,7 @@ export const ArticleCard = ({
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-					<Image className={styles.card_image} src={imageArticle} alt={title} width={200} height={200} />					</div>
+						<Image className={styles.card_image} src={imageArticle} alt={title} width={200} height={200} />					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
 							<h2 className={styles.card_title}>{title}</h2>

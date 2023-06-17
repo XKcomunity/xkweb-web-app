@@ -3,10 +3,8 @@ import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSni
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
-import { AuthorInfo } from "@/components/stateless/author-info/AuthorInfo";
 import SnippetArticle from "./SnippetArticle";
 import getSnippetId from "@/lib/getSnippetId";
-import { Snippet } from "type";
 
 type Params = {
 	params: {
@@ -26,13 +24,10 @@ export default async function SnippetChosen({ params: { snippetId } }: Params) {
 			{/* <WrapperInfoDetails snippet={snippet} /> */}
 			<WrapperInfoDetails data={snippet}>
         <BlogTitle title={snippet.title} />
-					<AuthorInfo authorName={snippet.author} date={snippet.date} />
+					{/* <AuthorInfo authorName={snippet.author} date={snippet.date} /> */}
 					<SnippetArticle
 						description={snippet.description}
-						// code={{
-						// 	title: "",
-						// 	code: "",
-						// }}
+
 					/>
 			</WrapperInfoDetails>
 

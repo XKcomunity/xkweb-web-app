@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import { Snippet } from "type";
 
 export const useFetchSnippets = (url: string) => {
 	const params = useParams();
