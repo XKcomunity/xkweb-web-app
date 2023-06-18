@@ -19,7 +19,7 @@ export default function Home() {
 			<AboutSection />
 			<HintSection />
 			<TitleComponent title="Articulos Recientes" />
-			<BlogCategoryTitle blogTitle="Frontend - Backend" />
+			<BlogCategoryTitle blogTitle="Frontend - Backend - Arquitectura" />
 			<SliderCard />
 			<ContainerButton buttonText="Explorar Articulos" route="/articles" />
 			<TitleComponent title="Snippets Recientes" />
