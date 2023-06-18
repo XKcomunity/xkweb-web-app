@@ -1,39 +1,39 @@
-import { getArticle } from "../../../../sanity/sanity-utils";
-import { PortableText } from "@portabletext/react";
+import { getArticle } from "../../../../hygraph/fetchings";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import styles from "./article-slug.module.scss";
-import { formatDate } from "@/utils/dateTime";
 import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
+import Image from "next/image";
 
 type Props = {
-	params: { article: string };
+	params: { slug: string };
 };
 
-export default async function Article({ params }: Props) {
+export default async function Article({ params}: Props) {
 
-	const slug = params.article;
+	const slug = params.slug;
 	const article = await getArticle(slug);
+	const { createdAt,level, shortDescription, title } = article;
 
 	return (
 		<>
-			<BannerHeaderInfo />
+			<BannerHeaderInfo data={article} />
 			<WrapperInfoDetails data={article}>
+			<Image src={article.image.url} alt="" width={1000} height={300} />
 				<main>
 					<section className={styles.article_reference}>
 						<div className={styles.author_date}>
 							<h4>Fecha:</h4>
-							<p>{formatDate(article._createdAt)}</p>
+							<p>{createdAt}</p>
 						</div>
 						<div className={styles.author_level}>
 							<h4 className=''>Nivel:</h4>
-							<p>{article.level}</p>
+							<p>{level}</p>
 						</div>
 					</section>
-					<BlogTitle title={article.title} />
+					<BlogTitle title={title} />
 
-					<p>{article.shortDescription}</p>
-					<PortableText value={article.content} />
+					<p>{shortDescription}</p>
 				</main>
 			</WrapperInfoDetails>
 		</>

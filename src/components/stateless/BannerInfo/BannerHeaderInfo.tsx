@@ -2,13 +2,16 @@ import { AuthorInfo } from "../author-info/AuthorInfo";
 import styles from "./banner-header-info.module.scss";
 
 type Props = {
+	data: Article;
 };
 
-export const BannerHeaderInfo = () => {
+export const BannerHeaderInfo = ({data}: Props) => {
 	return (
 		<>
 			<section className={styles.banner_header_wrapper}>
-        <AuthorInfo image={""} authorName={""} description={""} />
+        <div className={styles.banner_content}>
+				<AuthorInfo data={data} />
+        </div>
 			</section>
 		</>
 	);

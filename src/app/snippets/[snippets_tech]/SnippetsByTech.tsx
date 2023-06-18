@@ -3,7 +3,6 @@ import { useFetchSnippets } from '@/hooks/useFetchSnippets';
 import { useParams } from 'next/navigation';
 import SnippetTechPils from './SnippetTechPils';
 import SnippetCard from './SnippetCard';
-import { Snippet } from 'type';
 
 type Props = {};
 

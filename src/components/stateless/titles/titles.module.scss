@@ -16,15 +16,20 @@
 	}
 }
 
+.titleWrapper {
+	width: 90%;
+}
 
 .title {
    font-size: $font-size__title;
    color: $white-color;
-   display: flex;
-   justify-content: center;
-   margin: 3em 0em 3em 0em;
+	 text-align: center;
+	}
+	.divider {
+		height: 3px;
+		width: 100px;
+		background-color: $secondary-color;
 }
-
 
 .blogTitle_container {
 	width: $width-100-percent;
@@ -46,3 +51,4 @@
 .blogTitle_container {
 	width: $width-100-percent;
 }
+

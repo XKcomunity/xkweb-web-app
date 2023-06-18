@@ -1,32 +1,21 @@
 import styles from './author-info.module.scss';
-import Link from 'next/link';
 import Image from 'next/image';
+import { AuthorSotialNetwork } from './SotialNetwork';
 
 type AuthorInfoProps = {
-	image: string;
-  authorName: string;
-	description: string;
+	data: Article;
 }
 
-export function AuthorInfo({authorName, description, image}: AuthorInfoProps){
+export function AuthorInfo({data}: AuthorInfoProps){
+
   return(
 			<section className={styles.author_wrapper}>
-				<Image src={image} alt={""} className='' width={110} height={100} />
-				<article>
-					<h2 className={styles.author_name}>Michael Linares Abreu</h2>
-					<h4>fronted developer</h4>
-					<div className="author_sotialnetworks">
-						<Link href="https://www.google.com/" target='_blank'>
-							Linkedin
-						</Link>
-						<Link href="https://www.google.com/" target='_blank'>
-							twitter
-						</Link>
-						<Link href="https://www.google.com/" target='_blank'>
-							github
-						</Link>
-					</div>
-				</article>
+				<Image src={data.author.photo.url} alt={data.author.name} className='' width={110} height={100} />
+				<div>
+					<h2 className={styles.author_name}>{data.author.name}</h2>
+					<p>{data.author.bio}</p>
+					<AuthorSotialNetwork />
+				</div>
 			</section>
   );
 }
