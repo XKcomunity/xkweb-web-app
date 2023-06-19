@@ -14,7 +14,7 @@ export function AuthorInfo({data}: AuthorInfoProps){
 				<div>
 					<h2 className={styles.author_name}>{data.author.name}</h2>
 					<p>{data.author.bio}</p>
-					<AuthorSotialNetwork />
+					<AuthorSotialNetwork data={data} />
 				</div>
 			</section>
   );
