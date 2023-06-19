@@ -27,14 +27,14 @@ export const HintSection = () => {
                 <BsNewspaper className={styles.hint_icon}/>
                     <h2 className={styles.hint_card__title}>Articulos</h2>
                     <p className={styles.hint_card__paragraph}>
-                    Te mantendrán actualizado sobre las últimas tendencias, tips y herramientas de diseńo y desarrollo web.
+                    Te mantendrán actualizado sobre las últimas tendencias, tips acerca de arquitectura, backend, frontend entre otras tecnologías.
                     </p>
                 </div>
                 <div className={styles.hint_card}>
                 <BsFillLightbulbFill className={styles.hint_icon}/>
                     <h2 className={styles.hint_card__title}>Documentación</h2>
                     <p className={styles.hint_card__paragraph}>
-                        Te brindamos links a documentación, libros y articulos para que aprendas de fuentes confiables.
+                        Te brindamos links a documentación, PDFs, articulos para que aprendas de fuentes confiables sobre temas los que nos apasinan.
                     </p>
                 </div>
                 </section>
