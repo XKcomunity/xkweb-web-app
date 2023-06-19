@@ -7,29 +7,30 @@
 	margin-left: auto;
 
 	.main_title {
-	    @include total-center;
+	  @include total-center;
 		margin: 1.5em 0em 1em 0em;
 		color: $white-color;
 		font-size: $font-size__h1;
 		font-weight: 200;
-        font-style: italic;
+  	font-style: italic;
 	}
 }
 
 .titleWrapper {
-	width: 90%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title {
    font-size: $font-size__title;
    color: $white-color;
 	 text-align: center;
+	 border-bottom: 5px solid $secondary-color;
+	 margin:  2em 0em 2em 0em;
 	}
-	.divider {
-		height: 3px;
-		width: 100px;
-		background-color: $secondary-color;
-}
 
 .blogTitle_container {
 	width: $width-100-percent;

@@ -1,30 +1,54 @@
-// import Link from 'next/link';
-import styles from './author-info.module.scss';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+import Link from "next/link";
+import styles from "./author-info.module.scss";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 type AuthorSotialNetwork = {
-  sotial: SotialNetworks;
+	data: Article;
+};
+
+export function AuthorSotialNetwork({ data }: AuthorSotialNetwork) {
+	return (
+		<section className={styles.author_sotialnetworks}>
+			{data.author.linkedIn === "#" ? null : (
+				<Link href={data.author.linkedIn} target="_blank">
+					<FaLinkedin size={24} />
+				</Link>
+			)}
+
+			{data.author.twitter === "#" ? null : (
+				<Link href={data.author.twitter} target="_blank">
+					<FaTwitter size={24} />
+				</Link>
+			)}
+
+			{data.author.github === "#" ? null : (
+				<Link href={data.author.github} target="_blank">
+					<FaGithub size={24} />
+				</Link>
+			)}
+
+			{data.author.discord === "#" ? null : (
+				<Link href={data.author.discord} target="_blank">
+					<FaDiscord size={24} />
+				</Link>
+			)}
+
+			{data.author.youtube === "#" ? null : (
+				<Link href={data.author.youtube} target="_blank">
+					<FaYoutube size={24} />
+				</Link>
+			)}
+
+			{data.author.instagram === "#" ? null : (
+				<Link href={data.author.instagram} target="_blank">
+					<FaInstagram size={24} />
+				</Link>
+			)}
+		</section>
+	);
 }
-
-export function AuthorSotialNetwork({sotial}: AuthorSotialNetwork){
-  return(
-    <section className={styles.author_sotialnetworks}>
-      	<FaLinkedin size={24}/>
-        <FaTwitter size={24}/>
-        <FaGithub size={24}/>
-      {/* <Link href={data.author.linkedIn} target='_blank'>
-				<FaLinkedin size={24}/>
-			</Link>
-      <Link href={data.author.twitter} target='_blank'>
-				<FaTwitter size={24}/>
-			</Link>
-      <Link href={data.author.github} target='_blank'>
-				<FaGithub size={24}/>
-			</Link> */}
-    </section>
-  );
-}
-
-
