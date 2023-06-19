@@ -9,25 +9,24 @@ type Props = {
 	params: { slug: string };
 };
 
-export default async function Article({ params}: Props) {
-
+export default async function Article({ params }: Props) {
 	const slug = params.slug;
 	const article = await getArticle(slug);
-	const { createdAt,level, shortDescription, title } = article;
+	const { date, level, shortDescription, title } = article;
 
 	return (
 		<>
 			<BannerHeaderInfo data={article} />
 			<WrapperInfoDetails data={article}>
-			<Image src={article.image.url} alt="" width={1000} height={300} />
+				<Image src={article.image.url} alt="" width={1000} height={300} />
 				<main>
 					<section className={styles.article_reference}>
 						<div className={styles.author_date}>
 							<h4>Fecha:</h4>
-							<p>{createdAt}</p>
+							<p>{date}</p>
 						</div>
 						<div className={styles.author_level}>
-							<h4 className=''>Nivel:</h4>
+							<h4 className="">Nivel:</h4>
 							<p>{level}</p>
 						</div>
 					</section>

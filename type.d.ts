@@ -1,4 +1,3 @@
-
 type Technology = {
 	id: string;
 	title: string;
@@ -34,6 +33,7 @@ type Article = {
 	url: string;
 	shortDescription: string;
 	content: string;
+	date: Date;
 };
 
 type Author = {
@@ -41,16 +41,12 @@ type Author = {
 	photo: { url: string };
 	bio: string;
 	description: string;
-	sotialNetworks: SotialNetworks;
-	articles: Article[];
-	snippets: Snippet[];
-};
-
-type SotialNetworks = {
-	linkedin: string;
+	linkedIn: string;
 	twitter: string;
 	instagram: string;
 	github: string;
 	youtube: string;
 	discord: string;
-}
+	articles: Article[];
+	snippets: Snippet[];
+};

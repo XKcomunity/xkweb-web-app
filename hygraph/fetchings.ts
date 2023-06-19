@@ -49,9 +49,16 @@ export const getArticle = async (slug: string) => {
 					}
 					name
 					bio
+					linkedIn
+					github
+					discord
+					youtube
+					twitter
+					instagram
 				}
 				title
 				content
+				date
 				shortDescription
 				level
 				image {
