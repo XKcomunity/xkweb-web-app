@@ -210,5 +210,113 @@
 			"tech": "Vue",
 			"description": "What This one goes out to any frontend developer that has ever found themself dreading the thought of working on a codebase because it’s just too hard to follow what anything is doing anymore. I’m writing this because I’ve been there myself: you start working on a project and in the beginning, everything is a breeze. But as it grows it becomes harder and harder to get anything done on it. Over time, something that was exciting becomes a hassle, and the motivation to work suffers because of it. This can happen even if you follow best practices and the recommended style guide to the letter. If you can relate, then domain-driven architecture can help you. The domain-driven architecture I propose here is one implementation of some of the principles of domain-driven design (DDD), the development philosophy defined by Eric Evans in “Domain-Driven Design: Tackling Complexity in the Heart of Software” (2003). Why One of the main reasons this architecture is put in place is to help developers manage the complexity which increases over time in the codebase. Another reason is to enable developers to focus most of their attention and intelligence on thinking about the problem the business is solving (its domain). In other words, we tell devs: “Focus on figuring out the best solution possible. When you need to implement it just follow the architecture”. Architecture decisions are usually limits we impose on our liberty as devs, but which in return increase the organization, predictability, readability, and testability of the project. Domain-driven architecture increases the initial cost of building a project, but greatly reduces the cost of maintaining it. Domain-driven architecture is thus justified for any solution projected to exist (and evolve) in the long term."
 		}
+	],
+	"docs": [
+		{
+      "id": 1,
+      "title": "Recursos para practicar Javascript",
+      "category": "Lenguajes",
+      "links": [
+        {
+          "id": 1,
+          "name": "javascript-30",
+          "url": "https://javascript30.com/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "CSS-tricks",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "CSS-Tricks",
+          "enlace": "https://css-tricks.com/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Patrones de Diseño",
+      "category": "Patrones de Diseño",
+      "links": [
+        {
+          "id": 1,
+          "name": "Refactoring Guru",
+          "url": "https://refactoring.guru/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Inpiracion",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Dribble",
+          "url": "https://dribbble.com/"
+        },
+        {
+          "id": 2,
+          "name": "Awwwards",
+          "url": "https://www.awwwards.com/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Combinar Tipografías",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Font Joy",
+          "url": "https://fontjoy.com/"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "SVG Waves",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Get-Waves-IO",
+          "url": "https://getwaves.io/"
+        },
+        {
+          "id": 2,
+          "name": "Smoth Ie",
+          "url": "https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "LightBox",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "LightBox",
+          "url": "https://simplelightbox.com/"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Rotar Textos",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Text-Rotate",
+          "url": "https://www.cssportal.com/css3-text-rotate-generator/"
+        }
+      ]
+    }
 	]
 }
