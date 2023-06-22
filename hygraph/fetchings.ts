@@ -8,7 +8,6 @@ export const getArticles = async () => {
 	const query = gql`
 		query {
 			articles {
-				content
 				createdAt
 				id
 				level
@@ -57,7 +56,9 @@ export const getArticle = async (slug: string) => {
 					instagram
 				}
 				title
-				content
+				content {
+					json
+				}
 				date
 				shortDescription
 				level
