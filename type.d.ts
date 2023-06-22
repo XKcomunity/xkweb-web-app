@@ -1,3 +1,5 @@
+import { ElementNode } from "@graphcms/rich-text-types";
+
 type Technology = {
 	id: string;
 	title: string;
@@ -32,7 +34,9 @@ type Article = {
 	slug: string;
 	url: string;
 	shortDescription: string;
-	content: string;
+	content: {
+		json: ElementNode;
+	};
 	date: Date;
 };
 
@@ -50,3 +54,12 @@ type Author = {
 	articles: Article[];
 	snippets: Snippet[];
 };
+
+type Docs = {
+	id: number;
+	title: string;
+	category: string;
+	links: string[];
+	name: string;
+	link: string;
+}
