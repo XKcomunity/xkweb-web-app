@@ -50,3 +50,12 @@ type Author = {
 	articles: Article[];
 	snippets: Snippet[];
 };
+
+type Docs = {
+	id: number;
+	title: string;
+	category: string;
+	links: string[];
+	name: string;
+	link: string;
+}
