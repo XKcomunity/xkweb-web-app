@@ -4,7 +4,8 @@ import MainTitleSection from "@/components/stateless/titles/MainTitleSection";
 import WapperButtons from "./WrapperButtons";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import styles from "./links.module.scss";
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
+import { Docs } from "type";
 
 const data = {
 	title: "Aprende y ",
@@ -31,19 +32,19 @@ export default function Docs() {
 				subTitle={data.subTitle}
 			/>
 			<WapperButtons />
-			<BlogTitle title="CHEAT SHEETS PDFs" />
+			<SecondaryTitle title="CHEAT SHEETS PDFs" />
 
 			<TitleComponent title={titleComponentProps} />
-			<section className={styles.wrapper_links}>
-  {docs.map((doc: Docs) => (
-    <select className={styles.link__select} key={doc.id}>
-      <option disabled selected>{doc.title}</option>
-      {doc.links.map((link) => (
-        <option key={link.id} >{link.name}</option>
-      ))}
-    </select>
-  ))}
-</section>
+			<section className={styles.wrapper__links}>
+        {docs.map((doc) => (
+          <select className={styles.link__select} key={doc.id}>
+						<option disabled selected>{doc.title}</option>
+							{doc.links.map((link: Docs) => (
+						<option key={link.id} >{link.name}</option>
+      	))}
+    		</select>
+  			))}
+			</section>
 		</>
 	);
 }

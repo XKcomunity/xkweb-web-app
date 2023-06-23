@@ -20,10 +20,6 @@
 	gap: 0.5em;
 }
 
-.snippet_avatar {
-	@include NoPicAvatar;
-}
-
 .snippet_article_content {
 	width: 95%;
 }
