@@ -2,7 +2,7 @@ import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableB
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import SnippetArticle from "./SnippetArticle";
 import getSnippetId from "@/lib/getSnippetId";
 
@@ -23,7 +23,7 @@ export default async function SnippetChosen({ params: { snippetId } }: Params) {
 			<ReusableBanner title={snippet.tech} />
 			{/* <WrapperInfoDetails snippet={snippet} /> */}
 			<WrapperInfoDetails data={snippet}>
-        <BlogTitle title={snippet.title} />
+        <SecondaryTitle title={snippet.title} />
 					{/* <AuthorInfo authorName={snippet.author} date={snippet.date} /> */}
 					<SnippetArticle
 						description={snippet.description}

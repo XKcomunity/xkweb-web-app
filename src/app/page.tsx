@@ -4,7 +4,7 @@ import { AboutSection } from "@/components/stateless/about-section/AboutSection"
 import { HintSection } from "@/components/stateless/hint-section/HintSection";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { SliderCard } from "@/components/stateless/slider/SliderCard";
-import { BlogCategoryTitle } from "@/components/stateless/titles/BlogCategoryTitle";
+import { CategoryTitle } from "@/components/stateless/titles/CategoryTitle";
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/stateless/container-button/ContainerButton";
 import { OurTeam } from "@/components/stateless/our-team/OurTeam";
@@ -19,7 +19,7 @@ export default function Home() {
 			<AboutSection />
 			<HintSection />
 			<TitleComponent title="Articulos Recientes" />
-			<BlogCategoryTitle blogTitle="Frontend - Backend - Arquitectura" />
+			<CategoryTitle SecondaryTitle="Frontend - Backend - Arquitectura" />
 			<SliderCard />
 			<ContainerButton buttonText="Explorar Articulos" route="/articles" />
 			<TitleComponent title="Snippets Recientes" />

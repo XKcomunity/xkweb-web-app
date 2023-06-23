@@ -1,6 +1,6 @@
 import { getArticle } from "../../../../hygraph/fetchings";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import styles from "./article-slug.module.scss";
 import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
 import Image from "next/image";
@@ -32,7 +32,7 @@ export default async function Article({ params }: Props) {
 							<p>{level}</p>
 						</div>
 					</section>
-					<BlogTitle title={title} />
+					<SecondaryTitle title={title} />
 
 					<p>{shortDescription}</p>
 					<RichText

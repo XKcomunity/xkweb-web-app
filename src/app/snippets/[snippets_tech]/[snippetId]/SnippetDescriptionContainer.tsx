@@ -1,4 +1,4 @@
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./SnippetAuthor";
 import styles from "./snippet_chosen.module.scss";
@@ -12,7 +12,7 @@ export default function SnippetDescriptionContainer({ snippet }: Props) {
 		<>
 			<main className={styles.containerFluid}>
 				<div className={styles.container}>
-					<BlogTitle title={snippet.title} />
+					<SecondaryTitle title={snippet.title} />
 					<SnippetAuthor author={snippet.author} date={snippet.date} />
 					<SnippetArticle
 						description={snippet.description}
