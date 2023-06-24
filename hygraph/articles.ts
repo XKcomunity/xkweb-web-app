@@ -1,7 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
 
 const url: any = process.env.NEXT_PUBLIC_HYGRAPH_API;
-
 const graphContent = new GraphQLClient(url);
 
 export const getArticles = async () => {
@@ -30,10 +29,8 @@ export const getArticles = async () => {
 		}
 	`;
 
-	// const results: any = await request(hygraphAPI, query);
-
 	const results: any = await graphContent.request(query);
-	const articles = results.articles;
+  const articles = results.articles;
 
 	return articles;
 };
@@ -70,10 +67,8 @@ export const getArticle = async (slug: string) => {
 		}
 	`;
 
-	// const results: any = await request(hygraphAPI, query);
-
 	const results: any = await graphContent.request(query, { slug });
-
 	const article = results.article;
+
 	return article;
 };
