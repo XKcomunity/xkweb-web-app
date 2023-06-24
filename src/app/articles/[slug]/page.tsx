@@ -1,4 +1,4 @@
-import { getArticle } from "../../../../hygraph/fetchings";
+import { getArticle } from "../../../../hygraph/articleFetching";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
 import styles from "./article-slug.module.scss";

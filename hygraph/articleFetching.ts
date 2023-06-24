@@ -30,8 +30,6 @@ export const getArticles = async () => {
 		}
 	`;
 
-	// const results: any = await request(hygraphAPI, query);
-
 	const results: any = await graphContent.request(query);
 
 	return results.articles;
@@ -68,8 +66,6 @@ export const getArticle = async (slug: string) => {
 			}
 		}
 	`;
-
-	// const results: any = await request(hygraphAPI, query);
 
 	const results: any = await graphContent.request(query, { slug });
 

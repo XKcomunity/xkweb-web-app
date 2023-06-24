@@ -10,25 +10,31 @@ type Technology = {
 };
 
 type Snippet = {
-	codeList: LibraryCode[] | undefined;
 	id: string;
 	title: string;
-	author: string;
+	author: Author;
 	date: string;
 	category: string;
 	topic: string;
 	tech: string;
 	description: string;
-	img: string;
+	img: {
+		url: string;
+	};
 	subTitle: string;
-	code: string;
+	code: {
+		json: ElementNode;
+	};
+	slug: string;
 };
 
 type Article = {
-	_id: string;
+	id: string;
 	_createdAt: Date;
 	title: string;
-	image: string;
+	image: {
+		url: string;
+	};
 	author: Author;
 	level: string;
 	slug: string;
@@ -62,4 +68,4 @@ type Docs = {
 	links: string[];
 	name: string;
 	link: string;
-}
+};
