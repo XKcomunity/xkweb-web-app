@@ -1,12 +1,13 @@
-import { getArticle } from "../../../../hygraph/fetchings";
+import { getArticle } from "../../../../hygraph/articles";
+import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
 import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
-import styles from "./article-slug.module.scss";
-import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
-import Image from "next/image";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { irBlack } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Image from "next/image";
+import styles from "./article-slug.module.scss";
+
 type Props = {
 	params: { slug: string };
 };
