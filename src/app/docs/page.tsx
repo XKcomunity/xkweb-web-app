@@ -32,7 +32,9 @@ export default function Docs() {
 				subTitle={data.subTitle}
 			/>
 			<WapperButtons />
-			<SecondaryTitle title="CHEAT SHEETS PDFs" />
+			<div className={styles.grid}>
+				<SecondaryTitle title="Cheat Sheets PDFs" />d
+			</div>
 
 			<TitleComponent title={titleComponentProps} />
 			<section className={styles.wrapper__links}>
@@ -40,7 +42,9 @@ export default function Docs() {
           <select className={styles.link__select} key={doc.id}>
 						<option disabled selected>{doc.title}</option>
 							{doc.links.map((link: Docs) => (
-						<option key={link.id} >{link.name}</option>
+							<option key={link.id} >
+								{link.name}
+							</option>
       	))}
     		</select>
   			))}
