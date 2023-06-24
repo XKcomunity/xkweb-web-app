@@ -41,9 +41,10 @@
 	font-weight: bold;
 	margin-bottom: .5em;
 	width: $width-90-percent;
+	color: $bg-light-color;
 }
 
-.blog_category_title {
+.category_title {
     color: $white-color;
     font-weight: 400;
     margin: 0em 2em 1.5em 2em;

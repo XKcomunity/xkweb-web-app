@@ -59,7 +59,12 @@ type Docs = {
 	id: number;
 	title: string;
 	category: string;
-	links: string[];
+	links: string;
 	name: string;
-	link: string;
+	url: string;
+}
+
+type PdfFile = {
+	id: number;
+	file: string;
 }
