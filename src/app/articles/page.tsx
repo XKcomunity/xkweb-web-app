@@ -13,7 +13,6 @@ export default async function Articles() {
 	const articlesData: Promise<Article[]> = await getArticles();
 	const articles = await articlesData;
 
-
 	return (
 		<>
 			<ReusableBanner title={"Lista De Articulos"} />

@@ -13,7 +13,7 @@ export const useFetchSnippets = () => {
 		async function fetchSnippetCards() {
 			const cardsResponse = await getSnippets();
 			const cardsJson = await cardsResponse;
-			
+
 			const snippets_type: Snippet[] = cardsJson.filter(
 				(item: Snippet) => item.tech === params?.snippets_tech
 			);

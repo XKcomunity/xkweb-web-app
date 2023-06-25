@@ -65,5 +65,5 @@ type Docs = {
 type PdfFile = {
 	id: number;
 	file: string;
-	image: string;
+	image: { url: string; };
 }
