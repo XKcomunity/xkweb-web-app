@@ -1,5 +1,5 @@
-
 import { useState, useEffect } from "react";
+import { Docs } from "type";
 
 export const useFetchLinks = (url: string) => {
 	const [docs, setDocs] = useState<Docs[]>([]);

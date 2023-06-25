@@ -34,6 +34,7 @@ export default function Snippet() {
 		}
 	};
 
+	console.log(filteredTechnologies);
 	return (
 		<>
 			<main className={styles.main_snippet}>

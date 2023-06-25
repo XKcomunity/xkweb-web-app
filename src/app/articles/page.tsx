@@ -1,4 +1,7 @@
+"use client";
 import { getArticles } from "hygraph/articleFetching";
+import { useFetchArticles } from "@/hooks/useFetchArticles";
+import ArticleCategoryLink from "./ArticleCategoryLink";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
@@ -8,16 +11,39 @@ import styles from "./_articles.module.scss";
 import Link from "next/link";
 import { Article } from "type";
 
-export default async function Articles() {
-	const articlesData: Promise<Article[]> = await getArticles();
-	const articles = await articlesData;
+export default function Articles() {
+	// const articlesData: Promise<Article[]> = await getArticles();
+	// const articles = await articlesData;
+
+	const {
+		articles,
+		filteredArticles,
+		setSelectedCategory,
+		setFilteredArticles,
+	} = useFetchArticles();
+
+	const handleCategoryClick = (category: string): void => {
+		setSelectedCategory(category);
+		if (category === "") {
+			setFilteredArticles(articles);
+		} else {
+			const filtered = articles.filter(
+				(article: Article) => article.category.name === category
+			);
+			setFilteredArticles(filtered);
+		}
+	};
 
 	return (
 		<>
 			<ReusableBanner title={"Lista De Articulos"} />
 
+			<ArticleCategoryLink
+				articles={articles}
+				handleCategoryClick={handleCategoryClick}
+			/>
 			<main className={styles.container}>
-				{articles.map((article: Article) => (
+				{filteredArticles.map((article: Article) => (
 					<Link href={`/articles/${article.slug}`} key={article.id}>
 						<div className={styles.articleCardWrapper}>
 							<ArticleCard
@@ -33,6 +59,7 @@ export default async function Articles() {
 				))}
 			</main>
 			<TitleComponent title="Snippets Recientes" />
+
 			<RecentSnippets />
 			<ContainerButton buttonText="Explorar Snippets" route="/snippets" />
 		</>

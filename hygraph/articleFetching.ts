@@ -24,6 +24,9 @@ export const getArticles = async () => {
 						url
 					}
 				}
+				category {
+					name
+				}
 				updatedAt
 				url
 			}

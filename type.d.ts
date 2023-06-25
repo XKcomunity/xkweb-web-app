@@ -44,6 +44,7 @@ type Article = {
 		json: ElementNode;
 	};
 	date: Date;
+	category: Category;
 };
 
 type Author = {
@@ -68,4 +69,12 @@ type Docs = {
 	links: string[];
 	name: string;
 	link: string;
+};
+
+type Category = {
+	name: string;
+	slug: string;
+	technologies: Technology[];
+	snippets: Snippet[];
+	article: Article[];
 };
