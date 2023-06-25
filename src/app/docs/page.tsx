@@ -6,7 +6,6 @@ import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import styles from "./links.module.scss";
 import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import { Docs } from "type";
-import Image from 'next/image';
 
 const data = {
 	title: "Aprende y ",
