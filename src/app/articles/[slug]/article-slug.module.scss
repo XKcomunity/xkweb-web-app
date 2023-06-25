@@ -1,13 +1,6 @@
 @import "../../variables";
 @import "../../mixins";
 
-.article_reference,
-.author_date,
-.author_level {
-  display: flex;
-  gap: 1em;
-}
-
 
 .richtext{
   color: blue
