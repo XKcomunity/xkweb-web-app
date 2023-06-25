@@ -1,6 +1,7 @@
 import styles from './author-info.module.scss';
 import Image from 'next/image';
 import { AuthorSotialNetwork } from './SotialNetwork';
+import { Article } from 'type';
 
 type AuthorInfoProps = {
 	data: Article;

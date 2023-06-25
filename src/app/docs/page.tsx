@@ -6,6 +6,7 @@ import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import styles from "./links.module.scss";
 import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import { Docs } from "type";
+import Image from 'next/image';
 
 const data = {
 	title: "Aprende y ",
@@ -32,9 +33,11 @@ export default function Docs() {
 				subTitle={data.subTitle}
 			/>
 			<WapperButtons />
-			<div className={styles.grid}>
-				<SecondaryTitle title="Cheat Sheets PDFs" />d
-			</div>
+			<article className={styles.grid}>
+				<SecondaryTitle title="Cheat Sheets PDFs" />
+				 <section className={styles.pdf__wrapper}>
+				 </section>
+			</article>
 
 			<TitleComponent title={titleComponentProps} />
 			<section className={styles.wrapper__links}>

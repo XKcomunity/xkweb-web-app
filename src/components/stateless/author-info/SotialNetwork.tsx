@@ -6,6 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Article } from "type";
 
 type AuthorSotialNetwork = {
 	data: Article;
