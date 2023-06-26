@@ -10,33 +10,31 @@ type Technology = {
 };
 
 type Snippet = {
-	codeList: LibraryCode[] | undefined;
 	id: string;
 	title: string;
-	author: string;
+	author: Author;
 	date: string;
 	category: string;
 	topic: string;
 	tech: string;
 	description: string;
-	img: string;
+	img: { url: string; };
 	subTitle: string;
-	code: string;
+	code: { json: ElementNode; };
+	slug: string;
 };
 
 type Article = {
-	_id: string;
-	_createdAt: Date;
+	id: string;
+	createdAt: Date;
 	title: string;
-	image: string;
+	image: { url: string; };
 	author: Author;
 	level: string;
 	slug: string;
 	url: string;
 	shortDescription: string;
-	content: {
-		json: ElementNode;
-	};
+	content: { json: ElementNode; };
 	date: Date;
 };
 
@@ -59,7 +57,13 @@ type Docs = {
 	id: number;
 	title: string;
 	category: string;
-	links: string[];
+	links: string;
 	name: string;
-	link: string;
+	url: string;
+}
+
+type PdfFile = {
+	id: number;
+	file: string;
+	image: { url: string; };
 }

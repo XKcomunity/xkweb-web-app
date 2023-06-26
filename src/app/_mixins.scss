@@ -112,17 +112,6 @@
 	margin: 1em 0em 1em 0em;
 }
 
-@mixin NoPicAvatar {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: $dark-alt-color;
-	@include total-center;
-	color: $bg-light-color;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
 @mixin glass {
 	background-color: $dark-alt-color;
 	backdrop-filter: blur(16px) saturate(180%);
@@ -133,4 +122,7 @@
 	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
 }
 
-
+@mixin grid {
+	width: 90%;
+	@include flex-h-center;
+}

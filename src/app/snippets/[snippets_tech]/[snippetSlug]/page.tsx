@@ -2,33 +2,32 @@ import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableB
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import SnippetArticle from "./SnippetArticle";
-import getSnippetId from "@/lib/getSnippetId";
+import { getSnippet } from "../../../../../hygraph/snippets";
+import { Snippet } from "type";
+
 
 type Params = {
 	params: {
-		snippetId: string;
+		snippetSlug: string;
 	};
 };
 
-export default async function SnippetChosen({ params: { snippetId } }: Params) {
-	const subTitle = "Snippets Recientes";
+export default async function SnippetChosen({
+	params: { snippetSlug },
+}: Params) {
 
-	const dataSnippetId: Promise<Snippet> = getSnippetId(snippetId);
-	const snippet = await dataSnippetId;
+	const subTitle = "Snippets Recientes";
+	const dataSnippetId: Promise<Snippet> = getSnippet(snippetSlug);
+	const snippet: Snippet = await dataSnippetId;
 
 	return (
 		<>
 			<ReusableBanner title={snippet.tech} />
-			{/* <WrapperInfoDetails snippet={snippet} /> */}
 			<WrapperInfoDetails data={snippet}>
-        <BlogTitle title={snippet.title} />
-					{/* <AuthorInfo authorName={snippet.author} date={snippet.date} /> */}
-					<SnippetArticle
-						description={snippet.description}
-
-					/>
+        <SecondaryTitle title={snippet.title} />
+				<SnippetArticle description={snippet.description} />
 			</WrapperInfoDetails>
 
 			<TitleComponent title={subTitle} />

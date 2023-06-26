@@ -1,12 +1,12 @@
-import { getArticle } from "../../../../hygraph/fetchings";
-import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
-import { BlogTitle } from "@/components/stateless/titles/BlogTitle";
-import styles from "./article-slug.module.scss";
+import { getArticle } from "../../../../hygraph/articles";
 import { BannerHeaderInfo } from "@/components/stateless/BannerInfo/BannerHeaderInfo";
-import Image from "next/image";
+import { WrapperInfoDetails } from "@/components/stateless/wrapper-info-details/WrapperInfoDetails";
+import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { irBlack } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import styles from "./article-slug.module.scss";
+
 type Props = {
 	params: { slug: string };
 };
@@ -14,25 +14,15 @@ type Props = {
 export default async function Article({ params }: Props) {
 	const slug = params.slug;
 	const article = await getArticle(slug);
-	const { date, level, shortDescription, title } = article;
+	const { shortDescription, title } = article;
 
 	return (
 		<>
-			<BannerHeaderInfo data={article} />
 			<WrapperInfoDetails data={article}>
-				<Image src={article.image.url} alt="" width={1000} height={300} />
+			<BannerHeaderInfo data={article} />
+				<div className={styles.overlay}></div>
 				<main>
-					<section className={styles.article_reference}>
-						<div className={styles.author_date}>
-							<h4>Fecha:</h4>
-							<p>{date}</p>
-						</div>
-						<div className={styles.author_level}>
-							<h4 className="">Nivel:</h4>
-							<p>{level}</p>
-						</div>
-					</section>
-					<BlogTitle title={title} />
+					<SecondaryTitle title={title} />
 
 					<p>{shortDescription}</p>
 					<RichText

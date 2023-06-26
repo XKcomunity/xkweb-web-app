@@ -2,8 +2,11 @@
 @import "../mixins";
 
 
-.links__wrapper {
+.wrapper__links {
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 // Estilos del select personalizado

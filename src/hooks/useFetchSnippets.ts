@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
+import { getSnippets } from "hygraph/snippets";
+import { Snippet } from "type";
 
-export const useFetchSnippets = (url: string) => {
+export const useFetchSnippets = () => {
 	const params = useParams();
 	const [snippets, setSnippets] = useState<Snippet[]>([]);
 	const [selectedTech, setSelectedTech] = useState<string>("");
@@ -9,10 +11,9 @@ export const useFetchSnippets = (url: string) => {
 
 	useEffect(() => {
 		async function fetchSnippetCards() {
-			const cardsResponse = await fetch(url, {
-				cache: "no-store",
-			});
-			const cardsJson = await cardsResponse.json();
+			const cardsResponse = await getSnippets();
+			const cardsJson = await cardsResponse;
+
 			const snippets_type: Snippet[] = cardsJson.filter(
 				(item: Snippet) => item.tech === params?.snippets_tech
 			);
@@ -21,7 +22,7 @@ export const useFetchSnippets = (url: string) => {
 		}
 
 		fetchSnippetCards();
-	}, [url, params?.snippets_tech]);
+	}, [params?.snippets_tech]);
 
 	return {
 		snippets,

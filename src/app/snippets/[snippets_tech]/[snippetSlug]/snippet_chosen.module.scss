@@ -4,6 +4,7 @@
 .containerFluid {
 	width: $width-100-percent;
 	padding: 2em;
+	margin-top: 4em;
 }
 
 .container {
@@ -15,15 +16,6 @@
 	border-radius: 10px;
 }
 
-.snippet_author {
-	@include flex-v-center;
-	gap: 0.5em;
-}
-
-.snippet_avatar {
-	@include NoPicAvatar;
-}
-
 .snippet_article_content {
 	width: 95%;
 }
@@ -31,3 +23,5 @@
 .article_text {
 	@include articleText;
 }
+
+

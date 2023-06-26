@@ -1,4 +1,4 @@
-import { getArticles } from "../../../hygraph/fetchings";
+import { getArticles } from "../../../hygraph/articles";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
@@ -6,17 +6,20 @@ import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSni
 import ContainerButton from "@/components/stateless/container-button/ContainerButton";
 import styles from "./_articles.module.scss";
 import Link from "next/link";
+import { Article } from "type";
 
 export default async function Articles() {
-	const articles = await getArticles();
+
+	const articlesData: Promise<Article[]> = await getArticles();
+	const articles = await articlesData;
 
 	return (
 		<>
 			<ReusableBanner title={"Lista De Articulos"} />
 
 			<main className={styles.container}>
-				{articles.map((article: any) => (
-					<Link href={`/articles/${article.slug}`} key={article._id}>
+				{articles.map((article: Article) => (
+					<Link href={`/articles/${article.slug}`} key={article.id}>
 						<div className={styles.articleCardWrapper}>
 							<ArticleCard
 								imageArticle={article.image.url}

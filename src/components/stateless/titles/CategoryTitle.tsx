@@ -3,14 +3,14 @@
 import styles from "./titles.module.scss";
 
 type Props = {
-	blogTitle: string;
+	SecondaryTitle: string;
 };
 
-export const BlogCategoryTitle = ({ blogTitle }: Props) => {
+export const CategoryTitle = ({ SecondaryTitle }: Props) => {
 	return (
 		<>
 			<div className={styles.main_title_wrapper}>
-				<h2 className={styles.blog_category_title}>{blogTitle}</h2>
+				<h2 className={styles.category_title}>{SecondaryTitle}</h2>
 			</div>
 		</>
 	);
