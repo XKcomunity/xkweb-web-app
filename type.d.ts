@@ -1,5 +1,4 @@
 import { ElementNode } from "@graphcms/rich-text-types";
-import { type } from "os";
 
 type Technology = {
 	id: string;
@@ -19,9 +18,9 @@ type Snippet = {
 	topic: string;
 	tech: string;
 	description: string;
-	img: { url: string };
+	img: { url: string; };
 	subTitle: string;
-	code: { json: ElementNode };
+	code: { json: ElementNode; };
 	slug: string;
 };
 
@@ -29,13 +28,13 @@ type Article = {
 	id: string;
 	createdAt: Date;
 	title: string;
-	image: { url: string };
+	image: { url: string; };
 	author: Author;
 	level: string;
 	slug: string;
 	url: string;
 	shortDescription: string;
-	content: { json: ElementNode };
+	content: { json: ElementNode; };
 	date: Date;
 };
 
@@ -58,19 +57,13 @@ type Docs = {
 	id: number;
 	title: string;
 	category: string;
-	links: DocLink[];
+	links: string;
 	name: string;
 	url: string;
-};
-
-type DocLink = {
-	id: string;
-	name: string;
-	url: string;
-};
+}
 
 type PdfFile = {
 	id: number;
 	file: string;
-	image: { url: string };
-};
+	image: { url: string; };
+}
