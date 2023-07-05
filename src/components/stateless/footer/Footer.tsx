@@ -82,7 +82,7 @@ export function Footer() {
 							<span className={styles.heading}>Prueba tus Conocimientos</span>
 						</div>
 						<div className={styles.footer_links}>
-							<Link href="/" className={styles.link}>
+							<Link href="/quizzes" className={styles.link}>
 								<li className={styles.navbar_item}>
 									<a>Quiz Time</a>
 								</li>
