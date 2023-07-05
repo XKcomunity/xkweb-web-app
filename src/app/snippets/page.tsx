@@ -16,16 +16,6 @@ const data = {
 
 export default function Snippet() {
 
-	const data = {
-		title: "Aprende y ",
-		span: "Crea",
-		description:
-			"Sumérgete en nuestra sección especializada que alberga una amplia variedad de enlaces, documentos, PDFs e información valiosa sobre el mundo del diseño y desarrollo web. Obtén acceso a los recursos necesarios para potenciar tus habilidades.",
-		subTitle:
-			"Recursos y Conocimientos para el Diseño y Desarrollo Web",
-		titleComponet: "Links - Recursos"
-	};
-
 	const {
 		technologies,
 		setSelectedCategory,
