@@ -6,6 +6,7 @@ import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import styles from "./links.module.scss";
 import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import { Docs } from "type";
+import PdfCard from "@/components/stateless/pdf/PdfCard";
 
 const data = {
 	title: "Aprende y ",
@@ -32,24 +33,31 @@ export default function Docs() {
 				subTitle={data.subTitle}
 			/>
 			<WapperButtons />
-			<article className={styles.grid}>
-				<SecondaryTitle title="Cheat Sheets PDFs" />
+			<article className={styles.flex}>
 				 <section className={styles.pdf__wrapper}>
+					  <PdfCard />
 				 </section>
+				 <TitleComponent title={"Cheat Sheets PDFs"}>
+				 </TitleComponent>
 			</article>
 
 			<TitleComponent title={titleComponentProps} />
 			<section className={styles.wrapper__links}>
-        {docs.map((doc) => (
-          <select className={styles.link__select} key={doc.id}>
-						<option disabled selected>{doc.title}</option>
-							{doc.links.map((link: Docs) => (
-							<option key={link.id} >
-								{link.name}
-							</option>
-      	))}
-    		</select>
-  			))}
+			{docs.map((doc) => (
+				<select
+						className={styles.link__select}
+						key={doc.id}
+						defaultValue={'DEFAULT'}
+						onChange={(e) => window.open(e.target.value, '_blank')}
+				>
+						<option value='DEFAULT' disabled>{doc.title}</option>
+						{doc.links.map((link: Docs) => (
+								<option key={link.id} value={link.url}>
+										{link.name}
+								</option>
+						))}
+				</select>
+			))}
 			</section>
 		</>
 	);
