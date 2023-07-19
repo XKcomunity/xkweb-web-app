@@ -15,6 +15,7 @@ const data = {
 };
 
 export default function Snippet() {
+
 	const {
 		technologies,
 		setSelectedCategory,

@@ -5,7 +5,7 @@ export default function SnippetCategoryLinks({
 	handleCategoryClick,
 }) {
 	const uniqueCategories = [
-		...new Set(technologies.map((item) => item.category)),
+		...new Set(technologies.map((item: { category: string; }) => item.category)),
 	];
 
 	return (
