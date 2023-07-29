@@ -18,7 +18,7 @@
 
 		.card_image {
 			width: 100%;
-			object-fit: cover;
+			object-fit: fill;
 		}
 	}
 
@@ -28,6 +28,7 @@
 		flex-flow: wrap;
 		padding: 20px;
 		.card_title {
+			margin-top: 1em;
 			font-size: 25px;
 			color: $terceary-color;
 		}

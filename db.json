@@ -161,6 +161,81 @@
           "url": "https://www.cssportal.com/css3-text-rotate-generator/"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Paleta de colores",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Design Seeds",
+          "url": "https://www.design-seeds.com/"
+        },
+        {
+          "id": 2,
+          "name": "Colorhunt",
+          "url": "https://colorhunt.co/"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Generadores",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Box-Shadow",
+          "url": "https://www.cssmatic.com/box-shadow"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Degradados",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "UI-Gradients",
+          "url": "https://uigradients.com/#PastelOrangeattheSun"
+        },
+        {
+          "id": 2,
+          "name": "Grabient",
+          "url": "https://www.grabient.com/"
+        },
+        {
+          "id": 3,
+          "name": "Web-Gradients",
+          "url": "https://webgradients.com/"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sliders",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Swiper-JS",
+          "url": "https://swiperjs.com"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Cli-Path",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Clippy",
+          "url": "https://bennettfeely.com/clippy/"
+        }
+      ]
     }
 	]
 }

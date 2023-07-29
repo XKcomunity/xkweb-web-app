@@ -2,11 +2,34 @@
 @import "../../mixins";
 
 
-.richtext{
-  color: blue
+.title {
+  font-size: $font-size__title;
+  color: $text-color;
+  margin: 1.5em 0 .8em 0;
 }
 
+.subtitle {
+  color: $text-color;
+  font-size: $font-size__h3;
+  margin: 1.5em 0 .8em 0;
+}
 
-.subtitle{
-  color: red;
+.shortDescription {
+  font-size: $font-size__h4;
+  margin: 1.5em 0 .8em 0;
+}
+
+.intro {
+  margin: 2em 0 1.5em 0;
+  text-align: center;
+}
+
+.text {
+  font-size: $font-size__h6;
+}
+
+.conclusion {
+  color: $text-color;
+  font-size: $font-size__h2;
+  margin: 2em 0 1em;
 }
