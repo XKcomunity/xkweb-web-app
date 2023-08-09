@@ -2,7 +2,7 @@
 import { useScrollTop } from "@/hooks/useScrollTop";
 import { scrollToTop } from "@/utils/scrollToTop";
 import styles from "../../stateless/buttons/button.module.scss";
-import { BsArrowUpShort } from "react-icons/bs";
+import { BsArrowDownSquareFill, BsArrowUpShort, BsDisplay } from "react-icons/bs";
 
 const ScrollTopButton = () => {
 	const { isVisible } = useScrollTop();
