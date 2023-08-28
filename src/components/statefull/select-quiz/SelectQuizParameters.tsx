@@ -25,11 +25,7 @@ export const SelectQuizParameters = ({
 			>
 				<option value="">{subject}</option>
 				{options.map((option, index) => (
-					<option
-						value={option}
-						key={index}
-						// onChange={(e) => handleQuizParameter(e)}
-					>
+					<option value={option} key={index}>
 						{option}
 					</option>
 				))}

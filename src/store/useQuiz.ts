@@ -7,17 +7,11 @@ export type configTypesState = {
 	type: string;
 	status: string;
 	score: number;
-	// addLevel: (level: string) => void;
-	// addType: (type: string) => void;
-	// addNumberOfQuestinos: (count: number) => void;
-	// addCategory: (category: string) => void;
-	// addStatus: (status: string) => void;
-	// addScore: (score: number) => void;
 };
 
 const defaultConfig = {
 	numberOfQuestions: 10,
-	category: "",
+	category: { id: 0, name: "" },
 	level: "",
 	type: "",
 	status: "",
@@ -42,9 +36,9 @@ export const useQuiz = create((set) => ({
 			config: { ...state.config, numberOfQuestions: count },
 		})),
 
-	addCategory: (category: string) =>
+	addCategory: (id: number, name: string) =>
 		set((state: any) => ({
-			config: { ...state.config, category: category },
+			config: { ...state.config, category: { id: id, name: name } },
 		})),
 
 	addStatus: (status: string) =>
@@ -52,8 +46,8 @@ export const useQuiz = create((set) => ({
 			config: { ...state.config, status: status },
 		})),
 
-	addScore: (score: number) =>
+	addScore: () =>
 		set((state: any) => ({
-			config: { ...state.config, score: score },
+			config: { ...state.config, score: state.config.score + 1 },
 		})),
 }));

@@ -1,10 +1,25 @@
 "use client";
+import { useState, useEffect } from "react";
 import styles from "./quizzes.module.scss";
 import { useQuiz } from "@/store/useQuiz";
-import { quizType, selectQuizTheme, quizLevel } from "@/data";
+import { quizType, quizLevel } from "@/data";
 import { SelectQuizParameters } from "@/components/statefull/select-quiz/SelectQuizParameters";
+import { SelectQuizCategory } from "@/components/statefull/select-quiz-category/SelectQuizCategory";
+import { Category } from "type";
 
 export default function Quizzes() {
+	const [categories, setCategories] = useState<Category[]>([]);
+
+	useEffect(() => {
+		async function fetchCategories() {
+			const { trivia_categories } = await (
+				await fetch("https://opentdb.com/api_category.php")
+			).json();
+			setCategories([...trivia_categories]);
+		}
+		fetchCategories();
+	}, []);
+
 	const defaultStateObject = useQuiz((state: any) => state.config);
 	console.log(defaultStateObject);
 
@@ -36,11 +51,7 @@ export default function Quizzes() {
 			</section>
 
 			<section className={styles.select_quiz_container}>
-				<SelectQuizParameters
-					options={selectQuizTheme}
-					subject="Category"
-					functionState={addCategory}
-				/>
+				<SelectQuizCategory options={categories} subject="Category" />
 				<SelectQuizParameters
 					options={quizLevel}
 					subject="Level"
