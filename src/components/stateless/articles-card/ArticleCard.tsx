@@ -18,21 +18,32 @@ export const ArticleCard = ({
 	title,
 	shortDescription,
 	level,
-	author
+	author,
 }: Props) => {
-
-	const truncatedShortDescription = shortDescription.length > 130 ? shortDescription.slice(0, 130) + '...' : shortDescription;
+	const truncatedShortDescription =
+		shortDescription.length > 130
+			? shortDescription.slice(0, 130) + "..."
+			: shortDescription;
 
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
 				<div className={styles.card_wrapper}>
 					<div className={styles.image_wrapper}>
-						<Image className={styles.card_image} src={imageArticle} alt={title} width={200} height={200} />					</div>
+						<Image
+							className={styles.card_image}
+							src={imageArticle}
+							alt={title}
+							width={200}
+							height={200}
+						/>{" "}
+					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
 							<h2 className={styles.card_title}>{title}</h2>
-							<p className={styles.card_description}>{truncatedShortDescription}</p>
+							<p className={styles.card_description}>
+								{truncatedShortDescription}
+							</p>
 						</div>
 						<footer className={styles.footer_wrapper}>
 							<div className={styles.section_avatar}>

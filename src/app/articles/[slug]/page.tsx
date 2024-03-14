@@ -31,7 +31,7 @@ export default async function Article({ params }: Props) {
 							),
 
 							code: ({ children }) => (
-								<code>
+								<code className={styles.blockcode}>
 									<SyntaxHighlighter language="javascript" style={irBlack}>
 										{children}
 									</SyntaxHighlighter>
