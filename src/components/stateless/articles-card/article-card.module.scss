@@ -4,7 +4,7 @@
 .card_wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	max-width: 420px;
+	max-width: 400px;
 	height: auto;
 	min-height: 420px;
 	background-color: $light-color;

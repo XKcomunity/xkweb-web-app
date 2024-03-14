@@ -4,8 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-	imageArticle: string;
-	imageAuthor: string;
+	imageArticle?: string;
+	imageAuthor?: string;
 	title: string;
 	shortDescription: string;
 	level: string;
@@ -24,7 +24,8 @@ export const ArticleCard = ({
 		shortDescription.length > 130
 			? shortDescription.slice(0, 130) + "..."
 			: shortDescription;
-
+	const truncatedArticleTitle =
+		title.length > 35 ? title.slice(0, 35) + "..." : title;
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
@@ -40,7 +41,7 @@ export const ArticleCard = ({
 					</div>
 					<div className={styles.card_content}>
 						<div className={styles.content_wrapper}>
-							<h2 className={styles.card_title}>{title}</h2>
+							<h2 className={styles.card_title}>{truncatedArticleTitle}</h2>
 							<p className={styles.card_description}>
 								{truncatedShortDescription}
 							</p>
