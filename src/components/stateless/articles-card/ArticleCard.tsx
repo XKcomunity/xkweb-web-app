@@ -21,7 +21,7 @@ export const ArticleCard = ({
 	author
 }: Props) => {
 
-	const truncatedShortDescription = shortDescription.length > 100 ? shortDescription.slice(0, 100) + '...' : shortDescription;
+	const truncatedShortDescription = shortDescription.length > 130 ? shortDescription.slice(0, 130) + '...' : shortDescription;
 
 	return (
 		<>

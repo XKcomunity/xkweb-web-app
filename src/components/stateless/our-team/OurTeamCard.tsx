@@ -1,6 +1,6 @@
 import styles from "./our_team.module.scss";
 import Image from "next/image";
-import mike from "../../../../public/images/our_team/tech_banner.png";
+import mike from "../../../../public/images/our_team/mike_avatar.png";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export const OurTeamCard = () => {

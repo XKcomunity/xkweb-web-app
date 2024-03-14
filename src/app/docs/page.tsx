@@ -1,20 +1,13 @@
 "use client"
 import { useFetchLinks } from "@/hooks/useFetchLinks";
-import MainTitleSection from "@/components/stateless/titles/MainTitleSection";
-import WapperButtons from "./WrapperButtons";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
-import styles from "./links.module.scss";
-import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import { Docs } from "type";
 import PdfCard from "@/components/stateless/pdf/PdfCard";
+import styles from "./links.module.scss";
+import robot from "../../../public/images/robots/apolo-removebg-preview.png";
+import Image from "next/image";
 
 const data = {
-	title: "Aprende y ",
-	span: "Crea",
-	description:
-		"Sumérgete en nuestra sección especializada que alberga una amplia variedad de enlaces, documentos, PDFs e información valiosa sobre el mundo del diseño y desarrollo web. Obtén acceso a los recursos necesarios para potenciar tus habilidades.",
-	subTitle:
-		"Recursos y Conocimientos para el Diseño y Desarrollo Web",
 	titleComponet: "Links - Recursos"
 };
 
@@ -26,22 +19,26 @@ export default function Docs() {
 
 	return (
 		<>
-			<MainTitleSection
-				title={data.title}
-				span={data.span}
-				description={data.description}
-				subTitle={data.subTitle}
-			/>
-			<WapperButtons />
+			<main className={styles.banner_wrapper}>
+				<h1 className={styles.title}>Catalogo de Recursos</h1>
+				<h3 className={styles.subtitle}>¡Has abordado la nave correcta! Considera esto como tu centro de control de misión personal, listo para guiarte a través del cosmos digital. ¡Así que abróchate el cinturón, prepara tu casco y prepárate para el despegue en tu viaje interestelar de aprendizaje! Y recuerda, en este espacio, el único límite es tu curiosidad."</h3>
+			</main>
+
 			<article className={styles.flex}>
+				 <TitleComponent title={"Cheat Sheets PDFs"} />
 				 <section className={styles.pdf__wrapper}>
 					  <PdfCard />
 				 </section>
-				 <TitleComponent title={"Cheat Sheets PDFs"}>
-				 </TitleComponent>
 			</article>
 
-			<TitleComponent title={titleComponentProps} />
+	
+				<TitleComponent title={titleComponentProps} />
+
+			<article className={styles.link_slogan_content}>
+				<Image className={styles.link_slogan_img} src={robot} width={450} height={450} alt="xk-web space ship" />
+				<h3 className={styles.link_slogan}>¡Has abordado la nave correcta! Considera esto como tu centro de control de misión personal, listo para guiarte a través del cosmos digital. ¡Así que abróchate el cinturón, prepara tu casco y prepárate para el despegue en tu viaje interestelar de aprendizaje! Y recuerda, en este espacio, el único límite es tu curiosidad."</h3>
+			</article>
+
 			<section className={styles.wrapper__links}>
 			{docs.map((doc) => (
 				<select
