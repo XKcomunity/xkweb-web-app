@@ -4,9 +4,9 @@
 .card_wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	max-width: 420px;
+	max-width: 400px;
 	height: auto;
-  min-height: 420px;
+	min-height: 420px;
 	background-color: $light-color;
 	cursor: pointer;
 	border-radius: 1.5em;
@@ -61,7 +61,7 @@
 			.section_avatar {
 				@include flex;
 				align-items: center;
-				gap: .5em;
+				gap: 0.5em;
 				width: 170px;
 			}
 			.card_avatar {
@@ -78,4 +78,3 @@
 		}
 	}
 }
-
