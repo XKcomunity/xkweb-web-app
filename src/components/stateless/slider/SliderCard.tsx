@@ -33,19 +33,18 @@ export const SliderCard = () => {
 			items: 3,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 600 },
+			breakpoint: { max: 1024, min: 768 },
 			items: 2,
 		},
 		mobile: {
-			breakpoint: { max: 600, min: 0 },
+			breakpoint: { max: 768, min: 0 },
 			items: 1,
 		},
 	};
 	return (
 		<>
-			<div>
+			<div className={styles.slider}>
 				<Carousel
-					className={styles.slider}
 					responsive={responsive}
 					shouldResetAutoplay
 					ssr={true}
