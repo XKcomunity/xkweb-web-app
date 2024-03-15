@@ -2,3 +2,75 @@
 @import "../mixins";
 
 
+.banner{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80dvh;
+  margin-top: 150px;
+  margin-bottom: 100PX;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+
+  .title_container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    .quiz_title{
+      text-align: center;
+      font-size: 42px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 700;
+      font-style: oblique;
+    }
+
+    
+  }
+
+    .questions_section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 10px;
+
+      .label_text{
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-style: oblique;
+      }
+
+      .input_number{
+        width: 40%;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+    
+    .select_quiz_container{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .button_quiz_container{
+      width: 50%;
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .button_quiz{
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        height: 55px;
+        font-size: 20px;
+        color: blue;
+      }
+    }
+  
+}

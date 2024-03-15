@@ -8,6 +8,7 @@ import { HiArrowLeft } from "react-icons/hi";
 import image from "../../../../public/images/tech-logos/vue.png";
 import image1 from "../../../../public/images/article-cards/react.png";
 import image2 from "../../../../public/images/article-cards/handcard.png";
+import author from "../../../../public/images/our_team/mike_avatar.png";
 
 export const SliderCard = () => {
 	//customs icons for the slider
@@ -46,48 +47,55 @@ export const SliderCard = () => {
 				<Carousel
 					className={styles.slider}
 					responsive={responsive}
+					shouldResetAutoplay
 					ssr={true}
 					infinite={true}
 					customLeftArrow={LeftArrow}
 					customRightArrow={RightArrow}
 				>
 					<ArticleCard
-						image={image}
+						imageArticle={image}
+						imageAuthor={author}
 						title="Vue 3 - Composition"
 						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						level="Nivel"
 						// level_value="Intermedio"
 					/>
 					<ArticleCard
-						image={image1}
+						imageArticle={image1}
+						imageAuthor={author}
 						title="React 18 with hooks"
 						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
 						level="Nivel"
 						// level_value="Avanzado"
 					/>
 					<ArticleCard
-						image={image2}
+						imageArticle={image2}
+						imageAuthor={author}
 						title="Arquitecturas Limpias"
 						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
 						level="Nivel"
-					// 	level_value="Básico"
-					 />
+						// 	level_value="Básico"
+					/>
 					<ArticleCard
-						image={image}
+						imageArticle={image}
+						imageAuthor={author}
 						title="Vue 3-Composition"
 						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						level="Nivel"
 						// level_value="Avanzado"
 					/>
 					<ArticleCard
-						image={image1}
+						imageArticle={image1}
+						imageAuthor={author}
 						title="React 18 with hooks"
 						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
 						level="Nivel"
 						// level_value="Intermedio"
 					/>
 					<ArticleCard
-						image={image2}
+						imageArticle={image2}
+						imageAuthor={author}
 						title="Arquitecturas Limpias"
 						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
 						level="Nivel"
