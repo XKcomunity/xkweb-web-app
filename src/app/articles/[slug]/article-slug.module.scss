@@ -5,6 +5,10 @@
 	margin-top: 15px;
 }
 
+.images {
+	width: 100%;
+	object-fit: cover;
+}
 .title {
 	font-size: $font-size__title;
 	color: $text-color;

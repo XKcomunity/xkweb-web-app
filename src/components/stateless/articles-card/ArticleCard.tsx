@@ -2,7 +2,6 @@
 import styles from "./article-card.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Url } from "url";
 
 type Props = {
 	imageArticle?: string;

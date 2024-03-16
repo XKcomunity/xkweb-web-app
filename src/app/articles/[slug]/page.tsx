@@ -29,7 +29,6 @@ export default async function Article({ params }: Props) {
 							h1: ({ children }) => (
 								<h1 className={styles.title}>{children}</h1>
 							),
-
 							code: ({ children }) => (
 								<code className={styles.blockcode}>
 									<SyntaxHighlighter language="javascript" style={irBlack}>
