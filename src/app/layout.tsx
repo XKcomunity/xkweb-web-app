@@ -2,6 +2,7 @@ import "./globals.scss";
 import { NavBar } from "@/components/statefull/navbar/NavBar";
 import { Footer } from "@/components/stateless/footer/Footer";
 import ScrollTopButton from "@/components/statefull/buttons/ScrollTopButton";
+import React from "react";
 
 export default function RootLayout({
 	children,
