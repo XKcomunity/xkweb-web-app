@@ -33,7 +33,7 @@ export const getArticles = async () => {
 	`;
 
 	const results: any = await graphContent.request(query);
-	const articles = results.articles;
+  const articles = results.articles;
 
 	return articles;
 };

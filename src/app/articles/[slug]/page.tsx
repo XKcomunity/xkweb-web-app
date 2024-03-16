@@ -19,7 +19,7 @@ export default async function Article({ params }: Props) {
 	return (
 		<>
 			<WrapperInfoDetails data={article}>
-				<BannerHeaderInfo data={article} />
+			<BannerHeaderInfo data={article} />
 				<div className={styles.overlay}></div>
 				<main>
 					<SecondaryTitleBlack title={title} />
@@ -29,8 +29,9 @@ export default async function Article({ params }: Props) {
 							h1: ({ children }) => (
 								<h1 className={styles.title}>{children}</h1>
 							),
+
 							code: ({ children }) => (
-								<code className={styles.blockcode}>
+								<code>
 									<SyntaxHighlighter language="javascript" style={irBlack}>
 										{children}
 									</SyntaxHighlighter>
@@ -45,11 +46,11 @@ export default async function Article({ params }: Props) {
 							h4: ({ children }) => (
 								<h4 className={styles.intro}>{children}</h4>
 							),
-							p: ({ children }) => <p className={styles.text}>{children}</p>,
-							blockquote: ({ children }) => (
-								<blockquote className={styles.shortDescription}>
-									{children}
-								</blockquote>
+							p:  ({ children }) => (
+								<p className={styles.text}>{children}</p>
+							),
+							blockquote:  ({ children }) => (
+								<blockquote className={styles.shortDescription}>{children}</blockquote>
 							),
 						}}
 					/>
