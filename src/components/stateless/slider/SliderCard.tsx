@@ -8,7 +8,6 @@ import { HiArrowLeft } from "react-icons/hi";
 import image from "../../../../public/images/tech-logos/vue.png";
 import image1 from "../../../../public/images/article-cards/react.png";
 import image2 from "../../../../public/images/article-cards/handcard.png";
-import author from "../../../../public/images/our_team/mike_avatar.png";
 
 export const SliderCard = () => {
 	//customs icons for the slider
@@ -33,68 +32,62 @@ export const SliderCard = () => {
 			items: 3,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 768 },
+			breakpoint: { max: 1024, min: 600 },
 			items: 2,
 		},
 		mobile: {
-			breakpoint: { max: 768, min: 0 },
+			breakpoint: { max: 600, min: 0 },
 			items: 1,
 		},
 	};
 	return (
 		<>
-			<div className={styles.slider}>
+			<div>
 				<Carousel
+					className={styles.slider}
 					responsive={responsive}
-					shouldResetAutoplay
 					ssr={true}
 					infinite={true}
 					customLeftArrow={LeftArrow}
 					customRightArrow={RightArrow}
 				>
 					<ArticleCard
-						imageArticle={image}
-						imageAuthor={author}
+						image={image}
 						title="Vue 3 - Composition"
 						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						level="Nivel"
 						// level_value="Intermedio"
 					/>
 					<ArticleCard
-						imageArticle={image1}
-						imageAuthor={author}
+						image={image1}
 						title="React 18 with hooks"
 						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
 						level="Nivel"
 						// level_value="Avanzado"
 					/>
 					<ArticleCard
-						imageArticle={image2}
-						imageAuthor={author}
+						image={image2}
 						title="Arquitecturas Limpias"
 						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
 						level="Nivel"
-						// 	level_value="Básico"
-					/>
+					// 	level_value="Básico"
+					 />
 					<ArticleCard
-						imageArticle={image}
-						imageAuthor={author}
+						image={image}
 						title="Vue 3-Composition"
 						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
 						level="Nivel"
 						// level_value="Avanzado"
 					/>
 					<ArticleCard
-						imageArticle={image1}
-						imageAuthor={author}
+						image={image1}
 						title="React 18 with hooks"
 						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
 						level="Nivel"
 						// level_value="Intermedio"
 					/>
 					<ArticleCard
-						imageArticle={image2}
-						imageAuthor={author}
+						image={image2}
 						title="Arquitecturas Limpias"
 						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
 						level="Nivel"
