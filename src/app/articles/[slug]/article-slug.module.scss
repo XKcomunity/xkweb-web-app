@@ -5,10 +5,6 @@
 	margin-top: 15px;
 }
 
-.images {
-	width: 100%;
-	object-fit: cover;
-}
 .title {
 	font-size: $font-size__title;
 	color: $text-color;
@@ -33,6 +29,7 @@
 
 .text {
 	font-size: $font-size__h6;
+	margin-bottom: 15px;
 }
 
 .conclusion {
