@@ -10,7 +10,10 @@
 .footer_wrapper {
 	width: $width-90-percent;
 	height: $width-80-percent;
+	margin-right: auto;
+	margin-left: auto;
 	display: grid;
+	place-content: center;
 	place-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	padding: $padding-1;
@@ -61,6 +64,10 @@
 }
 
 @media screen and (max-width: 813px) {
+	.footer_wrapper {
+		display: grid;
+		place-items: start;
+	}
 	.footer_section_2 {
 		margin-top: 2.5em;
 	}
