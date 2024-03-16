@@ -5,11 +5,14 @@ import styles from "./slider.module.scss";
 import { ArticleCard } from "../articles-card/ArticleCard";
 import { HiArrowRight } from "react-icons/hi";
 import { HiArrowLeft } from "react-icons/hi";
-import image from "../../../../public/images/tech-logos/vue.png";
-import image1 from "../../../../public/images/article-cards/react.png";
-import image2 from "../../../../public/images/article-cards/handcard.png";
+import { Article } from "type";
+import Link from "next/link";
 
-export const SliderCard = () => {
+type SliderProps = {
+	articles: Article[];
+};
+
+export const SliderCard = ({ articles }: SliderProps) => {
 	//customs icons for the slider
 	const RightArrow = (
 		<div className={styles.right_arrow_container}>
@@ -32,67 +35,37 @@ export const SliderCard = () => {
 			items: 3,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 600 },
+			breakpoint: { max: 1024, min: 768 },
 			items: 2,
 		},
 		mobile: {
-			breakpoint: { max: 600, min: 0 },
+			breakpoint: { max: 768, min: 0 },
 			items: 1,
 		},
 	};
 	return (
 		<>
-			<div>
+			<div className={styles.slider}>
 				<Carousel
-					className={styles.slider}
 					responsive={responsive}
+					shouldResetAutoplay
 					ssr={true}
 					infinite={true}
 					customLeftArrow={LeftArrow}
 					customRightArrow={RightArrow}
 				>
-					<ArticleCard
-						image={image}
-						title="Vue 3 - Composition"
-						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-						level="Nivel"
-						// level_value="Intermedio"
-					/>
-					<ArticleCard
-						image={image1}
-						title="React 18 with hooks"
-						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
-						level="Nivel"
-						// level_value="Avanzado"
-					/>
-					<ArticleCard
-						image={image2}
-						title="Arquitecturas Limpias"
-						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-						level="Nivel"
-					// 	level_value="Básico"
-					 />
-					<ArticleCard
-						image={image}
-						title="Vue 3-Composition"
-						shortDescription="La mejor manera de hacer web apps modernas con vue. Aprende ya!"
-						level="Nivel"
-						// level_value="Avanzado"
-					/>
-					<ArticleCard
-						image={image1}
-						title="React 18 with hooks"
-						shortDescription="Aprende a dominar los hooks de react y crea magnificas UIs"
-						level="Nivel"
-						// level_value="Intermedio"
-					/>
-					<ArticleCard
-						image={image2}
-						title="Arquitecturas Limpias"
-						shortDescription="Aprende arquitecturas limpias y las mejores herramientas DevOps"
-						level="Nivel"
-						// level_value="Intermedio"
-					/>
+					{articles.map((article: Article) => (
+						<Link href={`/articles/${article.slug}`} key={article.id}>
+							<ArticleCard
+								imageArticle={article.image.url}
+								imageAuthor={article.author.photo.url}
+								title={article.title}
+								shortDescription={article.shortDescription}
+								author={article.author.name}
+								level={article.level}
+							/>
+						</Link>
+					))}
 				</Carousel>
 			</div>
 		</>

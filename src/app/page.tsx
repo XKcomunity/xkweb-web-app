@@ -8,9 +8,13 @@ import { CategoryTitle } from "@/components/stateless/titles/CategoryTitle";
 import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/stateless/container-button/ContainerButton";
 import { OurTeam } from "@/components/stateless/our-team/OurTeam";
-// import styles from "./page.module.scss";
+import { getArticles } from "../../hygraph/articles";
+import { Article } from "type";
+import styles from "./page.module.scss";
 
-export default function Home() {
+export default async function Home() {
+	const articlesData: Promise<Article[]> = await getArticles();
+	const articles = await articlesData;
 	return (
 		<>
 			<HomePageBanner />
@@ -20,7 +24,7 @@ export default function Home() {
 			<HintSection />
 			<TitleComponent title="Articulos Recientes" />
 			<CategoryTitle SecondaryTitle="Frontend - Backend - Arquitectura" />
-			<SliderCard />
+			<SliderCard articles={articles} />
 			<ContainerButton buttonText="Explorar Articulos" route="/articles" />
 			<TitleComponent title="Snippets Recientes" />
 			<RecentSnippets />
