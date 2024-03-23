@@ -25,6 +25,7 @@
 
 .hint_card {
     @include glass;
+    min-height: 280px;
 }
 
 

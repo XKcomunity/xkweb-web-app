@@ -77,23 +77,7 @@ export function Footer() {
 							</Link>
 						</div>
 					</div>
-					<div className={styles.footer_section_2}>
-						<div className={styles.links_heading}>
-							<span className={styles.heading}>Prueba tus Conocimientos</span>
-						</div>
-						<div className={styles.footer_links}>
-							<Link href="/quizzes" className={styles.link}>
-								<li className={styles.navbar_item}>
-									<a>Quiz Time</a>
-								</li>
-							</Link>
-							<Link href="/articles" className={styles.link}>
-								<li className={styles.navbar_item}>
-									<a>Impulso Profesional</a>
-								</li>
-							</Link>
-						</div>
-					</div>
+					
 				</div>
 			</footer>
 		</>
